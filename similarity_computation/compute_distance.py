@@ -1,3 +1,6 @@
+"""
+包括欧氏距离、曼哈顿距离的计算
+"""
 # coding=utf-8
 import numpy as np
 from math import radians, cos, sin, asin, sqrt
@@ -8,7 +11,6 @@ from math import radians, cos, sin, asin, sqrt
 def compute_euclidean_distance(lon1, lat1, lon2, lat2):
     # 将角度转化为弧度
     lon1, lat1, lon2, lat2 = map(radians, [lon1, lat1, lon2, lat2])
-    print('lon1, lat1, lon2, lat2 = ', lon1, lat1, lon2, lat2 )
 
     dlon = lon2 - lon1
     dlat = lat2 - lat1
@@ -22,23 +24,18 @@ def compute_euclidean_distance(lon1, lat1, lon2, lat2):
 def compute_manhattan_distance(lon1, lat1, lon2, lat2):
     # 将角度转化为弧度
     lon1_rad, lat1_rad, lon2_rad, lat2_rad = map(radians, [lon1, lat1, lon2, lat2])
-    print('lon1_rad, lat1_rad, lon2_rad, lat2_rad = ', lon1_rad, lat1_rad, lon2_rad, lat2_rad)
 
     # 1、计算纬线间经线长度
     standard_lat_distance = 111194.92664455873  # 1纬度之间经线长度
-    d_lat = np.abs(lat1-lat2) * standard_lat_distance
+    d_lat = np.abs(lat1 - lat2) * standard_lat_distance
 
     # 2、计算经线间纬线长度。上下纬度两条不等长，取中间经度均值
-    d_lon = np.abs(lon1-lon2) * cos((lat1_rad+lat2_rad)/2) * standard_lat_distance
+    d_lon = np.abs(lon1 - lon2) * cos((lat1_rad + lat2_rad) / 2) * standard_lat_distance
 
-    print('d_lat, d_lon = ', d_lat, d_lon)
-    return d_lat+d_lon
+    return d_lat + d_lon
 
 
-"""
-测试
-"""
-def fun_1():
+if __name__ == "__main__":
     # lon1, lat1 = 123.433033, 41.661604  # 东北大学
     # lon2, lat2 = 116.403955, 39.915121  # 天安门
     # lon1, lat1 = 0, 2
@@ -52,10 +49,6 @@ def fun_1():
     euclidean_distance = compute_euclidean_distance(lon1, lat1, lon2, lat2)
     manhattan_distance = compute_manhattan_distance(lon1, lat1, lon2, lat2)
     print(euclidean_distance, manhattan_distance)
-
-
-if __name__ == '__main__':
-    fun_1()
 
 
 # 一纬度间经线的长度为111194.92664455873

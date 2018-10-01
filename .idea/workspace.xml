@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="91198781-803d-49ae-8514-c7e749cd03f8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/config_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/config_reader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/draw_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/draw_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/bin/run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/conf/config_reader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/similarity_computation/compute_distance.py" beforeDir="false" afterPath="$PROJECT_DIR$/similarity_computation/compute_distance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/similarity_computation/idc_DTW.py" beforeDir="false" afterPath="$PROJECT_DIR$/similarity_computation/dtw.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/util/file_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/file_reader.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,55 +18,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="drawer.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/util/drawer.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="38" column="7" lean-forward="true" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="idc_DTW.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/similarity_computation/idc_DTW.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-              <folding>
-                <element signature="e#61#79#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="run.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bin/run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="792">
-              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="453">
+              <caret line="63" column="12" lean-forward="true" selection-start-line="63" selection-start-column="12" selection-end-line="63" selection-end-column="12" />
               <folding>
-                <element signature="e#0#39#0" expanded="true" />
+                <element signature="e#15#54#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config_reader.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config_reader.py">
+      <file leaf-file-name="dtw.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/similarity_computation/dtw.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="file_reader.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/util/file_reader.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="299">
+              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
               <folding>
-                <element signature="e#15#24#0" expanded="true" />
+                <element signature="e#61#79#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -73,10 +45,31 @@
       <file leaf-file-name="compute_distance.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/similarity_computation/compute_distance.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="7" column="30" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="30" />
+            <state relative-caret-position="268">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="e#15#33#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config_reader.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conf/config_reader.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="file_reader.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util/file_reader.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-493">
+              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+              <folding>
+                <element signature="e#15#24#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -96,6 +89,8 @@
       <find>filenames</find>
       <find>Drawer</find>
       <find>get_root_path</find>
+      <find>dtw</find>
+      <find>print</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -110,22 +105,26 @@
         <option value="$PROJECT_DIR$/similarity_computation/idc-DTW.py" />
         <option value="$PROJECT_DIR$/Main/main.py" />
         <option value="$PROJECT_DIR$/util/fileReader.py" />
-        <option value="$PROJECT_DIR$/conf.cfg" />
         <option value="$PROJECT_DIR$/util/draw.py" />
         <option value="$PROJECT_DIR$/util/draw_test.py" />
+        <option value="$PROJECT_DIR$/similarity_computation/idc_DTW.py" />
+        <option value="$PROJECT_DIR$/util/drawer.py" />
+        <option value="$PROJECT_DIR$/config_reader.py" />
+        <option value="$PROJECT_DIR$/conf.cfg" />
+        <option value="$PROJECT_DIR$/readme,txt" />
+        <option value="$PROJECT_DIR$/similarity_computation/compute_similarty_trajectory.py" />
+        <option value="$PROJECT_DIR$/similarity_computation/idc_dtw.py" />
+        <option value="$PROJECT_DIR$/bin/run.py" />
         <option value="$PROJECT_DIR$/util/file_reader.py" />
         <option value="$PROJECT_DIR$/conf/config_reader.py" />
-        <option value="$PROJECT_DIR$/similarity_computation/idc_DTW.py" />
         <option value="$PROJECT_DIR$/similarity_computation/compute_distance.py" />
-        <option value="$PROJECT_DIR$/util/drawer.py" />
-        <option value="$PROJECT_DIR$/bin/run.py" />
-        <option value="$PROJECT_DIR$/config_reader.py" />
+        <option value="$PROJECT_DIR$/similarity_computation/dtw.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="342" />
-    <option name="width" value="1578" />
+    <option name="x" value="294" />
+    <option name="width" value="1626" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -136,7 +135,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -148,6 +146,11 @@
               <item name="trajectory" type="b2602c69:ProjectViewProjectNode" />
               <item name="trajectory" type="462c0819:PsiDirectoryNode" />
               <item name="bin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="trajectory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="trajectory" type="462c0819:PsiDirectoryNode" />
+              <item name="conf" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="trajectory" type="b2602c69:ProjectViewProjectNode" />
@@ -168,19 +171,20 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Python" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\pythonSourceCoude\trajectory\conf" />
+      <recent name="D:\pythonSourceCoude\trajectory" />
+      <recent name="D:\pythonSourceCoude\trajectory\similarity_computation" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\pythonSourceCoude\trajectory\bin" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\pythonSourceCoude\trajectory" />
-      <recent name="D:\pythonSourceCoude\trajectory\conf" />
-      <recent name="D:\pythonSourceCoude\trajectory\similarity_computation" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -195,8 +199,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.config_reader (1)">
-    <configuration name="config_reader (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.drawer">
+    <configuration name="compute_distance" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="trajectory" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -204,11 +208,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/similarity_computation" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/config_reader.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/similarity_computation/compute_distance.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -226,7 +230,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="D:\pythonSourceCoude\trajectory\config_reader.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/conf/config_reader.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -250,7 +254,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="dtw" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="trajectory" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -258,43 +262,47 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bin" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/similarity_computation" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bin/run.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/similarity_computation/dtw.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="py.test for compute_distance.test" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="file_reader" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="trajectory" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/similarity_computation" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/util" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;compute_distance.test&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/file_reader.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.run" />
-      <item itemvalue="Python.drawer" />
+      <item itemvalue="Python.file_reader" />
       <item itemvalue="Python.config_reader" />
-      <item itemvalue="Python tests.py.test for compute_distance.test" />
-      <item itemvalue="Python.config_reader (1)" />
+      <item itemvalue="Python.compute_distance" />
+      <item itemvalue="Python.dtw" />
+      <item itemvalue="Python.drawer" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.config_reader (1)" />
-        <item itemvalue="Python.run" />
-        <item itemvalue="Python tests.py.test for compute_distance.test" />
         <item itemvalue="Python.drawer" />
+        <item itemvalue="Python.file_reader" />
+        <item itemvalue="Python.dtw" />
+        <item itemvalue="Python.compute_distance" />
         <item itemvalue="Python.config_reader" />
       </list>
     </recent_temporary>
@@ -324,9 +332,10 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="342" y="0" width="1578" height="1040" extended-state="0" />
+    <frame x="294" y="0" width="1626" height="1040" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13764405" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13354038" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3292683" />
@@ -336,7 +345,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.2774695" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39955604" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13764405" />
@@ -345,7 +354,6 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27081022" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3292683" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -359,102 +367,12 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/location/LocationService.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#16#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/similarity_computation/idc_DTW.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/similarity_computation/compute_distance.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/file_reader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#15#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf.cfg">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/dataProcess" />
-    <entry file="file://$PROJECT_DIR$/data/__init__.py" />
-    <entry file="file://D:/Anaconda/Lib/typing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="2286" column="8" selection-start-line="2286" selection-start-column="8" selection-end-line="2286" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Anaconda/Lib/os.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="286" column="42" lean-forward="true" selection-start-line="286" selection-start-column="14" selection-end-line="286" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/dataProcess.py" />
-    <entry file="file://$PROJECT_DIR$/trajectory.yml" />
-    <entry file="file://$PROJECT_DIR$/bin/conf.cfg">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/location/LocationService.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#16#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/draw_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="32" column="7" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
-          <folding>
-            <element signature="e#15#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Anaconda/Lib/configparser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="780" selection-start-line="780" selection-end-line="780" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/conf.cfg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -462,63 +380,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config_reader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" selection-start-column="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/file_reader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#15#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/similarity_computation/.cache/v/cache/lastfailed">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/similarity_computation/idc_DTW.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="e#61#79#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/drawer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="38" column="7" lean-forward="true" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/similarity_computation/compute_distance.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="21" column="30" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="30" />
-          <folding>
-            <element signature="e#15#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/location/LocationService.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
@@ -526,7 +387,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/similarity_computation/idc_DTW.py">
+    <entry file="file://$PROJECT_DIR$/similarity_computation/dtw.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
@@ -538,7 +399,7 @@
         <state relative-caret-position="44">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#15#54#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -606,16 +467,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/similarity_computation/idc_DTW.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="e#61#79#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/conf.cfg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -623,12 +474,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/similarity_computation/compute_distance.py">
+    <entry file="file://$PROJECT_DIR$/conf/config_reader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="30" />
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/file_reader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
           <folding>
-            <element signature="e#15#33#0" expanded="true" />
+            <element signature="e#15#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/similarity_computation/.cache/v/cache/lastfailed" />
+    <entry file="file://$PROJECT_DIR$/similarity_computation/dtw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="e#61#79#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -645,24 +514,189 @@
         <state relative-caret-position="792">
           <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#15#54#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config_reader.py">
+    <entry file="file://$PROJECT_DIR$/similarity_computation/compute_distance.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="17" />
+        <state relative-caret-position="266">
+          <caret line="21" column="30" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="30" />
+          <folding>
+            <element signature="e#15#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/location/LocationService.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/similarity_computation/dtw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#15#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/similarity_computation/compute_distance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/util/file_reader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="44">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
           <folding>
             <element signature="e#15#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf.cfg">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/dataProcess" />
+    <entry file="file://$PROJECT_DIR$/data/__init__.py" />
+    <entry file="file://D:/Anaconda/Lib/typing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="2286" column="8" selection-start-line="2286" selection-start-column="8" selection-end-line="2286" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Anaconda/Lib/os.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="286" column="42" lean-forward="true" selection-start-line="286" selection-start-column="14" selection-end-line="286" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/dataProcess.py" />
+    <entry file="file://$PROJECT_DIR$/trajectory.yml" />
+    <entry file="file://$PROJECT_DIR$/bin/conf.cfg" />
+    <entry file="file://$PROJECT_DIR$/location/LocationService.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/draw_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="32" column="7" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+          <folding>
+            <element signature="e#15#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Anaconda/Lib/configparser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="780" selection-start-line="780" selection-end-line="780" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/similarity_computation/dtw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+          <folding>
+            <element signature="e#61#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme,txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/drawer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/similarity_computation/compute_similarty_trajectory.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/file_reader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-493">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding>
+            <element signature="e#15#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="63" column="12" lean-forward="true" selection-start-line="63" selection-start-column="12" selection-end-line="63" selection-end-column="12" />
+          <folding>
+            <element signature="e#15#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/config_reader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/similarity_computation/compute_distance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#15#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/similarity_computation/dtw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+          <folding>
+            <element signature="e#61#79#0" expanded="true" />
           </folding>
         </state>
       </provider>

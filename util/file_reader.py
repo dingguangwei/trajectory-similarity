@@ -1,7 +1,7 @@
 # coding=utf-8
 import os
 import pandas as pd
-from config_reader import get_root_path
+from conf.config_reader import get_root_path
 
 
 class FileReader:
