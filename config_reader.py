@@ -4,7 +4,7 @@ import configparser
 
 def get_root_path():
     config = configparser.ConfigParser()
-    config.read("../conf.cfg")
+    config.read("./conf.cfg")
     return config.get("data", "root_path")
 
 

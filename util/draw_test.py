@@ -1,10 +1,5 @@
 # coding=utf-8
-from util.file_reader import file_reader
-from conf.config_reader import get_root_path
 import matplotlib.pyplot as plt
-import numpy as np
-from matplotlib.ticker import MultipleLocator, FormatStrFormatter
-
 
 y0 = [1, 2, 3]
 y1 = [6, 5, 6]
