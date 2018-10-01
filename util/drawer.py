@@ -2,7 +2,7 @@
 import matplotlib.pyplot as plt
 
 
-class drawer:
+class Drawer:
     font1 = {"family": "Times New Roman", "weight": "normal", "size": 9}
     font2 = {"family": "Times New Roman", "weight": "normal", "size": 14}
 
@@ -16,7 +16,7 @@ class drawer:
     reco_y_list = []
     reco_color = ["yellow", "red", "blue", "green"]
     reco_color_index = 0
-    reco_label = []
+    reco_label_list = []
     reco_line_width = 0.9
 
     def __init__(self):
@@ -30,7 +30,7 @@ class drawer:
     def add_reco(self, x, y, label="reco"):
         self.reco_x_list.append(x)
         self.reco_y_list.append(y)
-        self.reco_label.append(label)
+        self.reco_label_list.append(label)
 
     def draw(self, x, y, color="red", label="label", line_width=0.8):
         plt.plot(x, y, color=color, label="$" + label + "$", linewidth=line_width)
@@ -40,21 +40,22 @@ class drawer:
         self.reco_color_index %= len(self.reco_color)
         return self.reco_color[self.reco_color_index]
 
-    def run(self):
-        self.draw(
-            self.user_demand_x,
-            self.user_demand_y,
-            color=self.user_color,
-            label=self.user_label,
-            line_width=self.user_line_width,
-        )
-        plt.legend(loc="upper right", prop=self.font1, frameon=False)  # 绘制图例，指定图例位置
+    def draw_user_and_reco(self):
+        if len(self.user_demand_x) != 0:
+            self.draw(
+                self.user_demand_x,
+                self.user_demand_y,
+                color=self.user_color,
+                label=self.user_label,
+                line_width=self.user_line_width,
+            )
+            plt.legend(loc="upper right", prop=self.font1, frameon=False)  # 绘制图例，指定图例位置
         for i in range(len(self.reco_x_list)):
             self.draw(
                 self.reco_x_list[i],
                 self.reco_y_list[i],
                 color=self.get_reco_color(),
-                label=self.reco_label[i],
+                label=self.reco_label_list[i],
                 line_width=self.reco_line_width,
             )
             plt.legend(loc="upper right", prop=self.font1, frameon=False)  # 绘制图例，指定图例位置
@@ -62,8 +63,8 @@ class drawer:
 
 
 if __name__ == "__main__":
-    m_drawer = drawer()
-    m_drawer.set_user_demand([1, 2, 3, 4, 5, 6, 7], [1, 2, 3, 4, 5, 6, 7])
-    m_drawer.add_reco([3, 4, 5, 6, 7, 8, 9], [9, 8, 7, 6, 5, 4, 3], label='label1')
-    m_drawer.add_reco([-3, -2, -1, 0], [16, 19, 14, 20], label='label2')
-    m_drawer.run()
+    drawer = Drawer()
+    drawer.set_user_demand([1, 2, 3, 4], [16, 3, 7, 1])
+    drawer.add_reco([1, 2, 3, 4], [6, 8, 2, 8])
+    drawer.add_reco([4, 5, 6, 7], [3, 5, 7, 2])
+    drawer.draw_user_and_reco()

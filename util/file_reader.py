@@ -1,14 +1,17 @@
 # coding=utf-8
 import os
 import pandas as pd
+from conf.config_reader import get_root_path
 
 
-class file_reader:
+class FileReader:
     all_file_path = []
 
-    def __init__(self, root_path):
+    def __init__(self):
+        root_path = get_root_path()
+        print("root_path=", root_path)
         file_count = 0
-        print("scan all file:")
+        print("scan all file in root_path : ", root_path)
         for root, dirs, files in os.walk(root_path):
             # print('\n', root)
             # print(dirs)
@@ -20,7 +23,7 @@ class file_reader:
                         file_count += 1
                         if file_count % 5000 == 0:
                             print("file_count: ", file_count)
-        print("file_count: ", file_count)
+        print("file_number: ", file_count)
 
     # 获取单个文件数据中的经纬度和时间戳，以dataFrame格式返回
     def read_file(self, file_path):
@@ -45,8 +48,7 @@ class file_reader:
 
 
 if __name__ == "__main__":
-    path = "F:\\GeolifeTrajectories1.3\\Data"
-    reader = file_reader(root_path=path)
+    reader = FileReader()
     result = reader.get_some_trajectory([1])
     for item in result:
         print(item)

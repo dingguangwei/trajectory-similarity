@@ -36,7 +36,6 @@ def dtw(trajectory_1, trajectory_2):
                 m_arr[i, j] = min(pre_distance) + compute_distance(
                     trajectory_1[i - 1], trajectory_2[j - 1]
                 )
-    print(m_arr)
     return m_arr[m, n]
 
 
