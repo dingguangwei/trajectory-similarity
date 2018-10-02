@@ -1,12 +1,15 @@
 # coding=utf-8
-from util.file_reader import FileReader
 from similarity_computation.dtw import dtw, isdc_dtw, idc_dtw
 from util.drawer import Drawer
+from similarity_computation.recommend import get_similarity_trajectory
+from util.file_reader import FileReader
+from conf.config_reader import get_algorithm_code
 import numpy as np
+import pandas as pd
 
 
 # 计算相似度并且画出轨迹
-def test_1():
+def fun_1():
     index_list = [0, 6, 7, 8, 9, 10]
     reader = FileReader()
     trajectories = reader.get_some_trajectory(index_list=index_list)
@@ -28,7 +31,7 @@ def test_1():
 
 
 # 画轨迹
-def test_2():
+def fun_2():
     index_list = range(1100, 1150)
     reader = FileReader()
     trajectories = reader.get_some_trajectory(index_list=index_list)
@@ -47,18 +50,46 @@ def test_2():
     m_drawer.draw_user_and_reco()
 
 
-def test_3():
-    user_demand = np.array(
-        [
+def fun_3():
+    n = 20
+    user_demand = pd.DataFrame(
+        data=[
             [116.401987, 40.000061],
             [116.395448, 39.933315],
             [116.404143, 39.909299],
             [116.396094, 39.909133],
-        ]
+        ],
+        columns=["lon", "lat"],
     )
-    user_demand_x = user_demand[:, 0]
-    user_demand_y = user_demand[:, 1]
+    reader = FileReader()
+    trajectories = reader.get_all_trajectory()
+    dtw_distance, dtw_similarity_order = get_similarity_trajectory(
+        user_demand=user_demand,
+        trajectories=trajectories,
+        algorithm_code=get_algorithm_code(),
+        n=n,
+    )
+
+    print("dtw_similarity_order:", list(dtw_similarity_order))
+
+    similarity_trajectories = []
+    for i in dtw_similarity_order:
+        similarity_trajectories.append(trajectories[i])
+
+    drawer = Drawer(
+        user_demand=user_demand,
+        trajectories=similarity_trajectories,
+        trajectories_label=list(dtw_similarity_order),
+    )
+    drawer.draw_user_and_reco()
 
 
 if __name__ == "__main__":
-    test_2()
+    fun_2()
+    # m_list = [1,5,3,9,0,4,2]
+    # map = map(m_list.index, heapq.nsmallest(n=3, iterable=m_list))
+    # print(list(map))
+
+
+# dtw 距离最短的索引
+# [16395, 14265, 14710, 14242, 14240, 13724, 11836, 3044, 14545, 12860, 12850, 12846, 3251, 5560, 5874, 5687, 10052, 5476, 329, 5547]
