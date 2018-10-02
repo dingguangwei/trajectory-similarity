@@ -31,7 +31,7 @@ class FileReader:
         result = m_data[["lat", "lon", "date", "time"]]
         return result
 
-    # 将所有轨迹数据存入list，每条数据以一个DataFrame形式存放
+    # 将所有轨迹数据存入list，每条数据以一个DataFrame形式存放（也可以只读file_number条轨迹）
     def get_all_trajectory(self, file_number=None):
         all_trajectory = []
         print("\nread all files...")

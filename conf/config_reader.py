@@ -15,7 +15,11 @@ def get_root_path():
 
 def get_debug_model():
     config = init()
-    return bool(config.get("run", "debug_model"))
+    debug_model = config.get("run", "debug_model")
+    if debug_model == 'True' or debug_model == 'true':
+        return True
+    else:
+        return False
 
 
 def get_algorithm_code():
