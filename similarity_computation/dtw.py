@@ -1,7 +1,7 @@
+# coding=utf-8
 """
     Improved distance calculation DTW
 """
-# coding=utf-8
 import numpy as np
 import pandas as pd
 from similarity_computation.compute_distance import (

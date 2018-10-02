@@ -1,7 +1,7 @@
+# coding=utf-8
 """
 包括欧氏距离、曼哈顿距离的计算
 """
-# coding=utf-8
 import numpy as np
 from math import radians, cos, sin, asin, sqrt
 
