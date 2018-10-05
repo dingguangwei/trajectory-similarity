@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>地图加载完成事件</title>
+    <link rel="stylesheet" href="https://cache.amap.com/lbs/static/main1119.css"/>
+    <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.10&key=38c9d7969406ea48ab2c83a37e4137ab"></script>
+    <script type="text/javascript" src="https://cache.amap.com/lbs/static/addToolbar.js"></script>
+</head>
+<body>
+    <div>
+        <input type="file" id="files" style="display: none" onchange="fileImport();">
+        <input type="button" id="fileImport" value="trajectory-file-load">
+        
+        <div id="container" style="height:800px; top:80px; left:50px; right:50px;"></div>
+        <div id="tip"></div>
+    </div>
+
+<script type="text/javascript">
+    $("#fileImport").click(function () {
+        $("#files").click();
+    })
+
+    //初始化地图对象，加载地图
+    var map = new AMap.Map("container", {
+        center: [116.403999, 39.914668],
+        zoom: 10,
+        resizeEnable: true
+    });
+    
+    map.on('complete', function() {
+        document.getElementById('tip').innerHTML = "地图图块加载完毕！当前地图中心点为：" + map.getCenter();
+    });
+    
+    function fileImport(){
+        //获取读取我文件的File对象
+        var selectedFile = document.getElementById('files').files[0];
+        var name = selectedFile.name;//读取选中文件的文件名
+        var size = selectedFile.size;//读取选中文件的大小
+        console.log("文件名:"+name+"大小:"+size);
+
+        var reader = new FileReader();//这是核心,读取操作就是由它完成.
+        reader.readAsText(selectedFile);//读取文件的内容,也可以读取文件的URL
+        reader.onload = function () {
+            //当读取完成后回调这个函数,然后此时文件的内容存储到了result中,直接操作即可
+            console.log(this.result);
+            data = JSON.parse(this.result)
+            lineArr = new Array();
+            for(var i=0; i<data.lat.length; i++){
+                lineArr.push(new AMap.LngLat(data.lon[i],data.lat[i]));
+            }
+            console.log('lineArr: '+lineArr);
+            var polyline =new AMap.Polyline({
+                path: lineArr,
+                strokeColor: "black",
+                strokeOpacity: 0.5,
+                strokeWeight: 10, 
+                strokeStyle: "solid",
+            });
+            polyline.setMap(map);
+        }
+    }
+
+    function addLine(map, json_data) {
+        var lineArr = new Array();
+        lineArr.push(new AMap.LngLat(116,39));
+        lineArr.push(new AMap.LngLat(117,40));
+        var polyline =new AMap.Polyline({
+            path: lineArr,
+            strokeColor: "#00ff00",
+            strokeOpacity: 0.5,
+            strokeWeight: 3, 
+            strokeStyle: "solid",
+        });
+        polyline.setMap(map);
+    }
+</script>
+</body>
+</html>
