@@ -7,6 +7,8 @@ import pandas as pd
 class Drawer:
     font1 = {"family": "Times New Roman", "weight": "normal", "size": 9}
     font2 = {"family": "Times New Roman", "weight": "normal", "size": 14}
+    min_lon, min_lat = 116.105906, 39.699716
+    max_lon, max_lat = 116.68887, 40.137988
 
     user_demand_lon = []
     user_demand_lat = []
@@ -75,6 +77,8 @@ class Drawer:
                 line_width=self.reco_line_width,
             )
             plt.legend(loc="upper right", prop=self.font1, frameon=False)  # 绘制图例，指定图例位置
+        plt.xlim(self.min_lon, self.max_lon)
+        plt.ylim(self.min_lat, self.max_lat)
         plt.show()
 
 

@@ -33,7 +33,7 @@ def fun_1():
 # 画轨迹
 def fun_2(user_demand, trajectories):
     drawer = Drawer(user_demand=user_demand, trajectories=trajectories)
-
+    drawer.draw_user_and_reco()
 
 # 计算最相似的轨迹并作图
 def fun_3(user_demand, trajectories):
@@ -71,7 +71,7 @@ if __name__ == "__main__":
         columns=["lon", "lat"],
     )
     reader = FileReader()
-    trajectories = reader.get_all_trajectory(file_number=1000)
+    trajectories = reader.get_all_trajectory(file_number=550)
 
 
     fun_2(user_demand, trajectories[500:550])
