@@ -12,7 +12,7 @@ import pandas as pd
 def fun_1():
     index_list = [0, 6, 7, 8, 9, 10]
     reader = FileReader()
-    trajectories = reader.get_some_trajectory(index_list=index_list)
+    trajectories, ids = reader.get_some_trajectory(index_list=index_list)
 
     m_drawer = Drawer()
     m_drawer.set_user_demand(
@@ -71,7 +71,7 @@ if __name__ == "__main__":
         columns=["lon", "lat"],
     )
     reader = FileReader()
-    trajectories = reader.get_all_trajectory(file_number=550)
+    trajectories, ids = reader.get_all_trajectory(file_number=550)
 
 
     fun_2(user_demand, trajectories[500:550])

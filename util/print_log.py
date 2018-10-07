@@ -7,3 +7,6 @@ def print_rate(str, i, n):
 
 def print_complete(str):
     print(str)
+
+def print_error(str):
+    print('error:', str)

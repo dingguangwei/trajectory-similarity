@@ -20,7 +20,7 @@ def compute_euclidean_distance(lon1, lat1, lon2, lat2):
     return c * r * 1000
 
 
-# 根据经纬度计算曼哈顿距离
+# 根据经纬度计算曼哈顿距离，单位为米
 def compute_manhattan_distance(lon1, lat1, lon2, lat2):
     # 将角度转化为弧度
     lon1_rad, lat1_rad, lon2_rad, lat2_rad = map(radians, [lon1, lat1, lon2, lat2])
@@ -38,17 +38,22 @@ def compute_manhattan_distance(lon1, lat1, lon2, lat2):
 if __name__ == "__main__":
     # lon1, lat1 = 123.433033, 41.661604  # 东北大学
     # lon2, lat2 = 116.403955, 39.915121  # 天安门
-    # lon1, lat1 = 0, 2
-    # lon2, lat2 = 0, 1
-    lon1, lat1 = 116.847542, 40.419675  # 密云区，东北角
-    lon2, lat2 = 116.093253, 39.704022  # 房山区，西南角
-
-    lon1, lat1 = 116.847542, 39.704022  # 东南角
-    lon2, lat2 = 116.093253, 39.704022  # 西南角
+    lon1, lat1 = 0, 40.182947
+    lon2, lat2 = 0.00017657112768522496, 40.182947
+    # lon1, lat1 = 116.847542, 40.419675  # 密云区，东北角
+    # lon2, lat2 = 116.093253, 39.704022  # 房山区，西南角
+    #
+    # lon1, lat1 = 116.847542, 39.704022  # 东南角
+    # lon2, lat2 = 116.093253, 39.704022  # 西南角
 
     euclidean_distance = compute_euclidean_distance(lon1, lat1, lon2, lat2)
     manhattan_distance = compute_manhattan_distance(lon1, lat1, lon2, lat2)
     print(euclidean_distance, manhattan_distance)
+
+    lat_rad = list(map(radians, [40.182947]))[0]
+    detla_lon = 15 / (cos(lat_rad) * 111194.92664455873)
+    print('detla_lon = ', detla_lon)
+    print('delta_lat = ', 15/111194.92664455873)
 
 
 # 一纬度间经线的长度为111194.92664455873

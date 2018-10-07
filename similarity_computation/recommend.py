@@ -2,7 +2,7 @@
 import heapq
 from similarity_computation.dtw import compute_trajectory_distance
 from similarity_computation.dtw import DTW_CODE, ISDC_DTW_CODE, IDC_DTW_CODE
-from util.util import print_complete, print_rate
+from util.print_log import print_complete, print_rate
 
 """
 user_demand = pd.DataFrame()
