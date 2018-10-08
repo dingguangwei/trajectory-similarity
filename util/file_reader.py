@@ -1,6 +1,7 @@
 # coding=utf-8
 import os
 import sys
+import time
 import pandas as pd
 from conf.config_reader import get_root_path
 from util.print_log import print_rate, print_complete, print_error
@@ -44,13 +45,14 @@ class FileReader:
     # 获取单个文件数据中的经纬度和时间戳，以dataFrame格式返回，并返回文件名作为id
     def read_file(file_path):
         m_data = pd.read_csv(file_path, header=6)
-        m_data.columns = ["lat", "lon", "col3", "col4", "col5", "date", "time"]
-        result_data_frame = m_data[["lat", "lon", "date", "time"]]
+        m_data.columns = ["lat", "lon", "col3", "col4", "col5", "date", "time_stamp"]
+        result_data_frame = m_data[["lat", "lon", "date", "time_stamp"]]
         file_dir, file_name = os.path.split(file_path)
         return result_data_frame, int(file_name.split('.')[0])
 
     # 将所有轨迹数据存入list，每条数据以一个DataFrame形式存放（也可以只读file_number条轨迹）
     def get_all_trajectory(self, file_number=None):
+        start_time = time.time()
         all_trajectory = []
         all_trajectory_id = []
         print("\nread all files...")
@@ -62,7 +64,8 @@ class FileReader:
             trajectory, id = FileReader.read_file(self.all_file_path[i])
             all_trajectory.append(trajectory)
             all_trajectory_id.append(id)
-        print_complete("read_complete!")
+        end_time = time.time()
+        print_complete("get_all_trajectory complete! ", (end_time-start_time))
         return all_trajectory, all_trajectory_id
 
     def get_some_trajectory(self, index_list):

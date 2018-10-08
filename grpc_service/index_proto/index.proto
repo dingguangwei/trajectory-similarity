@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+message IntersectionRequest {
+    int32 min_lon = 1;
+    int32 min_lat = 2;
+    int32 max_lon = 3;
+    int32 max_lat = 4;
+}
+
+message IntersectionResponse {
+    repeated int64 id_list = 1;
+}
+
+message Point {
+    string lon = 1;
+    string lat = 2;
+    string time_stamp = 3;
+}
+
+message Trajectory {
+    repeated Point point_list = 1;
+    int64 id = 2;
+}
+
+message IndexRequest {
+    repeated int64 id_list = 1;
+}
+
+message IndexResponse {
+    repeated Trajectory trajectory_list = 1;
+}
+
+service TrajectoryIndex {
+    rpc get_intersection_trajectory_ids(IntersectionRequest) returns (IntersectionResponse){}
+    rpc get_trajectory_by_ids(IndexRequest) returns (IndexResponse){}
+}
