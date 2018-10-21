@@ -29,12 +29,11 @@ def dtw(arr1, arr2):
     print('m_arr=\n', m_arr)
 
 
-def get_QRS(is_less=True):
+def get_QRS(is_less=True, is_print=False):
     if is_less:
         Q = np.array([[1, 1], [5, 1], [18, 1]])
         R = np.array([[1, 2], [5, 2], [18, 3]])
         S = np.array([[1, 3], [5, 2], [18, 2]])
-        return Q, R, S
     else:
         Q = np.ones(shape=(18, 2))
         Q[:, 0] = np.arange(1, 19, 1)
@@ -52,8 +51,11 @@ def get_QRS(is_less=True):
         for i in np.arange(0, 5, 1):
             S[i, 1] = -(S[i, 0] - 1) / 4 + 3
         S[5:, 1] = [2 for i in range(13)]
-        # print(S)
-        return Q, R, S
+    if is_print:
+        print('Q=\n', Q)
+        print('R=\n', R)
+        print('S=\n', S)
+    return Q, R, S
 
 if __name__=='__main__':
     Q, R, S = get_QRS(is_less=True)
