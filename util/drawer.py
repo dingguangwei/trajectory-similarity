@@ -7,8 +7,10 @@ import pandas as pd
 class Drawer:
     font1 = {"family": "Times New Roman", "weight": "normal", "size": 9}
     font2 = {"family": "Times New Roman", "weight": "normal", "size": 14}
-    min_lon, min_lat = 116.105906, 39.699716
-    max_lon, max_lat = 116.68887, 40.137988
+    # min_lon, min_lat = 116.105906, 39.699716
+    # max_lon, max_lat = 116.68887, 40.137988
+    min_lon, min_lat = 0, 0
+    max_lon, max_lat = 9, 9
 
     user_demand_lon = []
     user_demand_lat = []
@@ -77,14 +79,14 @@ class Drawer:
                 line_width=self.reco_line_width,
             )
             plt.legend(loc="upper right", prop=self.font1, frameon=False)  # 绘制图例，指定图例位置
-        plt.xlim(self.min_lon, self.max_lon)
-        plt.ylim(self.min_lat, self.max_lat)
+        # plt.xlim(self.min_lon, self.max_lon)
+        # plt.ylim(self.min_lat, self.max_lat)
         plt.show()
 
 
 if __name__ == "__main__":
     drawer = Drawer()
-    drawer.set_user_demand([1, 2, 3, 4], [16, 3, 7, 1])
-    drawer.add_reco([1, 2, 3, 4], [6, 8, 2, 8])
-    drawer.add_reco([4, 5, 6, 7], [3, 5, 7, 2])
+    drawer.set_user_demand([1, 2, 3,], [1, 1.5, 2])
+    drawer.add_reco([1, 2.1, 3, 8], [1.1, 1, 1.9, 2], label='CarA')
+    drawer.add_reco([1, 2, 3], [2, 2.25, 3], label='CarB')
     drawer.draw_user_and_reco()

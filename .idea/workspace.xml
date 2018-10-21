@@ -4,10 +4,7 @@
     <list default="true" id="91198781-803d-49ae-8514-c7e749cd03f8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conf.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/conf.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/index/trajectory_index.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/file_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/file_reader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/print_log.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/print_log.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/drawer.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/drawer.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,35 +15,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.proto" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grpc_service/index_proto/index.proto">
+      <file leaf-file-name="5EU_que_dian.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util/drawer_package/5EU_que_dian.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index_server.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grpc_service/index_server.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="44" column="32" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="32" />
+            <state relative-caret-position="239">
+              <caret line="88" column="11" lean-forward="true" selection-start-line="88" selection-start-column="11" selection-end-line="88" selection-end-column="11" />
               <folding>
-                <element signature="e#16#27#0" expanded="true" />
+                <element signature="e#16#47#0" expanded="true" />
+                <element signature="e#342#1442#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index_client.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/grpc_service/index_client.py">
+      <file leaf-file-name="5compute_dtw_value.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/util/drawer_package/5compute_dtw_value.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
-              <folding>
-                <element signature="e#16#27#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="261">
+              <caret line="58" column="34" selection-start-line="58" selection-start-column="34" selection-end-line="58" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -62,7 +48,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>filenames</find>
       <find>Drawer</find>
       <find>get_root_path</find>
       <find>dtw</find>
@@ -87,10 +72,20 @@
       <find>200</find>
       <find>39.98470</find>
       <find>39.984683</find>
+      <find>get_similarity_trajectory</find>
+      <find>min_lon</find>
+      <find>R1</find>
+      <find>R2</find>
+      <find>15</find>
+      <find>12</find>
     </findStrings>
     <replaceStrings>
       <replace>lon</replace>
       <replace>lat</replace>
+      <replace>R</replace>
+      <replace>S</replace>
+      <replace>12</replace>
+      <replace>m_fontsize</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -99,23 +94,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/data/dataProcess.py" />
-        <option value="$PROJECT_DIR$/location/LocationService.py" />
-        <option value="$PROJECT_DIR$/util/idc-DTW.py" />
-        <option value="$PROJECT_DIR$/similarity_computation/idc-DTW.py" />
-        <option value="$PROJECT_DIR$/Main/main.py" />
-        <option value="$PROJECT_DIR$/util/fileReader.py" />
-        <option value="$PROJECT_DIR$/util/draw.py" />
-        <option value="$PROJECT_DIR$/util/draw_test.py" />
-        <option value="$PROJECT_DIR$/similarity_computation/idc_DTW.py" />
-        <option value="$PROJECT_DIR$/config_reader.py" />
-        <option value="$PROJECT_DIR$/readme,txt" />
         <option value="$PROJECT_DIR$/similarity_computation/compute_similarty_trajectory.py" />
         <option value="$PROJECT_DIR$/similarity_computation/idc_dtw.py" />
         <option value="$PROJECT_DIR$/similarity_computation/dtw.py" />
         <option value="$PROJECT_DIR$/util/util.py" />
-        <option value="$PROJECT_DIR$/similarity_computation/recommend.py" />
-        <option value="$PROJECT_DIR$/util/drawer.py" />
         <option value="$PROJECT_DIR$/conf/config_reader.py" />
         <option value="$PROJECT_DIR$/util/forGaodeMap/dataFormat.py" />
         <option value="$PROJECT_DIR$/fake/index_test.py" />
@@ -140,12 +122,29 @@
         <option value="$PROJECT_DIR$/readme.txt" />
         <option value="$PROJECT_DIR$/grpc_service/index_service.py" />
         <option value="$PROJECT_DIR$/util/print_log.py" />
-        <option value="$PROJECT_DIR$/conf.cfg" />
         <option value="$PROJECT_DIR$/index/trajectory_index.py" />
         <option value="$PROJECT_DIR$/util/file_reader.py" />
         <option value="$PROJECT_DIR$/grpc_service/index_server.py" />
         <option value="$PROJECT_DIR$/grpc_service/index_proto/index.proto" />
         <option value="$PROJECT_DIR$/grpc_service/index_client.py" />
+        <option value="$PROJECT_DIR$/util/data_preprocess.py" />
+        <option value="$PROJECT_DIR$/util/data_process.py" />
+        <option value="$PROJECT_DIR$/similarity_computation/recommend.py" />
+        <option value="$PROJECT_DIR$/data_process/data_process.py" />
+        <option value="$PROJECT_DIR$/util/time_format.py" />
+        <option value="$PROJECT_DIR$/conf.cfg" />
+        <option value="$PROJECT_DIR$/util/drawer.py" />
+        <option value="$PROJECT_DIR$/util/drawer_package/readme.txt" />
+        <option value="$PROJECT_DIR$/util/drawer_package/xyz_drawer.py" />
+        <option value="$PROJECT_DIR$/util/forGaodeMap/a.py" />
+        <option value="$PROJECT_DIR$/util/drawer_package/a.py" />
+        <option value="$PROJECT_DIR$/util/drawer_package/3hua_yuan_hu.py" />
+        <option value="$PROJECT_DIR$/util/drawer_package/yi_mian_zhi_xian.py" />
+        <option value="$PROJECT_DIR$/util/drawer_package/draw_math_function.py" />
+        <option value="$PROJECT_DIR$/util/drawer_package/test.py" />
+        <option value="$PROJECT_DIR$/util/drawer_package/xyzDrawer.py" />
+        <option value="$PROJECT_DIR$/util/drawer_package/5EU_que_dian.py" />
+        <option value="$PROJECT_DIR$/util/drawer_package/5compute_dtw_value.py" />
       </list>
     </option>
   </component>
@@ -162,6 +161,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -172,18 +172,12 @@
             <path>
               <item name="trajectory" type="b2602c69:ProjectViewProjectNode" />
               <item name="trajectory" type="462c0819:PsiDirectoryNode" />
-              <item name="fake" type="462c0819:PsiDirectoryNode" />
+              <item name="data_process" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="trajectory" type="b2602c69:ProjectViewProjectNode" />
               <item name="trajectory" type="462c0819:PsiDirectoryNode" />
               <item name="grpc_service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="trajectory" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trajectory" type="462c0819:PsiDirectoryNode" />
-              <item name="grpc_service" type="462c0819:PsiDirectoryNode" />
-              <item name="index_proto" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="trajectory" type="b2602c69:ProjectViewProjectNode" />
@@ -200,11 +194,16 @@
               <item name="trajectory" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="trajectory" type="b2602c69:ProjectViewProjectNode" />
+              <item name="trajectory" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="drawer_package" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -212,11 +211,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\pythonSourceCoude\trajectory\data_process" />
       <recent name="D:\pythonSourceCoude\trajectory\grpc_service\index_proto" />
       <recent name="D:\pythonSourceCoude\trajectory\grpc\proto" />
       <recent name="D:\pythonSourceCoude\trajectory\grpc" />
       <recent name="D:\pythonSourceCoude\trajectory\index" />
-      <recent name="D:\pythonSourceCoude\trajectory\fake" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\pythonSourceCoude\trajectory\util\forGaodeMap" />
@@ -235,8 +234,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.index_client">
-    <configuration name="index_client" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.5compute_dtw_value">
+    <configuration name="5EU_que_dian" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="trajectory" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -244,17 +243,17 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/grpc_service" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/util/drawer_package" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/grpc_service/index_client.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/drawer_package/5EU_que_dian.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="index_server" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="5compute_dtw_value" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="trajectory" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -262,17 +261,17 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/grpc_service" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/util/drawer_package" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/grpc_service/index_server.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/drawer_package/5compute_dtw_value.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="index_service" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="draw_math_function" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="trajectory" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -280,17 +279,17 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/grpc_service" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/util/drawer_package" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="D:\pythonSourceCoude\trajectory\grpc_service\index_server.py" />
+      <option name="SCRIPT_NAME" value="D:\pythonSourceCoude\trajectory\util\drawer_package\4draw_math_function.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="trajectory_index_client" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="trajectory" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -298,17 +297,17 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/grpc_service" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/util/drawer_package" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/grpc_service/trajectory_index_client.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/drawer_package/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="trajectory_index_service" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="xyzDrawer" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="trajectory" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -316,30 +315,30 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/grpc_service" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/util/drawer_package" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/grpc_service/trajectory_index_service.py" />
+      <option name="SCRIPT_NAME" value="D:\pythonSourceCoude\trajectory\util\drawer_package\1xyzDrawer.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.trajectory_index_service" />
-      <item itemvalue="Python.trajectory_index_client" />
-      <item itemvalue="Python.index_service" />
-      <item itemvalue="Python.index_client" />
-      <item itemvalue="Python.index_server" />
+      <item itemvalue="Python.xyzDrawer" />
+      <item itemvalue="Python.draw_math_function" />
+      <item itemvalue="Python.test" />
+      <item itemvalue="Python.5EU_que_dian" />
+      <item itemvalue="Python.5compute_dtw_value" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.index_client" />
-        <item itemvalue="Python.index_server" />
-        <item itemvalue="Python.index_service" />
-        <item itemvalue="Python.trajectory_index_client" />
-        <item itemvalue="Python.trajectory_index_service" />
+        <item itemvalue="Python.5compute_dtw_value" />
+        <item itemvalue="Python.5EU_que_dian" />
+        <item itemvalue="Python.xyzDrawer" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.draw_math_function" />
       </list>
     </recent_temporary>
   </component>
@@ -380,20 +379,20 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14963119" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32824427" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37136465" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3293348" />
       <window_info anchor="bottom" id="Python Console" order="7" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38143176" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.22595078" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.18568233" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.35234898" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32824427" />
     </layout>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -427,59 +426,17 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/util/drawer_package/1xyzDrawer.py</url>
+          <line>115</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="12" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data/dataProcess" />
-    <entry file="file://$PROJECT_DIR$/data/__init__.py" />
-    <entry file="file://D:/Anaconda/Lib/typing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="2286" column="8" selection-start-line="2286" selection-start-column="8" selection-end-line="2286" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Anaconda/Lib/os.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="286" column="42" lean-forward="true" selection-start-line="286" selection-start-column="14" selection-end-line="286" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/dataProcess.py" />
-    <entry file="file://$PROJECT_DIR$/trajectory.yml" />
-    <entry file="file://$PROJECT_DIR$/bin/conf.cfg" />
-    <entry file="file://$PROJECT_DIR$/fake/LocationService.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Anaconda/Lib/configparser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="780" selection-start-line="780" selection-end-line="780" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/similarity_computation/dtw.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/similarity_computation/compute_similarty_trajectory.py" />
-    <entry file="file://D:/Anaconda/Lib/heapq.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="523" column="24" selection-start-line="523" selection-start-column="16" selection-end-line="523" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/util" />
     <entry file="file://$PROJECT_DIR$/bin/.cache/v/cache/lastfailed" />
     <entry file="file://$PROJECT_DIR$/util/forGaodeMap/dataFormatHandler" />
     <entry file="file://$PROJECT_DIR$/util/forGaodeMap/trajectoryInGaodeMap.html">
@@ -493,27 +450,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="29" column="15" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/drawer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/similarity_computation/recommend.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/config_reader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
@@ -531,24 +467,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/similarity_computation/dtw.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="3" selection-end-line="3" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/util/forGaodeMap/dataFormat.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="30" column="26" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -557,13 +479,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="397">
           <caret line="213" column="25" selection-start-line="213" selection-start-column="21" selection-end-line="213" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/similarity_computation/compute_distance.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="55" column="47" selection-start-line="55" selection-start-column="47" selection-end-line="55" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -579,77 +494,15 @@
     <entry file="file://$PROJECT_DIR$/grpc/proto/index_service_pb2.py" />
     <entry file="file://$PROJECT_DIR$/grpc/proto/index_service.proto" />
     <entry file="file://$PROJECT_DIR$/grpc/index_service.py" />
-    <entry file="file://$PROJECT_DIR$/grpc_service/grpc_service_proto/data_pb2_grpc.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grpc_service/grpc_service_proto/data_pb2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-223">
-          <caret line="60" column="29" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grpc_service/grpc_service_proto/TrajectoryIndex_pb2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="145" selection-start-line="145" selection-end-line="145" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grpc_service/hello_client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="30" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="30" />
-          <folding>
-            <element signature="e#16#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grpc_service/hello_service.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="25" column="61" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="61" />
-          <folding>
-            <element signature="e#16#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grpc_service/grpc_service_proto/data.proto">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grpc_service/grpc_service_proto/TrajectoryIndex.proto">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grpc_service/trajectory_index_service.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="59" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="59" />
-          <folding>
-            <element signature="e#16#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grpc_service/trajectory_index_client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="25" selection-end-line="25" />
-          <folding>
-            <element signature="e#16#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/grpc_service/grpc_service_proto/data_pb2_grpc.py" />
+    <entry file="file://$PROJECT_DIR$/grpc_service/grpc_service_proto/data_pb2.py" />
+    <entry file="file://$PROJECT_DIR$/grpc_service/grpc_service_proto/TrajectoryIndex_pb2.py" />
+    <entry file="file://$PROJECT_DIR$/grpc_service/hello_client.py" />
+    <entry file="file://$PROJECT_DIR$/grpc_service/hello_service.py" />
+    <entry file="file://$PROJECT_DIR$/grpc_service/grpc_service_proto/data.proto" />
+    <entry file="file://$PROJECT_DIR$/grpc_service/grpc_service_proto/TrajectoryIndex.proto" />
+    <entry file="file://$PROJECT_DIR$/grpc_service/trajectory_index_service.py" />
+    <entry file="file://$PROJECT_DIR$/grpc_service/trajectory_index_client.py" />
     <entry file="file://$PROJECT_DIR$/util/print_log.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -657,37 +510,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf.cfg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/util/file_reader.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
-          <folding>
-            <element signature="e#15#24#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index/trajectory_index.py">
+    <entry file="file://$PROJECT_DIR$/grpc_service/index_server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="37" column="17" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
-          <folding>
-            <element signature="e#16#39#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="206">
+          <caret line="44" column="32" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme.txt">
+    <entry file="file://$PROJECT_DIR$/conf/config_reader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="2" selection-start-line="6" selection-end-line="7" />
+        <state relative-caret-position="162">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grpc_service/index_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
@@ -698,23 +545,148 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grpc_service/index_server.py">
+    <entry file="file://$PROJECT_DIR$/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index/trajectory_index.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="19" column="38" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="41" column="41" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/similarity_computation/recommend.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/time_format.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_process/data_process.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/drawer_package/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="15" selection-start-column="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/drawer_package/xyz_drawer.py" />
+    <entry file="file://$PROJECT_DIR$/util/forGaodeMap/a.py" />
+    <entry file="file://$PROJECT_DIR$/util/drawer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="31" selection-start-line="2" selection-end-line="2" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Anaconda/Lib/site-packages/matplotlib/pyplot.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
-          <caret line="44" column="32" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="32" />
+          <caret line="3829" selection-start-line="3829" selection-end-line="3829" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/drawer_package/3hua_yuan_hu.py" />
+    <entry file="file://$PROJECT_DIR$/util/drawer_package/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
           <folding>
-            <element signature="e#16#27#0" expanded="true" />
+            <element signature="e#15#54#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grpc_service/index_client.py">
+    <entry file="file://$PROJECT_DIR$/util/drawer_package/4draw_math_function.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+        <state relative-caret-position="154">
+          <caret line="13" column="45" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="45" />
           <folding>
-            <element signature="e#16#27#0" expanded="true" />
+            <element signature="e#16#47#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/drawer_package/2yi_mian_zhi_xian.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="858">
+          <caret line="39" column="63" lean-forward="true" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="63" />
+          <folding>
+            <element signature="e#16#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/drawer_package/1xyzDrawer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="106" column="51" lean-forward="true" selection-start-line="104" selection-start-column="4" selection-end-line="106" selection-end-column="51" />
+          <folding>
+            <element signature="e#16#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/similarity_computation/compute_distance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/similarity_computation/dtw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="49" column="17" lean-forward="true" selection-start-line="38" selection-start-column="4" selection-end-line="49" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/drawer_package/5EU_que_dian.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="88" column="11" lean-forward="true" selection-start-line="88" selection-start-column="11" selection-end-line="88" selection-end-column="11" />
+          <folding>
+            <element signature="e#16#47#0" expanded="true" />
+            <element signature="e#342#1442#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/drawer_package/5compute_dtw_value.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="58" column="34" selection-start-line="58" selection-start-column="34" selection-end-line="58" selection-end-column="34" />
         </state>
       </provider>
     </entry>
