@@ -67,8 +67,8 @@ def draw_DTW_more_point():
 if __name__=='__main__':
     fig = plt.figure()
 
-    # draw_DTW_less_point()
-    draw_DTW_more_point()
+    draw_DTW_less_point()
+    # draw_DTW_more_point()
 
     ax = plt.gca()
     # 将底部的线移到y=0的地方
