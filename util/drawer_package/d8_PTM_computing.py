@@ -56,9 +56,27 @@ def get_data():
     S = [[5, 9, 24], [10, 4.7, 31], [18, 9, 34], [25,15,55],[30,15,60],[35,15,65]]
     return np.array(Q), np.array(R), np.array(S)
 
+
+def get_v_avg():
+    Q, R, S = get_data()
+    d = 0.
+    t = 0.
+    # for i in range(len(Q)-1):
+    #     d += np.sqrt((Q[i][0]-Q[i+1][0])**2+(Q[i][1]-Q[i+1][1])**2)
+    #     t += Q[i+1][2]-Q[i][2]
+    for i in range(len(R)-1):
+        d += np.sqrt((R[i][0]-R[i+1][0])**2+(R[i][1]-R[i+1][1])**2)
+        t += R[i+1][2]-R[i][2]
+    for i in range(len(S)-1):
+        d += np.sqrt((S[i][0]-S[i+1][0])**2+(S[i][1]-S[i+1][1])**2)
+        t += S[i+1][2]-S[i][2]
+    v = d/t
+    print('d=', d, ' t=', t, ' v =', v)
+    return v
+
 if __name__ == "__main__":
     Q, R, S = get_data()
 
-    print('sim(Q,R) = ',ST_sim(Q, R), '\n')
-    print('sim(Q,S) = ', ST_sim(Q, S), '\n')
-
+    # print('sim(Q,R) = ',ST_sim(Q, R), '\n')
+    # print('sim(Q,S) = ', ST_sim(Q, S), '\n')
+    print(get_v_avg())
