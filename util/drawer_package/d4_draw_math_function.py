@@ -3,6 +3,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
+m_fontsize=16
 
 def cos_fun(x):
     return np.cos(x)
@@ -25,16 +26,45 @@ def draw_cos():
 
 
 def draw_sigmoid():
-    x = np.linspace(-10, 10, 200)
+    x = np.linspace(-5, 5, 200)
     y = 1/(1+np.power(np.e, -x))
     plt.plot(x, y)
+    plt.plot([-5, 5], [1, 1], linewidth=1., linestyle='--')
+    plt.text(0.5, 1.5, 'y', fontsize=m_fontsize)
+    plt.text(1, 0.5, 'y=1/(1+e^(-x))', fontsize=m_fontsize)
+
+
+def draw_fu_sigmoid():
+    miu = 0.3
+    x = np.linspace(-5, 5, 200)
+    y = 1/(1+np.power(np.e, x))+0.3
+    plt.plot(x, y)
+    plt.plot([-5, 5], [miu, miu], linewidth=1., linestyle='--')
+    plt.plot([-5, 5], [1+miu, 1+miu], linewidth=1., linestyle='--')
+    plt.text(0.5, 1.5, 'y', fontsize=m_fontsize)
+    plt.text(1, 0.5, 'y=1/(1+e^x)+μ', fontsize=m_fontsize)
+    plt.text(0.3, miu, 'μ', fontsize=m_fontsize)
+    plt.text(0.3, 1+miu, '1+μ', fontsize=m_fontsize)
+
+
+def draw_g_x():
+    x0 = np.linspace(0, 5, 500)
+    y0 = 1.4-np.power(np.e, -x0)
+    x1 = np.linspace(-5, 0, 500)
+    y1 = [-0.7 for i in range(500)]
+    plt.plot(x0, y0, color='0', linewidth=2.)
+    plt.plot(x1, y1, color='0', linewidth=2.)
+    plt.text(0.2, -0.74, '-ε', fontsize=14)
+    plt.text(-0.4, 0.4, 'μ', fontsize=14)
 
 
 if __name__=='__main__':
     fig = plt.figure()
 
     # draw_cos()
-    draw_sigmoid()
+    # draw_sigmoid()
+    draw_fu_sigmoid()
+    # draw_g_x()
 
     ax = plt.gca()
     # 将底部的线移到y=0的地方
@@ -43,12 +73,12 @@ if __name__=='__main__':
     ax.spines['left'].set_position(('data', 0))
     ax.spines['right'].set_position(('data', 0))
 
-    plt.xticks(np.arange(-10, 11, 5))
-    plt.yticks(np.arange(0, 1.1, 0.5))
+    plt.xticks(np.arange(-5, 6, 1), fontsize=m_fontsize)
+    plt.yticks(np.arange(0, 2, 0.5), fontsize=m_fontsize)
     # plt.xlim(0, 4)
     # plt.ylim(-2, 2)
-    plt.xlabel('x')
-    plt.ylabel('y')
+    plt.xlabel('x', fontsize=m_fontsize)
+    # plt.ylabel('y')
 
     plt.show()
 

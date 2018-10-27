@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import numpy as np
 import d0_util_3d
+from util.algorithm.DTW_BDS_pair import get_DTW_BDS_pair_by_traj
 
 def get_data():
     R = [
@@ -42,18 +43,15 @@ if __name__=='__main__':
 
     for i in [0, 1, 3, 4]:
         ax.text(Q[i, 0] + 0.2, Q[i, 1], Q[i, 2] - 0.7, 'q'+str(i), color='blue', fontsize=m_fontsize)
-    for i in [0, 2, 3, 5]:
+    for i in range(9):
         ax.text(R[i, 0] + 0.2, R[i, 1], R[i, 2] - 0.7, 'r'+str(i), color='0.3', fontsize=m_fontsize)
 
-    for i in range(3):
-        d0_util_3d.find_pair_point_in_Traj_and_draw(R[i], Q[:3], label=None, color='green', linestyle='--')
-    for i in range(3, 7):
-        d0_util_3d.find_pair_point_in_Traj_and_draw(R[i], Q[2:], label=None, color='green', linestyle='--')
-    for i in range(7, len(R)):
-        d0_util_3d.find_pair_point_in_Traj_and_draw(R[i], Q, label=None, color='green', linestyle='--')
-
-
-    # ax.plot([0,1],[1, 2],[3, 4], label='a', linestyle='-', linewidth=2, color='0', marker='H')
+    DTW_BDS_pair = get_DTW_BDS_pair_by_traj()
+    print('DTW_BDS_pair=\n', DTW_BDS_pair)
+    for pair in DTW_BDS_pair:
+        v1 = R[pair[0]]
+        v2 = pair[1]
+        ax.plot([v1[0], v2[0]], [v1[1], v2[1]], [v1[2], v2[2]], linestyle='--', linewidth=1.5, color='green')
 
 
     ax.legend()  # 显示图例

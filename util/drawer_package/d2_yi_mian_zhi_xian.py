@@ -24,26 +24,32 @@ def draw_radian(ax, center_x, center_y, center_z, theta_from=0, r = 1., theta_to
 if __name__=='__main__':
     fig = plt.figure()
     ax = fig.add_subplot(111, projection='3d')
-    marker = '>'
+    m_fontsize=14
     a=[
         [0, 0, 0],
         [0, 1, 1]
     ]
     b=[
         [1, 0, 0],
-        [1, 1, 0]
+        [1, 2, 0]
     ]
-    d1_xyzDrawer.plot(a, ax, label='a', linestyle='-', linewidth=2, color='0', marker=marker)
-    d1_xyzDrawer.plot(b, ax, label='b', linestyle='-', linewidth=2, color='0.3', marker=marker)
+    d1_xyzDrawer.plot(a, ax, label='', linestyle='-', linewidth=2, color='0', marker='H')
+    d1_xyzDrawer.plot(b, ax, label='', linestyle='-', linewidth=2, color='0.5', marker='.')
+    ax.text(0, 0.5, 0.7, 'a', fontsize=m_fontsize)
+    ax.text(1, 1, -0.2, 'b', fontsize=m_fontsize)
+    ax.text(0, 0.6, 0.05, "a'", fontsize=m_fontsize)
 
-    d1_xyzDrawer.plot([a[0],[0,1,0]], ax, label="b'", linestyle='-', linewidth=2, color='0.5', marker=marker)
+
+    d1_xyzDrawer.plot([a[0], [0, 1, 0]], ax, label="", linestyle='-', linewidth=2, color='0', marker='2')
+    d1_xyzDrawer.plot([a[0],[0,2,0]], ax, label="", linestyle='--', linewidth=1, color='0.8', marker='2')
     d1_xyzDrawer.plot([a[0], b[0]], ax, label=None, linestyle='--', linewidth=1, color='green', marker=None)
-    d1_xyzDrawer.plot([[0,1,0], b[1]], ax, label=None, linestyle='--', linewidth=1, color='green', marker=None)
+    d1_xyzDrawer.plot([[0,2,0], b[1]], ax, label=None, linestyle='--', linewidth=1, color='green', marker=None)
+    d1_xyzDrawer.plot([a[1], [0,1,0]], ax, label=None, linestyle='--', linewidth=1, color='green', marker=None)
     draw_radian(ax=ax, center_x=0, center_y=0, center_z=0, theta_from=0, r=0.2, theta_to=np.pi/4)
 
-    ax.text(0, 0.3, 0.1, 'theta')
+    ax.text(0, 0.3, 0.1, 'θ')
 
-    ax.legend()  # 显示图例
+    # ax.legend()  # 显示图例
     ax.set_xlabel('x')
     ax.set_ylabel('y')
 
