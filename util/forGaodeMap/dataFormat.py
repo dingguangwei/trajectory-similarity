@@ -48,5 +48,5 @@ def plt_to_json(file_path, new_file_dir="F:\\json", new_file_name=None):
 if __name__ == "__main__":
     # plt_to_json('F:\\GeolifeTrajectories1.3\\Data\\000\\Trajectory\\20081026134407.plt')
     reader = FileReader()
-    for file_path in reader.all_file_path[0:171]:
+    for file_path in reader.all_file_path[171:5000]:
         plt_to_json(file_path)

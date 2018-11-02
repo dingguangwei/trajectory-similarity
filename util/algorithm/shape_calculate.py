@@ -62,6 +62,25 @@ def get_I_shape(r1, r2, Q, mu, q_pre=None, q_next=None):
     return reverse_sigmoid(sim_shape, mu=mu)
 
 
+"""
+输入：轨迹Q，R，DTW-BDS对应点对pair，形状因素权重mu
+输出：R上轨迹段到对应段的形状影响因子
+"""
+def I_shape_calculate(new_Q, R, DTW_BDS_pair_index, mu):
+    I_shape_Traj = []
+    for i in range(len(R) - 1):
+        start_index = DTW_BDS_pair_index[i][1]
+        end_index = DTW_BDS_pair_index[i + 1][1] + 1
+        q_pre, q_next = None, None
+        if start_index + 1 == end_index:
+            if start_index > 0:
+                q_pre = new_Q[start_index - 1]
+            if end_index < len(new_Q) - 1:
+                q_next = new_Q[end_index + 1]
+        I_shape = get_I_shape(R[i], R[i + 1], new_Q[start_index:end_index], mu, q_pre=q_pre, q_next=q_next)
+        I_shape_Traj.append(I_shape)
+    return I_shape_Traj
+
 if __name__=='__main__':
     r1 = np.array([0, 2, 0])
     r2 = np.array([0,2,3])

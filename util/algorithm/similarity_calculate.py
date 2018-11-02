@@ -20,19 +20,19 @@ def similarity_calculate(d_segment_list, R_segment_length_list, Q_length, Q, R, 
                     R_end_index = j+1
                     min_mean = mean_temp
     if R_end_index==-1:
-        print('[ERROR] similarity_calculate: can not find a sub trajectory cause epsilon is too large')
-        sys.exit(0)
+        print('[warning] similarity_calculate: can not find a sub trajectory cause epsilon=', epsilon,' is too large')
+        return R_start_index, R_end_index, R_Q_min_distance
     R_Q_min_distance = np.sum(d_segment_list[R_start_index:R_end_index+1])
     return R_start_index, R_end_index, R_Q_min_distance
 
 
-def get_similar_segment_and_distance(Q, R, d_segment_list, epsilon):
+def similar_segment_and_distance(Q, R, d_segment_list, epsilon):
     Q_length = 0
     for i in range(len(Q) - 1):
         Q_length += get_EU_distance(Q[i], Q[i + 1])
     R_segment_length_list = [get_EU_distance(R[i], R[i + 1]) for i in range(len(R) - 1)]
 
-    print('R_segment_length_list=', R_segment_length_list,'\n')
+    # print('R_segment_length_list=', R_segment_length_list,'\n')
 
     return similarity_calculate(d_segment_list, R_segment_length_list, Q_length, Q, R, epsilon)
 
@@ -59,7 +59,7 @@ def get_data():
 
 if __name__=='__main__':
     Q, R, d_segment_list = get_data()
-    res = get_similar_segment_and_distance(Q, R, d_segment_list, 0.1)
+    res = similar_segment_and_distance(Q, R, d_segment_list, 0.1)
     print('[R_start_index, R_end_index, R_Q_min_distance]=', res)
 
 

@@ -51,7 +51,7 @@ class FileReader:
         return result_data_frame, int(file_name.split('.')[0])
 
     # 将所有轨迹数据存入list，每条数据以一个DataFrame形式存放（也可以只读file_number条轨迹）
-    def get_all_trajectory(self, file_number=None):
+    def get_all_trajectory(self, start_number=0, file_number=None):
         start_time = time.time()
         all_trajectory = []
         all_trajectory_id = []
@@ -59,7 +59,7 @@ class FileReader:
         n = len(self.all_file_path)
         if not file_number is None:
             n = file_number
-        for i in range(n):
+        for i in range(start_number, n):
             print_rate("has_read: ", i, n)
             trajectory, id = FileReader.read_file(self.all_file_path[i])
             all_trajectory.append(trajectory)

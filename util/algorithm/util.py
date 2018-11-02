@@ -70,14 +70,26 @@ def get_L_excitation(x, center):
         return np.power(np.e, x-center)
 
 
+# 输入：经度lon，纬度lat
+# 输出：坐标
+def geo_to_xy(lon, lat):
+    R=6371393.0
+    L = R * np.pi * 2
+    W=L
+    H=L/2
+    mill=2.3
+    x = lon * np.pi / 180
+    y = lat * np.pi / 180
+    y=1.25 * np.log( np.tan( 0.25 * np.pi + 0.4 * y ) )
+    x = ( W / 2 ) + ( W / (2 * np.pi) ) * x
+    y = ( H / 2 ) - ( H / ( 2 * mill ) ) * y
+    return x, y
+
 if __name__=='__main__':
     # v = [0,0,0]
     # T = [[0,1,0],[0,0,1]]
     # min_point, min_distance = get_BDS_point_and_distance(v, T)
     # print(min_point, min_distance)
 
-    # print(reverse_sigmoid(0))
-    # print(reverse_sigmoid(100))
-
-    print(get_reciprocal(4, 5))
-    print(np.power(np.e, -1))
+    print(reverse_sigmoid(0))
+    print(reverse_sigmoid(100))

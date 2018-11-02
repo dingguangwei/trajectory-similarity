@@ -65,6 +65,22 @@ def get_space_time_distance_by_segment(r1, r2, Q, eta):
     return d_space, break_point_pair_point
 
 
+"""
+输入：轨迹Q，R，DTW-BDS对应点对pair，断点距离阈值eta
+输出：R上轨迹段到对应段的距离，以及断点与对应点
+"""
+def space_distance_calculate(new_Q, R, DTW_BDS_pair_index, eta):
+    d_space_Traj = []
+    break_point_pair_point = []
+    for i in range(len(R) - 1):
+        start_index = DTW_BDS_pair_index[i][1]
+        end_index = DTW_BDS_pair_index[i + 1][1] + 1
+        res = get_space_time_distance_by_segment(R[i], R[i + 1], new_Q[start_index:end_index], eta=eta)
+        d_space_Traj.append(res[0])
+        break_point_pair_point.append(res[1])
+    return d_space_Traj, break_point_pair_point
+
+
 if __name__=='__main__':
     v1 = [0, 0, 0]
     v2 = [3, 3, 3]

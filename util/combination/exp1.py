@@ -5,7 +5,9 @@ from mpl_toolkits.mplot3d import Axes3D
 import numpy as np
 from util.algorithm.space_calculate import get_space_time_distance_by_segment
 from util.algorithm.shape_calculate import get_I_shape
-from util.algorithm.sub_traj_similarity_calculate import get_similar_segment_and_distance
+from util.algorithm.similarity_calculate import similar_segment_and_distance
+from util.drawer_package import d902_BDS_weakness_draw
+
 
 def get_data():
     Q = [
@@ -37,11 +39,15 @@ if __name__=='__main__':
     ax = fig.add_subplot(111, projection='3d')
     m_fontsize = 16
     # 1、数据
-    Q, R = get_data()
+    # Q, R = get_data()
+    Q, R, S = d902_BDS_weakness_draw.get_data()
+    print('Q=\n', Q, '\n')
+    print('R=\n', R, '\n')
     # 2、画轨迹
     ax.plot(Q[:, 0], Q[:, 1], Q[:, 2], label='Q', linestyle='-', linewidth=2, color='blue', marker='H')
     ax.plot(R[:, 0], R[:, 1], R[:, 2], label='R', linestyle='-', linewidth=2, color='0.3', marker='H')
-    eta = 0.8
+    eta = 0.2
+    epsilon=0.1
 
     # 获取DTW_pair
     # DTW_QR_pair = get_pair_index_in_DTW(Q, R)
@@ -51,31 +57,13 @@ if __name__=='__main__':
     #     ax.plot([v1[0], v2[0]],[v1[1], v2[1]],[v1[2], v2[2]], linestyle='--', linewidth=1.5, color='green')
 
     # 3、获取DTW_BDS_pair
-    DTW_BDS_pair = get_DTW_BDS_pair_by_traj(Q, R)
+    DTW_BDS_pair, new_Q, DTW_BDS_pair_index = get_DTW_BDS_pair_by_traj(Q, R)
     for pair in DTW_BDS_pair:
         v1 = R[pair[0]]
         v2 = pair[1]
         ax.plot([v1[0], v2[0]], [v1[1], v2[1]], [v1[2], v2[2]], linestyle='--', linewidth=1.5, color='green')
 
     # 4、创建包含对应点的Q的索引
-    new_Q = []
-    DTW_BDS_pair_index = []
-    Q_index = 0
-    for pair in DTW_BDS_pair:
-        v1 = R[pair[0]]
-        v2 = pair[1]
-        while Q_index<len(Q) and Q[Q_index, 2] < v2[2]:
-            if len(new_Q)>=1 and new_Q[-1][2]<Q[Q_index, 2] or len(new_Q)==0:
-                new_Q.append(Q[Q_index])
-            Q_index+=1
-        if Q_index<len(Q) and Q[Q_index, 2]==v1[2]:
-            Q_index+=1
-        if len(new_Q) >= 1 and new_Q[-1][2]<v2[2] or len(new_Q)==0:
-            new_Q.append(v2)
-        DTW_BDS_pair_index.append([pair[0], len(new_Q)-1])
-    new_Q = np.array(new_Q)
-    print('new_Q=\n', new_Q, '\n')
-    print('DTW_BDS_pair_index=\n', DTW_BDS_pair_index, '\n')
 
     # 5、计算时空距离
     d_space_Traj = []
@@ -104,7 +92,7 @@ if __name__=='__main__':
         if start_index+1==end_index:
             if start_index>0:
                 q_pre = Q[start_index-1]
-            if end_index<len(Q)-1:
+            if end_index<len(new_Q)-1:
                 q_next = Q[end_index+1]
         I_shape = get_I_shape(R[i], R[i+1], new_Q[start_index:end_index], mu=6, q_pre=q_pre, q_next=q_next)
         I_shape_Traj.append(I_shape)
@@ -116,7 +104,7 @@ if __name__=='__main__':
     ####################################################################################
     # 求得所有线段形状影响因子和空间距离后，求最长的相似轨迹段
     ####################################################################################
-    res = get_similar_segment_and_distance(Q, R, d_segment_list, epsilon=0.6)
+    res = similar_segment_and_distance(Q, R, d_segment_list, epsilon=epsilon)
     print('[R_start_index, R_end_index, R_Q_min_distance]=', res)
 
     ####################################################################################
