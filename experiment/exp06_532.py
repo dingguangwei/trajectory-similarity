@@ -2,29 +2,29 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-label = ['DTW', 'DTW-3d', 'STS']
-name_list = ['1km', '5km', '10km']
+label = ['DTW-2d', 'DTW-3d', 'STS']
+name_list = ['GeoLife', 'North America Road Network']
 num_list = []
 x = []
 def get_data_GL():
-    num0 = [0.56,0.683,0.776]
+    num0 = [0.75,0.72]
     num_list.append(num0)
 
-    num1 = [0.65,0.848,0.93]
+    num1 = [0.88,0.899]
     num_list.append(num1)
 
-    num2 = [0.62,0.785,0.879]
+    num2 = [0.94, 0.976]
     num_list.append(num2)
 
     total_width, n = 0.4, len(num_list)
     width = total_width / n
-    x.append([0.1, 0.6, 1.1])
-    x.append(list(np.array(x[0]) + width))
-    x.append(list(np.array(x[1]) + width))
-    x.append(list(np.array(x[2]) + width))
+    x.append([0.1, 0.6])
+    x.append(list(np.array(x[-1]) + width))
+    x.append(list(np.array(x[-1]) + width))
+    x.append(list(np.array(x[-1]) + width))
 
-    m_title = 'GeoLife'
-    path = 'F:/毕业设计大文件夹/picture/exp/exp05_GL.jpg'
+    m_title = ''
+    path = 'F:/毕业设计大文件夹/picture/exp/exp06.jpg'
     return num_list, x, width, name_list, label, m_title, path
 
 
@@ -67,8 +67,8 @@ if __name__=='__main__':
 
     plt.ylim((0, 1.5))
 
-    plt.xlabel('L(Q)', fontsize=m_fontsize)
-    plt.ylabel('P_mul', fontsize=m_fontsize)
+    plt.xlabel('Algorithm name', fontsize=m_fontsize)
+    plt.ylabel('P_mul(top-40)', fontsize=m_fontsize)
 
     plt.legend()
     plt.title(m_title, fontsize=m_fontsize)
