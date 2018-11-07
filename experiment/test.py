@@ -12,7 +12,8 @@ ax.set_ylim([1, 9]);
 #     \leq \ c$",fontsize=20);
 #
 ax.text(2, 2, r"$ \sum_{i=1}^{\infty}\ x_i^2$",fontsize=20)
-ax.text(5, 5, r'$ 1/10^20^2$')
+ax.text(5, 5, r'$ 1/10^{200}$')
+ax.text(1, 5, r'$ 1/10_{200}$')
 
 # ax.text(4, 8, r"$ \sin(0) = \cos(\frac{\pi}{2})$",fontsize=20);
 # ax.text(4, 6, r"$ \sqrt[3]{x} = \sqrt{y}$",fontsize=20);

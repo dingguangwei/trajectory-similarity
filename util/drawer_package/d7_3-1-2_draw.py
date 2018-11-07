@@ -4,21 +4,21 @@ import numpy as np
 
 
 def get_Data():
-    A = [4.5, 1.5]
-    B = [6, 1.36]
-    C = [8, 2]
+    A = [3.2, 2]
+    B = [4, 1.2]
+    C = [8, 1.2]
     Q = [A, B, C]
     R = [
-        [1,3],
+        [1,2],
         [2,2],
         [3,2],
-        [4, 2],
+        [4, 1],
         [5, 1],
-        [8, 2],
+        [8, 1],
         [9, 3],
         [10, 3]
     ]
-    S = [[3,3], [8,3]]
+    S = [[3.3,3], [8,2]]
 
     return np.array(R), np.array(S), np.array(Q)
 
@@ -31,25 +31,14 @@ if __name__ == "__main__":
 
     # 画轨迹
     R, S, Q = get_Data()
+    plt.plot(Q[:, 0], Q[:, 1], color='blue', linewidth=1.5, label='Q', marker='*', linestyle='--')
     plt.plot(R[:, 0], R[:, 1], color='0.1', linewidth=1.5, label='R', marker='H', linestyle=None)
     plt.plot(S[:, 0], S[:, 1], color='0.4', linewidth=1.5, label='S', marker='H', linestyle=None)
-    plt.plot(Q[:, 0], Q[:, 1], color='blue', linewidth=1.5, label='Q', marker='*', linestyle='--')
 
-    #
-    # plt.plot([A[0], B[0]], [A[1], B[1]], color='blue', linewidth=1., label='', marker='*', linestyle='--')
-    # plt.text(A[0]-0.2, A[1]-0.3, 'A', fontsize=m_fontsize)
-    # plt.text(B[0]+0.1, B[1]-0.4, 'B', fontsize=m_fontsize)
-    # plt.text(C[0] + 0.1, C[1] + 0.4, 's0', fontsize=m_fontsize)
-    # plt.text(D[0] + 0.1, D[1] + 0.4, 's1', fontsize=m_fontsize)
-
-    Q_label = ['A', 'B', 'C']
     for i in range(len(Q)):
-        if i == 2:
-            plt.text(Q[i][0] + 0.3, Q[i][1], Q_label[i], fontsize=m_fontsize, color='blue')
-        else:
-            plt.text(Q[i][0] - 0.2, Q[i][1] - 0.5, Q_label[i], fontsize=m_fontsize, color='blue')
+        plt.text(Q[i][0] - 0.2, Q[i][1] + 0.3, 'q'+str(i), fontsize=m_fontsize, color='blue')
     for i in range(len(S)):
-        plt.text(S[i][0] - 0.4, S[i][1] - 0.5, 's'+str(i), fontsize=m_fontsize)
+        plt.text(S[i][0] - 0.1, S[i][1] + 0.3, 's'+str(i), fontsize=m_fontsize)
     for i in range(len(R)):
         plt.text(R[i][0] - 0.3, R[i][1] - 0.4, 'r'+str(i), fontsize=m_fontsize)
 
@@ -68,8 +57,9 @@ if __name__ == "__main__":
     plt.xticks(np.arange(0, 12, 1), fontsize=m_fontsize)
     plt.yticks(np.arange(0, 8, 1), fontsize=m_fontsize)
     # plt.xlim(0, 4)
-    # plt.ylim(-2, 2)
+    plt.ylim(0, 5)
     plt.xlabel("x", fontsize=m_fontsize)
     plt.ylabel("y", fontsize=m_fontsize)
 
+    plt.savefig('F:/毕业设计大文件夹/picture/exp/d7-3-1-2.jpg')
     plt.show()

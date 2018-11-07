@@ -46,15 +46,15 @@ if __name__=='__main__':
         v2 = R[j]
         ax.plot([v1[0], v2[0]], [v1[1], v2[1]], [v1[2], v2[2]], linestyle='--', linewidth=1., color='green', marker=None)
 
-    Q_label=['qj','qj+1','qj+2','qj+3']
+    Q_label=[r'$q_{j}$',r'$  q_{j+1} = Q(r_{i-1})$',r'$q_{j+2}$',r'$q_{j+3}$']
     for i in [0, 1,2,3]:
         ax.text(Q[i, 0] + 0., Q[i, 1]+0., Q[i, 2] - 0.7, Q_label[i], color='blue', fontsize=m_fontsize)
-    R_label = ['ri-1', 'ri', 'ri+1']
+    R_label = [r'$r_{i-1}$', r'$r_{i}$', r'$r_{i+1}$']
     for i in [0, 1, 2]:
         ax.text(R[i, 0] + 0., R[i, 1]+0., R[i, 2] - 0.7, R_label[i], color='0.1', fontsize=m_fontsize)
 
     d0_util_3d.find_pair_point_in_Traj_and_draw(R[0], Q, text='', ax=ax, fontsize=14,color='0.1',linestyle='--')
-    d0_util_3d.find_pair_point_in_Traj_and_draw(R[1], Q, text='BDS(ri)', ax=ax, fontsize=14, color='0.1', linestyle='--')
+    d0_util_3d.find_pair_point_in_Traj_and_draw(R[1], Q, text=r'$ BDS(r_{i})$', ax=ax, fontsize=14, color='0.1', linestyle='--')
 
     ax.legend()  # 显示图例
     ax.set_xlabel('x', fontsize=m_fontsize)

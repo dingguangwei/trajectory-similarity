@@ -61,7 +61,7 @@ if __name__=='__main__':
     for i in [0, 1, 3, 4]:
         ax.text(Q[i, 0] + 0.2, Q[i, 1], Q[i, 2] - 0.7, 'q'+str(i), color='blue', fontsize=m_fontsize)
     for i in [0, 2, 3, 5, 6]:
-        ax.text(R[i, 0] + 0.4, R[i, 1], R[i, 2] - 0.7, 'r'+str(i), color='0.3', fontsize=m_fontsize)
+        ax.text(R[i, 0] + 0.7, R[i, 1], R[i, 2] - 1, 'r'+str(i), color='0.3', fontsize=m_fontsize)
 
 
     ax.legend()  # 显示图例
@@ -71,7 +71,7 @@ if __name__=='__main__':
 
     # 设置坐标轴刻度
     ax.set_xticks([])
-    # ax.set_yticks([])
+    ax.set_yticks([])
     ax.set_zticks(np.arange(0, 10, 2))
 
     # plt.xlim(0, 2)

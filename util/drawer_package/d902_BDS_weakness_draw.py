@@ -34,7 +34,7 @@ def get_data():
 if __name__=='__main__':
     fig = plt.figure()
     ax = fig.add_subplot(111, projection='3d')
-    m_fontsize='12'
+    m_fontsize='14'
 
     Q, R, S = get_data()
     ax.plot(Q[:, 0], Q[:, 1], Q[:, 2], label='Q', linestyle='-', linewidth=2, color='blue', marker='H')
@@ -43,7 +43,7 @@ if __name__=='__main__':
     for i in [0, 1, 3, 4]:
         ax.text(Q[i, 0] + 0.2, Q[i, 1], Q[i, 2] - 0.7, 'q'+str(i), color='blue', fontsize=m_fontsize)
     for i in [0, 2, 3, 5]:
-        ax.text(R[i, 0] + 0.2, R[i, 1], R[i, 2] - 0.7, 'r'+str(i), color='0.3', fontsize=m_fontsize)
+        ax.text(R[i, 0] + 0.2, R[i, 1], R[i, 2] - 1, 'r'+str(i), color='0.3', fontsize=m_fontsize)
 
     for i in range(3):
         d0_util_3d.find_pair_point_in_Traj_and_draw(R[i], Q[:3], label=None, color='green', linestyle='--')
