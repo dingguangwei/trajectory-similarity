@@ -67,8 +67,8 @@ def draw_DTW_more_point():
 if __name__=='__main__':
     fig = plt.figure()
 
-    draw_DTW_less_point()
-    # draw_DTW_more_point()
+    # draw_DTW_less_point()
+    draw_DTW_more_point()
 
     ax = plt.gca()
     # 将底部的线移到y=0的地方
@@ -78,11 +78,11 @@ if __name__=='__main__':
     ax.spines['right'].set_position(('data', 0))
 
     plt.legend(fontsize=m_fontsize)
-    plt.xticks(np.arange(0, 19, 1), fontsize=m_fontsize)
+    plt.xticks(np.arange(0, 19, 5), fontsize=m_fontsize)
     plt.yticks(np.arange(0, 7, 1), fontsize=m_fontsize)
     # plt.xlim(0, 4)
     # plt.ylim(-2, 2)
-    plt.xlabel('x', fontsize=m_fontsize-6)
-    plt.ylabel('y', fontsize=m_fontsize-6)
+    plt.xlabel('x', fontsize=m_fontsize-3)
+    plt.ylabel('y', fontsize=m_fontsize-3)
 
     plt.show()

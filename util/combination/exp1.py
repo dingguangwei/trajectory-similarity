@@ -6,7 +6,7 @@ import numpy as np
 from util.algorithm.space_calculate import get_space_time_distance_by_segment
 from util.algorithm.shape_calculate import get_I_shape
 from util.algorithm.similarity_calculate import similar_segment_and_distance
-from util.drawer_package import d902_BDS_weakness_draw
+from util.drawer_package import d902_Fig3_8_BDS_weakness_draw
 
 
 def get_data():
@@ -40,7 +40,7 @@ if __name__=='__main__':
     m_fontsize = 16
     # 1、数据
     # Q, R = get_data()
-    Q, R, S = d902_BDS_weakness_draw.get_data()
+    Q, R, S = d902_Fig3_8_BDS_weakness_draw.get_data()
     print('Q=\n', Q, '\n')
     print('R=\n', R, '\n')
     # 2、画轨迹

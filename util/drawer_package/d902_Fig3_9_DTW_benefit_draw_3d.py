@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import numpy as np
 import d0_util_3d
-import d902_BDS_weakness_draw
+import d902_Fig3_8_BDS_weakness_draw
 
 
 def get_EU_distance_3d(v1, v2):
@@ -47,7 +47,7 @@ if __name__=='__main__':
     ax = fig.add_subplot(111, projection='3d')
     m_fontsize = 16
 
-    Q, R, S = d902_BDS_weakness_draw.get_data()
+    Q, R, S = d902_Fig3_8_BDS_weakness_draw.get_data()
     pair = get_pair_point_in_DTW(Q, R)
 
     ax.plot(Q[:, 0], Q[:, 1], Q[:, 2], label='Q', linestyle='-', linewidth=2, color='blue', marker='H')
@@ -58,10 +58,10 @@ if __name__=='__main__':
         v2 = R[pair[i, 1]]
         ax.plot([v1[0], v2[0]], [v1[1], v2[1]], [v1[2], v2[2]],linestyle='--', linewidth=1.5, color='green', marker=None)
 
-    for i in [0, 1, 3, 4]:
-        ax.text(Q[i, 0] + 0.2, Q[i, 1], Q[i, 2] - 0.7, 'q'+str(i), color='blue', fontsize=m_fontsize)
-    for i in [0, 2, 3, 5, 6]:
-        ax.text(R[i, 0] + 0.7, R[i, 1], R[i, 2] - 1, 'r'+str(i), color='0.3', fontsize=m_fontsize)
+    for i in [0, 1, 2, 3, 4,5,6]:
+        ax.text(Q[i, 0] + 0.2, Q[i, 1], Q[i, 2] - 1, r'$q_{'+str(i)+'}$', color='blue', fontsize=m_fontsize)
+    for i in [0, 2, 3, 5, 6,7,8]:
+        ax.text(R[i, 0] + 0.7, R[i, 1], R[i, 2] - 1, r'$r_{'+str(i)+'}$', color='0.3', fontsize=m_fontsize)
 
 
     ax.legend()  # 显示图例

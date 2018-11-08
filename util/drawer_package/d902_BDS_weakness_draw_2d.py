@@ -1,13 +1,13 @@
 # coding=utf-8
 import matplotlib.pyplot as plt
 import numpy as np
-import d902_BDS_weakness_draw
+import d902_Fig3_8_BDS_weakness_draw
 
 if __name__=='__main__':
     fig = plt.figure()
     m_fontsize = 16
 
-    Q, R, S = d902_BDS_weakness_draw.get_data()
+    Q, R, S = d902_Fig3_8_BDS_weakness_draw.get_data()
 
     plt.plot(Q[:, 0], Q[:, 1], color='blue', linewidth=2, label='Q', marker='H', linestyle=None)
     plt.plot(R[:, 0], R[:, 1], color='0.5', linewidth=2, label='R', marker='>', linestyle=None)

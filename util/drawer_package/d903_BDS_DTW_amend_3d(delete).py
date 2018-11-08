@@ -53,8 +53,8 @@ if __name__=='__main__':
     for i in [0, 1, 2]:
         ax.text(R[i, 0] + 0., R[i, 1]+0., R[i, 2] - 0.7, R_label[i], color='0.1', fontsize=m_fontsize)
 
-    d0_util_3d.find_pair_point_in_Traj_and_draw(R[0], Q, text='', ax=ax, fontsize=14,color='0.1',linestyle='--')
-    d0_util_3d.find_pair_point_in_Traj_and_draw(R[1], Q, text=r'$ BDS(r_{i})$', ax=ax, fontsize=14, color='0.1', linestyle='--')
+    d0_util_3d.find_pair_point_in_Traj_and_draw(R[0], Q, m_text='', ax=ax, fontsize=14,color='0.1',linestyle='--')
+    d0_util_3d.find_pair_point_in_Traj_and_draw(R[1], Q, m_text=r'$ BDS(r_{i})$', ax=ax, fontsize=14, color='0.1', linestyle='--')
 
     ax.legend()  # 显示图例
     ax.set_xlabel('x', fontsize=m_fontsize)
