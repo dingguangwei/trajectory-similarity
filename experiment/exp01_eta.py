@@ -67,7 +67,9 @@ def get_data():
     #     value_60[i][1]+=np.random.rand()/50 - 0.05
 
     print(value_60)
-    return np.array(value_20), np.array(value_40), np.array(value_60), x_list
+    m_title='GeoLife'
+    path = "F:\\毕业设计大文件夹\\picture\\exp\\Fig5-1(a)_exp01.jpg"
+    return np.array(value_20), np.array(value_40), np.array(value_60), x_list,m_title, path
 
 # NA数据集
 def get_data_NA():
@@ -93,14 +95,16 @@ def get_data_NA():
         value_40[i, 1] += np.random.rand() / 1000
         value_60[i, 1]+=np.random.rand()/100
 
-    return np.array(value_20), np.array(value_40), np.array(value_60), x_list
+    m_title = 'NorthAmericaRoadNetwork'
+    path = "F:\\毕业设计大文件夹\\picture\\exp\\Fig5-1(b)_exp01.jpg"
+    return np.array(value_20), np.array(value_40), np.array(value_60), x_list, m_title, path
 
 if __name__=='__main__':
     fig = plt.figure()
     m_fontsize = 13
 
-    # value_20, value_40, value_60, x_list = get_data()
-    value_20, value_40, value_60, x_list = get_data_NA()
+    # value_20, value_40, value_60, x_list,m_title, path = get_data()
+    value_20, value_40, value_60, x_list,m_title, path = get_data_NA()
 
     plt.plot(value_20[:, 0], value_20[:, 1], color='0.2', linewidth=2, label='k=20', marker='H', linestyle=None)
     plt.plot(value_40[:, 0], value_40[:, 1], color='0.3', linewidth=2, label='k=40', marker='.', linestyle=None)
@@ -121,5 +125,7 @@ if __name__=='__main__':
     plt.ylim(0.5, 1)
     plt.xlabel('η', fontsize=m_fontsize)
     plt.ylabel('P_sim', fontsize=m_fontsize)
+    plt.title(m_title)
+    plt.savefig(path)
 
     plt.show()

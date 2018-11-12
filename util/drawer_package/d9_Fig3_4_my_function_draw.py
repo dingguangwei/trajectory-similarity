@@ -28,11 +28,11 @@ if __name__=='__main__':
     ax.set_ylabel('y')
 
     # 设置坐标轴刻度
-    # ax.set_xticks(np.arange(0, 40, 10))
-    # ax.set_yticks(np.arange(0, 40, 10))
+    ax.set_xticks([])
+    ax.set_yticks([])
     # plt.xlim(0, 2)
     # plt.ylim(0, 2)
 
-    ax.view_init(elev=20, azim=20)  # 调整视角
+    ax.view_init(elev=20, azim=260)  # 调整视角
 
     plt.show()

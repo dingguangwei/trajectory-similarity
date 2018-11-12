@@ -2,7 +2,6 @@
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import numpy as np
-import d0_util_3d
 
 
 if __name__=='__main__':
@@ -21,12 +20,10 @@ if __name__=='__main__':
     # 设置坐标轴刻度
     ax.set_xticks([])
     # ax.set_yticks([])
-    ax.set_zticks(np.arange(0, 10, 2))
-
+    ax.set_zticks(np.arange(0, 10, 2), fontsize=m_fontsize)
     # plt.xlim(0, 2)
     # plt.ylim(0, 2)
     ax.set_zlim(0, 10)
-
+    plt.subplots_adjust(top=1, bottom=0, right=1, left=0, hspace=0, wspace=0)
     ax.view_init(elev=20, azim=20)  # 调整视角
-
     plt.show()

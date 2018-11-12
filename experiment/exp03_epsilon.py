@@ -22,7 +22,7 @@ def get_data():
     value_60[:, 1] = [0.830, 0.851, 0.863, 0.890, 0.902,
                       0.909, 0.910, 0.907]
 
-    path = 'F:/毕业设计大文件夹/picture/exp/exp03_GeoLife.jpg'
+    path = 'F:/毕业设计大文件夹/picture/exp/Fig5-3(a).jpg'
     m_title = 'GeoLife'
     return np.array(value_20), np.array(value_40), np.array(value_60), x_list, m_title, path
 
@@ -44,7 +44,7 @@ def get_data_NA():
     value_60[:, 1] = [0.810, 0.871, 0.893, 0.900, 0.902,
                       0.909, 0.910, 0.907]
 
-    path = 'F:/毕业设计大文件夹/picture/exp/exp03_NorthAmericaRoadNetwork.jpg'
+    path = 'F:/毕业设计大文件夹/picture/exp/Fig5-3(b).jpg'
     m_title = 'North America Road Network'
     return np.array(value_20), np.array(value_40), np.array(value_60), x_list, m_title, path
 
@@ -52,8 +52,8 @@ if __name__=='__main__':
     fig = plt.figure()
     m_fontsize = 14
 
-    value_20, value_40, value_60, x_list, m_title, path = get_data()
-    # value_20, value_40, value_60, x_list, m_title, path = get_data_NA()
+    # value_20, value_40, value_60, x_list, m_title, path = get_data()
+    value_20, value_40, value_60, x_list, m_title, path = get_data_NA()
 
     plt.plot(value_20[:, 0], value_20[:, 1], color='0.2', linewidth=2, label='k=20', marker='P', linestyle=None)
     plt.plot(value_40[:, 0], value_40[:, 1], color='0.3', linewidth=2, label='k=40', marker='o', linestyle=None)

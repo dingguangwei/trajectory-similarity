@@ -19,7 +19,9 @@ def get_data():
     value_60[:, 0] = [i for i in range(1, 11)]
     value_60[:, 1] = [0.789, 0.863, 0.905, 0.920, 0.9166,
                       0.861, 0.855, 0.854, 0.853, 0.853]
-    return np.array(value_20), np.array(value_40), np.array(value_60), x_list
+    m_title = 'GeoLife'
+    path = "F:\\毕业设计大文件夹\\picture\\exp\\Fig5-2(a)_exp02.jpg"
+    return np.array(value_20), np.array(value_40), np.array(value_60), x_list, m_title, path
 
 
 def get_data_NA():
@@ -38,15 +40,17 @@ def get_data_NA():
     value_60[:, 1] = [0.716, 0.821, 0.870, 0.887, 0.895,
                       0.884, 0.84, 0.807, 0.801, 0.801]
 
-    return np.array(value_20), np.array(value_40), np.array(value_60), x_list
+    m_title = 'NorthAmericaRoadNetwork'
+    path = "F:\\毕业设计大文件夹\\picture\\exp\\Fig5-2(b)_exp02.jpg"
+    return np.array(value_20), np.array(value_40), np.array(value_60), x_list, m_title, path
 
 
 if __name__=='__main__':
     fig = plt.figure()
     m_fontsize = 13
 
-    # value_20, value_40, value_60, x_list = get_data()
-    value_20, value_40, value_60, x_list = get_data_NA()
+    # value_20, value_40, value_60, x_list, m_title, path = get_data()
+    value_20, value_40, value_60, x_list, m_title, path = get_data_NA()
 
     plt.plot(value_20[:, 0], value_20[:, 1], color='0.2', linewidth=2, label='k=20', marker='P', linestyle=None)
     plt.plot(value_40[:, 0], value_40[:, 1], color='0.3', linewidth=2, label='k=40', marker='o', linestyle=None)
@@ -67,5 +71,6 @@ if __name__=='__main__':
     plt.ylim(0.7, 1)
     plt.xlabel('μ', fontsize=m_fontsize)
     plt.ylabel('P_mul', fontsize=m_fontsize)
-
+    plt.title(m_title)
+    plt.savefig(path)
     plt.show()

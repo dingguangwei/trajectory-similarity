@@ -41,7 +41,7 @@ def draw_fu_sigmoid():
     plt.plot(x, y)
     plt.plot([-5, 5], [miu, miu], linewidth=1., linestyle='--')
     plt.plot([-5, 5], [1+miu, 1+miu], linewidth=1., linestyle='--')
-    plt.text(0.5, 1.5, 'y', fontsize=m_fontsize)
+    plt.text(0.5, 1.6, '$I_{shape}$', fontsize=m_fontsize)
     plt.text(1, 0.5, 'y=1/(1+e^x)+μ', fontsize=m_fontsize)
     plt.text(0.3, miu, 'μ', fontsize=m_fontsize)
     plt.text(0.3, 1+miu, '1+μ', fontsize=m_fontsize)
@@ -74,10 +74,10 @@ if __name__=='__main__':
     ax.spines['right'].set_position(('data', 0))
 
     plt.xticks(np.arange(-5, 6, 1), fontsize=m_fontsize)
-    plt.yticks(np.arange(0, 2, 0.5), fontsize=m_fontsize)
+    plt.yticks(np.arange(0.5, 2, 0.5), fontsize=m_fontsize)
     # plt.xlim(0, 4)
-    # plt.ylim(-2, 2)
-    plt.xlabel('x', fontsize=m_fontsize)
+    plt.ylim(0, 1.6)
+    plt.xlabel(r'$sim_{shape}$', fontsize=m_fontsize)
     # plt.ylabel('y')
 
     plt.show()
