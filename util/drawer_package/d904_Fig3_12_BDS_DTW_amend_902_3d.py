@@ -35,19 +35,18 @@ def get_data():
 if __name__=='__main__':
     fig = plt.figure()
     ax = fig.add_subplot(111, projection='3d')
-    m_fontsize='12'
+    m_fontsize=14
 
     Q, R, S = get_data()
     ax.plot(Q[:, 0], Q[:, 1], Q[:, 2], label='Q', linestyle='-', linewidth=2, color='blue', marker='H')
     ax.plot(R[:, 0], R[:, 1], R[:, 2], label='R', linestyle='-', linewidth=2, color='0.3', marker='H')
 
-    for i in [0, 1, 3, 4]:
-        ax.text(Q[i, 0] + 0.2, Q[i, 1], Q[i, 2] - 0.7, 'q'+str(i), color='blue', fontsize=m_fontsize)
+    for i in [0, 1,2, 3, 4,5,6,]:
+        ax.text(Q[i, 0] + 0.2, Q[i, 1], Q[i, 2] - 0.9, 'q'+str(i), color='blue', fontsize=m_fontsize)
     for i in range(9):
-        ax.text(R[i, 0] + 0.2, R[i, 1], R[i, 2] - 0.7, 'r'+str(i), color='0.3', fontsize=m_fontsize)
+        ax.text(R[i, 0] + 0.2, R[i, 1], R[i, 2] - 0.9, 'r'+str(i), color='0.3', fontsize=m_fontsize)
 
-    DTW_BDS_pair = get_DTW_BDS_pair_by_traj()
-    print('DTW_BDS_pair=\n', DTW_BDS_pair)
+    DTW_BDS_pair, new_Q, DTW_BDS_pair_index = get_DTW_BDS_pair_by_traj()
     for pair in DTW_BDS_pair:
         v1 = R[pair[0]]
         v2 = pair[1]

@@ -47,9 +47,9 @@ if __name__=='__main__':
 
     plt.legend(fontsize=m_fontsize)
     plt.xticks(np.arange(0, 40, 5), fontsize=m_fontsize)
-    plt.yticks(np.arange(0, 20, 5), fontsize=m_fontsize)
+    plt.yticks(np.arange(0, 21, 5), fontsize=m_fontsize)
     plt.xlim(0, 37)
-    plt.ylim(0, 18)
+    plt.ylim(0, 21)
     plt.xlabel('x', fontsize=m_fontsize)
     plt.ylabel('y', fontsize=m_fontsize)
 
