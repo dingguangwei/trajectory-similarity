@@ -29,7 +29,7 @@ def dtw(arr1, arr2):
     print('m_arr=\n', m_arr)
 
 
-def get_QRS(is_less=True, is_print=False):
+def get_QRS(is_less=True, is_print=True):
     if is_less:
         Q = np.array([[1, 1], [3, 1], [5, 1], [18, 1]])
         R = np.array([[1, 2], [3, 2], [5, 2], [18, 3]])

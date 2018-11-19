@@ -2,7 +2,7 @@
 
 import matplotlib.pyplot as plt
 import numpy as np
-from d5_compute_dtw_value import get_QRS
+import d5_compute_dtw_value
 
 m_fontsize = 17
 
@@ -11,7 +11,7 @@ def plot_line_with_points(point_array, color='0', linewidth=1., label=None, mark
 
 
 def draw_DTW_less_point():
-    Q, R, S = get_QRS()
+    Q, R, S = d5_compute_dtw_value.get_QRS()
     # 画轨迹
     plot_line_with_points(Q, color='black', linewidth=1.5, label='Q', marker='*', linestyle='-')
     plot_line_with_points(R, color='blue', linewidth=1.5, label='R', marker='>', linestyle='--')
@@ -37,7 +37,7 @@ def draw_DTW_less_point():
 
 
 def draw_DTW_more_point():
-    Q, R, S = get_QRS(is_less=False)
+    Q, R, S = d5_compute_dtw_value.get_QRS(is_less=False)
 
     # 画轨迹
     plot_line_with_points(Q, color='black', linewidth=1.5, label='Q', marker='*', linestyle='-')
