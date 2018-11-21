@@ -2,13 +2,14 @@
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import numpy as np
+from PIL import Image
 from d0_util_3d import find_pair_point_in_Traj_and_draw
 
 ################################################################################################
 # --------------------------- util ---------------------------
 ################################################################################################
 m_fontsize = 14
-small_fontsize = 12
+small_fontsize = 11
 
 def get_data():
     Q = [
@@ -81,9 +82,9 @@ def draw_2d():
     plt.plot(Q[:, 0], Q[:, 1], label='Q', linestyle='-', linewidth=2, color='blue', marker='H')
     plt.plot(R[:, 0], R[:, 1], label='R', linestyle='-', linewidth=2, color='.4', marker='*')
     for i in range(len(Q)):
-        plt.text(Q[i, 0]+0.2, Q[i, 1]-0.3, '$q_'+str(i)+'$', color='blue', fontsize=m_fontsize)
+        plt.text(Q[i, 0]+0.2, Q[i, 1]-0.3, '$q_'+str(i)+'$', color='blue', fontsize=m_fontsize+4)
     for i in range(len(R)):
-        plt.text(R[i, 0] + 0.1, R[i, 1] - 0.4, '$r_' + str(i) + '$', color='.4', fontsize=m_fontsize)
+        plt.text(R[i, 0] + 0.1, R[i, 1] - 0.4, '$r_' + str(i) + '$', color='.4', fontsize=m_fontsize+4)
 
     ax = plt.gca()
     plt.legend(fontsize=m_fontsize)
@@ -125,7 +126,8 @@ def draw_2(fig, ax):
     # 获取DTW对应点
     DTW_pair = get_pair_index_in_DTW(Q=R, R=Q)
     print(DTW_pair)
-    for pair in DTW_pair:
+    for i in range(1, len(DTW_pair)):
+        pair = DTW_pair[i]
         draw_line(ax, Q[pair[1]], R[pair[0]])
 
     for i in range(0, len(Q) - 1):
@@ -139,7 +141,7 @@ def draw_2(fig, ax):
     # 寻找r0的对应点
     ###################################################################################################################
     min_point = find_pair_point_in_Traj_and_draw(R[0], [Q[0], Q[1]], color='0.1', ax=ax)
-    ax.text(min_point[0] - 1, min_point[1]-0.5, min_point[2], r'$Q(r_0)$', color='0.1', fontsize=small_fontsize)
+    ax.text(min_point[0] - 2.6, min_point[1]-0.5, min_point[2], r'$DTW-BDS(r_0)$', color='0.1', fontsize=small_fontsize)
     return "F:\\毕业设计大文件夹\\picture\\chapter\\Fig3-10\\2.jpg"
 
 # 寻找r0,r1,r2的对应点
@@ -151,7 +153,8 @@ def draw_3(fig, ax):
     # 获取DTW对应点
     DTW_pair = get_pair_index_in_DTW(Q=R, R=Q)
     print(DTW_pair)
-    for pair in DTW_pair:
+    for i in range(4, len(DTW_pair)):
+        pair = DTW_pair[i]
         draw_line(ax, Q[pair[1]], R[pair[0]])
 
     for i in range(0, len(Q) - 1):
@@ -164,18 +167,18 @@ def draw_3(fig, ax):
     ###################################################################################################################
     # 寻找r0,r1,r2的对应点
     ###################################################################################################################
-    b_x, b_y, b_z = -1, -0.5, 0
+    b_x, b_y, b_z = -2.6, -0.5, 0
     min_point = find_pair_point_in_Traj_and_draw(R[0], [Q[0], Q[1]], color='0.1', ax=ax)
-    ax.text(min_point[0] +b_x, min_point[1]+b_y, min_point[2], r'$Q(r_0)$', color='0.1', fontsize=small_fontsize)
+    ax.text(min_point[0] +b_x, min_point[1]+b_y, min_point[2], r'', color='0.1', fontsize=small_fontsize)
 
     min_point = find_pair_point_in_Traj_and_draw(R[1], [Q[0], Q[1]], color='0.1', ax=ax)
-    ax.text(min_point[0] +b_x, min_point[1]+b_y, min_point[2], r'$Q(r_1)$', color='0.1', fontsize=small_fontsize)
+    ax.text(min_point[0] +b_x, min_point[1]+b_y, min_point[2], r'', color='0.1', fontsize=small_fontsize)
 
     min_point = find_pair_point_in_Traj_and_draw(R[2], [Q[0], Q[1]], color='0.1', ax=ax)
-    ax.text(min_point[0] +b_x-0.6, min_point[1]+b_y, min_point[2], r'$Q(r_2)$', color='0.1', fontsize=small_fontsize)
+    ax.text(min_point[0] +b_x-0.6, min_point[1]+b_y, min_point[2], r'$DTW-BDS(r_2)$', color='0.1', fontsize=small_fontsize)
 
     min_point = find_pair_point_in_Traj_and_draw(R[3], [Q[1], Q[2]], color='0.1', ax=ax)
-    ax.text(min_point[0] +b_x, min_point[1]+b_y, min_point[2], r'$Q(r_3)$', color='0.1', fontsize=small_fontsize)
+    ax.text(min_point[0] +b_x, min_point[1]+b_y, min_point[2], r'$DTW-BDS(r_3)$', color='0.1', fontsize=small_fontsize)
     return "F:\\毕业设计大文件夹\\picture\\chapter\\Fig3-10\\3.jpg"
 
 
@@ -188,7 +191,8 @@ def draw_4(fig, ax):
     # 获取DTW对应点
     DTW_pair = get_pair_index_in_DTW(Q=R, R=Q)
     print(DTW_pair)
-    for pair in DTW_pair:
+    for i in range(4, len(DTW_pair)):
+        pair = DTW_pair[i]
         draw_line(ax, Q[pair[1]], R[pair[0]])
 
     for i in range(0, len(Q) - 1):
@@ -201,18 +205,18 @@ def draw_4(fig, ax):
     ###################################################################################################################
     # 优化r2的对应点
     ###################################################################################################################
-    b_x, b_y, b_z = -1, -0.5, 0
+    b_x, b_y, b_z = -2.6, -0.5, 0
     min_point = find_pair_point_in_Traj_and_draw(R[0], [Q[0], Q[1]], color='0.1', ax=ax)
-    ax.text(min_point[0] + b_x, min_point[1] + b_y, min_point[2], r'$Q(r_0)$', color='0.1', fontsize=small_fontsize)
+    ax.text(min_point[0] + b_x, min_point[1] + b_y, min_point[2], r'', color='0.1', fontsize=small_fontsize)
 
     min_point = find_pair_point_in_Traj_and_draw(R[1], [Q[0], Q[1]], color='0.1', ax=ax)
-    ax.text(min_point[0] + b_x, min_point[1] + b_y, min_point[2], r'$Q(r_1)$', color='0.1', fontsize=small_fontsize)
+    ax.text(min_point[0] + b_x, min_point[1] + b_y, min_point[2], r'', color='0.1', fontsize=small_fontsize)
 
     min_point = find_pair_point_in_Traj_and_draw(R[2], [Q[1], Q[2]], color='0.1', ax=ax)
-    ax.text(min_point[0] + b_x, min_point[1] + b_y, min_point[2], r'$Q(r_1)$', color='0.1', fontsize=small_fontsize)
+    ax.text(min_point[0] + b_x, min_point[1] + b_y, min_point[2], r'$DTW-BDS(r_2)$', color='0.1', fontsize=small_fontsize)
 
     min_point = find_pair_point_in_Traj_and_draw(R[3], [Q[1], Q[2]], color='0.1', ax=ax)
-    ax.text(min_point[0] + b_x, min_point[1] + b_y, min_point[2], r'$Q(r_3)$', color='0.1', fontsize=small_fontsize)
+    ax.text(min_point[0] + b_x, min_point[1] + b_y, min_point[2], r'$DTW-BDS(r_3)$', color='0.1', fontsize=small_fontsize)
     return "F:\\毕业设计大文件夹\\picture\\chapter\\Fig3-10\\4.jpg"
 
 
@@ -223,10 +227,11 @@ def draw_5(fig, ax):
     ax.plot(R[:, 0], R[:, 1], R[:, 2], label='R', linestyle='-', linewidth=2, color='0.4', marker='*')
 
     # 获取DTW对应点
-    DTW_pair = get_pair_index_in_DTW(Q=R, R=Q)
-    print(DTW_pair)
-    for pair in DTW_pair:
-        draw_line(ax, Q[pair[1]], R[pair[0]])
+    # DTW_pair = get_pair_index_in_DTW(Q=R, R=Q)
+    # print(DTW_pair)
+    # for i in range(1, len(DTW_pair)):
+    #     pair = DTW_pair[i]
+    #     draw_line(ax, Q[pair[1]], R[pair[0]])
 
     for i in range(0, len(Q) - 1):
         ax.text(Q[i, 0] - 0.7, Q[i, 1] + 1, Q[i, 2] - 0.8, r'$q_{' + str(i) + '}$', color='blue', fontsize=m_fontsize)
@@ -238,24 +243,24 @@ def draw_5(fig, ax):
     ###################################################################################################################
     # 优化r2的对应点
     ###################################################################################################################
-    b_x, b_y, b_z = -1, -0.5, 0
+    b_x, b_y, b_z = -2.6, -0.5, 0
     min_point = find_pair_point_in_Traj_and_draw(R[0], [Q[0], Q[1]], color='0.1', ax=ax)
-    ax.text(min_point[0] + b_x, min_point[1] + b_y, min_point[2], r'$Q(r_0)$', color='0.1', fontsize=small_fontsize)
+    ax.text(min_point[0] + b_x, min_point[1] + b_y, min_point[2], r'', color='0.1', fontsize=small_fontsize)
 
     min_point = find_pair_point_in_Traj_and_draw(R[1], [Q[0], Q[1]], color='0.1', ax=ax)
-    ax.text(min_point[0] + b_x, min_point[1] + b_y, min_point[2], r'$Q(r_1)$', color='0.1', fontsize=small_fontsize)
+    ax.text(min_point[0] + b_x, min_point[1] + b_y, min_point[2], r'', color='0.1', fontsize=small_fontsize)
 
     min_point = find_pair_point_in_Traj_and_draw(R[2], [Q[1], Q[2]], color='0.1', ax=ax)
-    ax.text(min_point[0] + b_x, min_point[1] + b_y, min_point[2], r'$Q(r_1)$', color='0.1', fontsize=small_fontsize)
+    ax.text(min_point[0] + b_x, min_point[1] + b_y, min_point[2], r'', color='0.1', fontsize=small_fontsize)
 
     min_point = find_pair_point_in_Traj_and_draw(R[3], [Q[1], Q[2]], color='0.1', ax=ax)
-    ax.text(min_point[0] + b_x, min_point[1] + b_y, min_point[2], r'$Q(r_3)$', color='0.1', fontsize=small_fontsize)
+    ax.text(min_point[0] + b_x, min_point[1] + b_y, min_point[2], r'', color='0.1', fontsize=small_fontsize)
 
     min_point = find_pair_point_in_Traj_and_draw(R[4], [Q[1], Q[2]], color='0.1', ax=ax)
-    ax.text(min_point[0] +b_x+0.1, min_point[1] +b_y-0.3, min_point[2]-0.7, r'$Q(r_4)$', color='0.1', fontsize=small_fontsize)
+    ax.text(min_point[0] +b_x+0.1, min_point[1] +b_y-0.3, min_point[2]-0.7, r'', color='0.1', fontsize=small_fontsize)
 
     min_point = find_pair_point_in_Traj_and_draw(R[5], [Q[2], Q[3]], color='0.1', ax=ax)
-    ax.text(min_point[0] +b_x-0.6, min_point[1] +b_y, min_point[2], r'$Q(r_5)$', color='0.1', fontsize=small_fontsize)
+    ax.text(min_point[0] +b_x-0.6, min_point[1] +b_y, min_point[2], r'', color='0.1', fontsize=small_fontsize)
     return "F:\\毕业设计大文件夹\\picture\\chapter\\Fig3-10\\5.jpg"
 
 
@@ -266,10 +271,12 @@ if __name__=='__main__':
     # path = draw_1(fig, ax)
     # path = draw_2(fig, ax)
     # path = draw_3(fig, ax)
-    # path = draw_4(fig, ax)
-    path = draw_5(fig, ax)
+    path = draw_4(fig, ax)
+    # path = draw_5(fig, ax)
 
-    ax.legend()  # 显示图例
+    #                                     左     下
+    ax.legend(loc='right', bbox_to_anchor=(0.95, 0.85),ncol=1)  # 显示图例
+
     ax.set_xlabel('x', fontsize=m_fontsize)
     ax.set_ylabel('y', fontsize=m_fontsize)
     ax.set_zlabel('Z', fontsize=m_fontsize)
@@ -277,11 +284,28 @@ if __name__=='__main__':
     ax.set_xticks([])
     ax.set_yticks([])
     ax.set_zticks(np.arange(0, 10, 2))
-    plt.xlim(2, 8)
+    plt.xlim(1, 7)
     # plt.ylim(0, 2)
     ax.set_zlim(0, 10)
     ax.view_init(elev=20, azim=270)  # 调整视角
     plt.savefig(path, dpi=500)
     plt.show()
 
+    # 裁剪
+    print('裁剪中...')
+    path = "F:\\毕业设计大文件夹\\picture\\chapter\\Fig3-10\\"
+    m_files = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', ]
+    for m_file in m_files:
+        img = Image.open(path + m_file)  # 打开当前路径图像
+        # print(img.size)
+        # 左，上，右，下
+        box1 = (750, 400, 2800, 2200)  # 设置图像裁剪区域
+        image1 = img.crop(box1)  # 图像裁剪
+        # image1.show()
+        # print(image1.size)
+        image1.save(path + 'cut_' + m_file)  # 存储当前区域
+        print('path = ', path + 'cut_' + m_file)
+
+    #################################################
+    # 画2d
     # draw_2d()

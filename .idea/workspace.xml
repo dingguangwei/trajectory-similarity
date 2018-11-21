@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="91198781-803d-49ae-8514-c7e749cd03f8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/drawer_package/d903_Fig3_11_all_step.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/drawer_package/d903_Fig3_10_all_step.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,33 +14,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="d903_Fig3_11_all_step.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/util/drawer_package/d903_Fig3_11_all_step.py">
+      <file leaf-file-name="d903_Fig3_10_all_step.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/util/drawer_package/d903_Fig3_10_all_step.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="270" lean-forward="true" selection-start-line="270" selection-end-line="270" />
+            <state relative-caret-position="485">
+              <caret line="306" column="39" lean-forward="true" selection-start-line="306" selection-start-column="39" selection-end-line="306" selection-end-column="39" />
               <folding>
                 <element signature="e#15#46#0" expanded="true" />
-                <element signature="e#938#1030#0" />
-                <element signature="e#1070#2039#0" />
-                <element signature="e#2330#3174#0" />
-                <element signature="e#3219#4125#0" />
+                <element signature="e#477#748#0" />
+                <element signature="e#1082#2051#0" />
+                <element signature="e#2330#3200#0" />
+                <element signature="e#3228#4180#0" />
                 <element signature="e#4218#5641#0" />
-                <element signature="e#5685#7722#0" />
-                <element signature="e#7799#10719#0" />
-                <element signature="e#9915#12408#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="d903_Fig3_12.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/util/drawer_package/d903_Fig3_12.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1408">
-              <caret line="67" column="20" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
-              <folding>
-                <element signature="e#15#46#0" expanded="true" />
+                <element signature="e#9918#12424#0" />
               </folding>
             </state>
           </provider>
@@ -83,9 +70,9 @@
       <find>i</find>
       <find>y</find>
       <find>0</find>
-      <find>Q</find>
       <find>draw_line(</find>
       <find>DTW-DBS</find>
+      <find>Q</find>
     </findStrings>
     <replaceStrings>
       <replace>lon</replace>
@@ -113,6 +100,7 @@
       <replace>S</replace>
       <replace>draw_line(ax,</replace>
       <replace>Q</replace>
+      <replace>DTW-BDS</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -121,8 +109,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/experiment/exp06.py" />
-        <option value="$PROJECT_DIR$/experiment/exp05.py" />
         <option value="$PROJECT_DIR$/experiment/exp06_532.py" />
         <option value="$PROJECT_DIR$/experiment/exp07_533.py" />
         <option value="$PROJECT_DIR$/util/drawer_package/d7_3-1-2_draw.py" />
@@ -172,10 +158,12 @@
         <option value="$PROJECT_DIR$/util/drawer_package/d903_Fig3_12.py" />
         <option value="$PROJECT_DIR$/util/algorithm/DTW_BDS_pair.py" />
         <option value="$PROJECT_DIR$/util/drawer_package/d903_Fig3_11_all_step.py" />
+        <option value="$PROJECT_DIR$/util/drawer_package/d903_Fig3_10_cut_image.py" />
+        <option value="$PROJECT_DIR$/util/drawer_package/d903_Fig3_10_all_step.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="1249" />
     <option name="height" value="1040" />
   </component>
@@ -257,7 +245,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.d903_Fig3_11_all_step">
+  <component name="RunManager" selected="Python.d903_Fig3_10_all_step">
     <configuration name="DTW_BDS_pair" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="trajectory" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -276,7 +264,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="d903_Fig3_11_DTW-BDS" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="d903_Fig3_10_all_step" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="trajectory" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -288,7 +276,25 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/drawer_package/d903_Fig3_11_DTW-BDS.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/drawer_package/d903_Fig3_10_all_step.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="d903_Fig3_10_cut_image" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="trajectory" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/util/drawer_package" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/drawer_package/d903_Fig3_10_cut_image.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -306,25 +312,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/drawer_package/d903_Fig3_11_all_step.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="d903_Fig3_12" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="trajectory" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/util/drawer_package" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/drawer_package/d903_Fig3_12.py" />
+      <option name="SCRIPT_NAME" value="D:\pythonSourceCoude\trajectory\util\drawer_package\d903_Fig3_10_all_step.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -349,19 +337,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.d903_Fig3_11_DTW-BDS" />
-      <item itemvalue="Python.d903_Fig3_12" />
       <item itemvalue="Python.d903_Fig3_11_all_step" />
       <item itemvalue="Python.DTW_BDS_pair" />
       <item itemvalue="Python.exp01_eta" />
+      <item itemvalue="Python.d903_Fig3_10_cut_image" />
+      <item itemvalue="Python.d903_Fig3_10_all_step" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.d903_Fig3_10_all_step" />
+        <item itemvalue="Python.d903_Fig3_10_cut_image" />
         <item itemvalue="Python.d903_Fig3_11_all_step" />
         <item itemvalue="Python.exp01_eta" />
         <item itemvalue="Python.DTW_BDS_pair" />
-        <item itemvalue="Python.d903_Fig3_12" />
-        <item itemvalue="Python.d903_Fig3_11_DTW-BDS" />
       </list>
     </recent_temporary>
   </component>
@@ -396,7 +384,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18545838" />
@@ -470,13 +458,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/util/drawer_package/d7_Fig3-1_3-1-2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/util/drawer_package/d902_Fig3_9_DTW_benefit_draw_3d.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
@@ -758,13 +739,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/drawer_package/d903_Fig3_11_DTW-BDS.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="57" column="4" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/util/drawer_package/d903_Fig3_12.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1408">
@@ -799,9 +773,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="e#15#46#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -826,20 +797,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/drawer_package/d903_Fig3_11_all_step.py">
+    <entry file="file://$PROJECT_DIR$/util/drawer_package/d903_Fig3_11_DTW-BDS.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="270" lean-forward="true" selection-start-line="270" selection-end-line="270" />
+        <state relative-caret-position="360">
+          <caret line="57" column="4" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/drawer_package/d903_Fig3_10_cut_image.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" lean-forward="true" selection-start-line="4" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/drawer_package/d903_Fig3_10_all_step.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="306" column="39" lean-forward="true" selection-start-line="306" selection-start-column="39" selection-end-line="306" selection-end-column="39" />
           <folding>
             <element signature="e#15#46#0" expanded="true" />
-            <element signature="e#938#1030#0" />
-            <element signature="e#1070#2039#0" />
-            <element signature="e#2330#3174#0" />
-            <element signature="e#3219#4125#0" />
+            <element signature="e#477#748#0" />
+            <element signature="e#1082#2051#0" />
+            <element signature="e#2330#3200#0" />
+            <element signature="e#3228#4180#0" />
             <element signature="e#4218#5641#0" />
-            <element signature="e#5685#7722#0" />
-            <element signature="e#7799#10719#0" />
-            <element signature="e#9915#12408#0" />
+            <element signature="e#9918#12424#0" />
           </folding>
         </state>
       </provider>
