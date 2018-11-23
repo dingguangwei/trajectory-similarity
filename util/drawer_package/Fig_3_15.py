@@ -2,6 +2,7 @@
 
 import matplotlib.pyplot as plt
 import numpy as np
+from PIL import Image
 from mpl_toolkits.mplot3d import Axes3D
 
 m_fontsize = 16
@@ -100,23 +101,24 @@ def draw_a():
     R, Q = get_R_and_Q('a')
 
     # 画出轨迹R和Q
-    plot(R, ax, label='R', linestyle='-', linewidth=2, color='0', marker=markers[2])
     plot(Q, ax, label='Q', linestyle='-', linewidth=2, color='blue', marker='H')
+    plot(R, ax, label='R', linestyle='-', linewidth=2, color='0.4', marker='*')
+
     # 为轨迹样本点进行标注
     for i in range(len(R)):
         m_label = r'$r_' + str(i)+'$'
-        ax.text(R[i][0], R[i][1], R[i][2]+0.03, m_label, fontsize=m_fontsize)
+        ax.text(R[i][0], R[i][1], R[i][2]+0.03, m_label, fontsize=m_fontsize, color='0.4')
     for i in range(len(Q)):
         m_label = r'$q_' + str(i)+'$'
         ax.text(Q[i][0], Q[i][1], Q[i][2]+0.03, m_label, fontsize=m_fontsize, color='blue')
 
     min_point = find_pair_point(ax=ax, r=R[0], qi=Q[0], qj=Q[1])
     ax.scatter(min_point[0], min_point[1], min_point[2], marker='*', linewidths=2.)
-    ax.text(min_point[0], min_point[1], min_point[2]+0.03, r'$Q(r_0)$', fontsize=m_fontsize)
+    ax.text(min_point[0], min_point[1], min_point[2]+0.03, r'$Q(r_0)$', fontsize=m_fontsize, color='0.4')
 
     min_point = find_pair_point(ax=ax, r=R[1], qi=Q[0], qj=Q[1])
     ax.scatter(min_point[0], min_point[1], min_point[2], marker='*', linewidths=2.)
-    ax.text(min_point[0], min_point[1], min_point[2] + 0.03, r'$Q(r_1)$', fontsize=m_fontsize)
+    ax.text(min_point[0], min_point[1], min_point[2] + 0.03, r'$Q(r_1)$', fontsize=m_fontsize, color='0.4')
 
     # 对应轨迹段情况三(作图讲解d_shape遇到Q(r1)和Q(r2)中间有间隔样本点的情况)
     # find_pair_point(ax=ax, r=Q[1], qi=R[0], qj=R[1], label='   R(q1,r0r1)')
@@ -132,7 +134,7 @@ def draw_a():
     ax.set_yticks([])
     ax.set_zticks(np.arange(0.2, 0.5, 0.1))
     ax.view_init(elev=20, azim=130)  # 调整视角
-    plt.savefig("F:\\毕业设计大文件夹\\picture\\chapter\\Fig3-13(a).jpg")
+    plt.savefig("F:\\毕业设计大文件夹\\picture\\chapter\\Fig3-15(a).jpg", dpi=500)
     plt.show()
 
 
@@ -143,17 +145,20 @@ def draw_b():
     R, Q = get_R_and_Q('b')
 
     # 画出轨迹R和Q
-    plot(R, ax, label='R', linestyle='-', linewidth=2, color='0', marker='.')
     plot(Q, ax, label='Q', linestyle='-', linewidth=2, color='blue', marker='H')
+    plot(R, ax, label='R', linestyle='-', linewidth=2, color='0.4', marker='*')
+
     # 为轨迹样本点进行标注
     for i in range(len(R)):
         m_label = r'$r_' + str(i)+'$'
-        ax.text(R[i][0]-0.04, R[i][1]+0.02, R[i][2] + 0.02, m_label, fontsize=m_fontsize)
+        ax.text(R[i][0]-0.04, R[i][1]+0.02, R[i][2] + 0.02, m_label, fontsize=m_fontsize, color='0.4')
     for i in range(len(Q)):
         m_label = r'$q_' + str(i)+'$'
-        if i==1:
-            m_label=r'$q_1=Q(r_0)=Q(r_1)$'
+        # if i==1:
+        #     m_label=r'$q_1=Q(r_0)=Q(r_1)$'
         ax.text(Q[i][0]+0.02, Q[i][1], Q[i][2] + 0.01, m_label, fontsize=m_fontsize, color='blue')
+
+    ax.text(Q[1][0] + 0.04, Q[1][1], Q[1][2] - 0.04, r'$Q(r_0) Q(r_1)$', fontsize=m_fontsize, color='0.4')
 
     ax.plot([R[0, 0], Q[1, 0]], [R[0, 1], Q[1, 1]], [R[0, 2], Q[1, 2]], linestyle='--', linewidth=1, color='green')
     ax.plot([R[1, 0], Q[1, 0]], [R[1, 1], Q[1, 1]], [R[1, 2], Q[1, 2]], linestyle='--', linewidth=1, color='green')
@@ -168,7 +173,7 @@ def draw_b():
     ax.set_yticks([])
     ax.set_zticks(np.arange(0.2, 0.5, 0.1))
     ax.view_init(elev=20, azim=240)  # 调整视角
-    plt.savefig("F:\\毕业设计大文件夹\\picture\\chapter\\Fig3-13(b).jpg")
+    plt.savefig("F:\\毕业设计大文件夹\\picture\\chapter\\Fig3-15(b).jpg", dpi=500)
     plt.show()
 
 
@@ -179,27 +184,26 @@ def draw_c():
     R, Q = get_R_and_Q('c')
 
     # 画出轨迹R和Q
-    plot(R, ax, label='R', linestyle='-', linewidth=2, color='0', marker='.')
     plot(Q, ax, label='Q', linestyle='-', linewidth=2, color='blue', marker='H')
+    plot(R, ax, label='R', linestyle='-', linewidth=2, color='0.4', marker='*')
+
     # 为轨迹样本点进行标注
     for i in range(len(R)):
         m_label = r'$r_' + str(i) + '$'
-        ax.text(R[i][0] - 0.01, R[i][1] + 0.02, R[i][2] + 0.02, m_label, fontsize=m_fontsize)
+        ax.text(R[i][0] - 0.01, R[i][1] + 0.02, R[i][2] + 0.02, m_label, fontsize=m_fontsize, color='0.4')
     for i in range(len(Q)):
         m_label = r'$q_' + str(i) + '$'
-        # if i == 1:
-        #     m_label = r'$q_1=Q(r_0)=Q(r_1)$'
         ax.text(Q[i][0] + 0.01, Q[i][1], Q[i][2] + 0.005, m_label, fontsize=m_fontsize, color='blue')
 
     # 寻找R0对应点
     min_point = find_pair_point(ax=ax, r=R[0], qi=Q[0], qj=Q[1])
     ax.scatter(min_point[0], min_point[1], min_point[2], marker='*', linewidths=2.)
-    ax.text(min_point[0]+0.01, min_point[1], min_point[2] + 0.01, r'$Q(r_0)$', fontsize=m_fontsize)
+    ax.text(min_point[0]+0.01, min_point[1], min_point[2] + 0.01, r'$Q(r_0)$', fontsize=m_fontsize, color='0.4')
 
     # 寻找R1对应点
     min_point = find_pair_point(ax=ax, r=R[1], qi=Q[2], qj=Q[3])
     ax.scatter(min_point[0], min_point[1], min_point[2], marker='*', linewidths=2.)
-    ax.text(min_point[0]+0.01, min_point[1], min_point[2] - 0.01, r'$Q(r_1)$', fontsize=m_fontsize)
+    ax.text(min_point[0]+0.01, min_point[1], min_point[2] - 0.01, r'$Q(r_1)$', fontsize=m_fontsize, color='0.4')
 
     # ax.plot([R[0, 0], Q[1, 0]], [R[0, 1], Q[1, 1]], [R[0, 2], Q[1, 2]], linestyle='--', linewidth=1, color='green')
     # ax.plot([R[1, 0], Q[1, 0]], [R[1, 1], Q[1, 1]], [R[1, 2], Q[1, 2]], linestyle='--', linewidth=1, color='green')
@@ -214,12 +218,27 @@ def draw_c():
     ax.set_yticks([])
     ax.set_zticks(np.arange(0.2, 0.5, 0.1))
     ax.view_init(elev=20, azim=240)  # 调整视角
-    plt.savefig("F:\\毕业设计大文件夹\\picture\\chapter\\Fig3-13(c).jpg")
+    plt.savefig("F:\\毕业设计大文件夹\\picture\\chapter\\Fig3-15(c).jpg", dpi=500)
     plt.show()
 
 if __name__=='__main__':
     # draw_a()
     # draw_b()
     draw_c()
+
+    # 裁剪
+    print('裁剪中...')
+    path = "F:\\毕业设计大文件夹\\picture\\chapter\\"
+    m_files = ['Fig3-15(a).jpg', 'Fig3-15(b).jpg', 'Fig3-15(c).jpg' ]
+    for m_file in m_files:
+        img = Image.open(path + m_file)  # 打开当前路径图像
+        # print(img.size)
+        # 左，上，右，下
+        box1 = (530, 230, 2900, 2150)  # 设置图像裁剪区域
+        image1 = img.crop(box1)  # 图像裁剪
+        # image1.show()
+        # print(image1.size)
+        image1.save(path + 'cut_' + m_file)  # 存储当前区域
+        print('path = ', path + 'cut_' + m_file)
 
 

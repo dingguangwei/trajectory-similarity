@@ -153,7 +153,7 @@ def draw_3(fig, ax):
     # 获取DTW对应点
     DTW_pair = get_pair_index_in_DTW(Q=R, R=Q)
     print(DTW_pair)
-    for i in range(4, len(DTW_pair)):
+    for i in range(1, len(DTW_pair)):
         pair = DTW_pair[i]
         draw_line(ax, Q[pair[1]], R[pair[0]])
 
@@ -191,7 +191,7 @@ def draw_4(fig, ax):
     # 获取DTW对应点
     DTW_pair = get_pair_index_in_DTW(Q=R, R=Q)
     print(DTW_pair)
-    for i in range(4, len(DTW_pair)):
+    for i in range(1, len(DTW_pair)):
         pair = DTW_pair[i]
         draw_line(ax, Q[pair[1]], R[pair[0]])
 
@@ -270,8 +270,10 @@ if __name__=='__main__':
 
     # path = draw_1(fig, ax)
     # path = draw_2(fig, ax)
+
     # path = draw_3(fig, ax)
     path = draw_4(fig, ax)
+
     # path = draw_5(fig, ax)
 
     #                                     左     下
