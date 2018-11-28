@@ -9,16 +9,17 @@ def get_Data():
     C = [8, 1.2]
     Q = [A, B, C]
     R = [
+        [1, 4],
+        [1, 3],
         [1,2],
         [2,2],
         [3,2],
         [4, 1],
         [5, 1],
         [8, 1],
-        [9, 3],
-        [10, 3]
+        [9, 1],
     ]
-    S = [[3.3,3], [8,2]]
+    S = [[4.,2.5],  [4.5, 2], [8,2]]
 
     return np.array(R), np.array(S), np.array(Q)
 
@@ -31,9 +32,9 @@ if __name__ == "__main__":
 
     # 画轨迹
     R, S, Q = get_Data()
-    plt.plot(Q[:, 0], Q[:, 1], color='blue', linewidth=1.5, label='Q', marker='*', linestyle='--')
-    plt.plot(R[:, 0], R[:, 1], color='0.1', linewidth=1.5, label='R', marker='H', linestyle=None)
-    plt.plot(S[:, 0], S[:, 1], color='0.4', linewidth=1.5, label='S', marker='H', linestyle=None)
+    plt.plot(Q[:, 0], Q[:, 1], color='blue', linewidth=4, label='Q', marker='H', linestyle='-')
+    plt.plot(R[:, 0], R[:, 1], color='0.4', linewidth=4, label='R', marker='*', linestyle=None)
+    plt.plot(S[:, 0], S[:, 1], color='0.6', linewidth=4, label='S', marker='|', linestyle=None)
 
     for i in range(len(Q)):
         plt.text(Q[i][0] - 0.2, Q[i][1] + 0.3, 'q'+str(i), fontsize=m_fontsize, color='blue')
@@ -56,8 +57,8 @@ if __name__ == "__main__":
     plt.legend(fontsize=m_fontsize)
     plt.xticks(np.arange(0, 12, 1), fontsize=m_fontsize)
     plt.yticks(np.arange(0, 8, 1), fontsize=m_fontsize)
-    # plt.xlim(0, 4)
-    plt.ylim(0, 5)
+    plt.xlim(0, 10)
+    plt.ylim(0, 4)
     plt.xlabel("x", fontsize=m_fontsize)
     plt.ylabel("y", fontsize=m_fontsize)
 

@@ -120,7 +120,7 @@ def BDS_optimization(Q, R, DTW_pair):
         T = []
         if i == 0:
             from_index = 0
-            end_index = get_pair_index_by_key(DTW_pair, i)[0]
+            end_index = get_pair_index_by_key(DTW_pair, i+1)[0]
         elif i != n - 1:
             BDS_pre_i = DTW_BDS_pair[-1][1]
             T.append(BDS_pre_i)
