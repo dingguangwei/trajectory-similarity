@@ -47,6 +47,17 @@ def plot(point_arr, ax, label=None, linestyle='-', linewidth=1., color='0', mark
     ax.plot(x, y, z, label=label, linestyle=linestyle, linewidth=linewidth, color=color, marker=marker)
 
 
+def plot_R(R, ax):
+    plot(R[0:3], ax, label='R', linewidth=3., color='0.4', marker='*')
+    plot(R[2:6], ax, label='R', linewidth=3., color='0.1', marker='*')
+    plot(R[5:8], ax, label='R', linewidth=3., color='0.4', marker='*')
+
+
+def plot_S(S, ax):
+    plot(S[0:4], ax, label='S', linewidth=3., color='0.1', marker='|')
+    plot(S[3:], ax, label='S', linewidth=3., color='0.6', marker='|')
+
+
 if __name__=='__main__':
     fig = plt.figure()
     ax = fig.add_subplot(111, projection='3d')
@@ -54,9 +65,9 @@ if __name__=='__main__':
 
     Q, R, S = get_data()
 
-    plot(Q, ax, label='Q', linewidth=2., color='blue', marker='H')
-    plot(R, ax, label='R', linewidth=2., color='0.4', marker='*')
-    plot(S, ax, label='S', linewidth=2., color='0.6', marker='|')
+    plot(Q, ax, label='Q', linewidth=3., color='blue', marker='H')
+    plot_R(R, ax)
+    plot_S(S, ax)
 
     for i in range(len(Q)):
         ax.text(Q[i, 0], Q[i, 1]-0., Q[i, 2], '$q_'+str(i)+'$', fontsize=m_fontsize, color='blue')
@@ -88,5 +99,5 @@ if __name__=='__main__':
     # ax.set_zlim(0, 10)
     plt.subplots_adjust(top=1, bottom=0, right=1, left=0, hspace=0, wspace=0)
     ax.view_init(elev=20, azim=220)  # 调整视角
-    plt.savefig("F:\\毕业设计大文件夹\\picture\\chapter4\\Fig4_11.jpg", dpi=300)
+    plt.savefig("F:\\毕业设计大文件夹\\picture\\ppt图片\\Fig4_11.jpg", dpi=300)
     plt.show()

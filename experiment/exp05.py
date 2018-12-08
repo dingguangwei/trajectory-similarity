@@ -2,8 +2,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-label = ['DTW', 'SDTW', 'PTM', 'STS']
-name_list = ['1km', '5km', '10km']
+label = ['DTW', 'SDTW', 'PTM', 'DST']
+name_list = ['0.5km', '2km', '5km']
 num_list = []
 x = []
 def get_data_GL():
@@ -16,7 +16,7 @@ def get_data_GL():
     num2 = [0.62,0.785,0.879]  # PTM
     num_list.append(num2)
 
-    num3 = [0.942, 0.956, 0.978]  # STS
+    num3 = [0.942, 0.956, 0.978]  # DST
     num_list.append(num3)
 
     total_width, n = 0.4, len(num_list)
@@ -27,7 +27,7 @@ def get_data_GL():
     x.append(list(np.array(x[2]) + width))
 
     m_title = 'GeoLife'
-    path = 'F:/毕业设计大文件夹/picture/exp/exp05_GL.jpg'
+    path = 'F:/毕业设计大文件夹/picture/exp/Fig5-5(a).jpg'
     return num_list, x, width, name_list, label, m_title, path
 
 
@@ -52,13 +52,13 @@ def get_data_NA():
     x.append(list(np.array(x[2]) + width))
 
     m_title = 'North America Road Network'
-    path='F:/毕业设计大文件夹/picture/exp/exp05_NA.jpg'
+    path='F:/毕业设计大文件夹/picture/exp/Fig5-5(b).jpg'
     return num_list, x, width, name_list, label, m_title, path
 
 
 if __name__=='__main__':
-    num_list, x, width, name_list, label, m_title, path = get_data_GL()
-    # num_list, x, width, name_list, label, m_title, path = get_data_NA()
+    # num_list, x, width, name_list, label, m_title, path = get_data_GL()
+    num_list, x, width, name_list, label, m_title, path = get_data_NA()
 
     m_fontsize = 14
     color_list = ['cornflowerblue', 'lightsteelblue', 'lightsalmon', 'rosybrown']
@@ -68,12 +68,13 @@ if __name__=='__main__':
     plt.xticks(x[1], name_list, fontsize=m_fontsize)
     plt.yticks(np.arange(0, 1.1, 0.2), fontsize=m_fontsize)
 
-    plt.ylim((0, 1.5))
+    plt.ylim((0, 1.2))
 
-    plt.xlabel('L(Q)', fontsize=m_fontsize)
-    plt.ylabel('P_mul', fontsize=m_fontsize)
+    plt.xlabel('Length of query trajectories', fontsize=m_fontsize)
+    plt.ylabel('Precision rate', fontsize=m_fontsize)
 
-    plt.legend()
-    plt.title(m_title, fontsize=m_fontsize)
+    plt.legend(ncol=2)
+    # plt.title(m_title, fontsize=m_fontsize)
+    plt.subplots_adjust(top=0.97, bottom=0.15, right=0.99, left=0.12, hspace=0, wspace=0)
     plt.savefig(path)
     plt.show()

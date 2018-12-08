@@ -3,7 +3,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-m_fontsize=16
+m_fontsize=20
 
 def cos_fun(x):
     return np.cos(x)
@@ -31,18 +31,18 @@ def draw_sigmoid():
     plt.plot(x, y)
     plt.plot([-5, 5], [1, 1], linewidth=1., linestyle='--')
     plt.text(0.5, 1.5, 'y', fontsize=m_fontsize)
-    plt.text(1, 0.5, 'y=1/(1+e^(-x))', fontsize=m_fontsize)
+    plt.text(1, 0.5, '$y=1/(1+e^x)$', fontsize=m_fontsize)
 
 
 def draw_fu_sigmoid():
     miu = 0.3
     x = np.linspace(-5, 5, 200)
     y = 1/(1+np.power(np.e, x))+0.3
-    plt.plot(x, y)
+    plt.plot(x, y, linewidth=3., color='0')
     plt.plot([-5, 5], [miu, miu], linewidth=1., linestyle='--')
     plt.plot([-5, 5], [1+miu, 1+miu], linewidth=1., linestyle='--')
     plt.text(0.5, 1.6, '$I_{shape}$', fontsize=m_fontsize)
-    plt.text(1, 0.5, 'y=1/(1+e^x)+μ', fontsize=m_fontsize)
+    plt.text(-5, 0.5, '$y=1/(1+e^x)+μ$', fontsize=m_fontsize)
     plt.text(0.3, miu, 'μ', fontsize=m_fontsize)
     plt.text(0.3, 1+miu, '1+μ', fontsize=m_fontsize)
 
@@ -62,8 +62,8 @@ if __name__=='__main__':
     fig = plt.figure()
 
     # draw_cos()
-    # draw_sigmoid()
-    draw_fu_sigmoid()
+    draw_sigmoid()
+    # draw_fu_sigmoid()
     # draw_g_x()
 
     ax = plt.gca()
@@ -73,11 +73,15 @@ if __name__=='__main__':
     ax.spines['left'].set_position(('data', 0))
     ax.spines['right'].set_position(('data', 0))
 
-    plt.xticks(np.arange(-5, 6, 1), fontsize=m_fontsize)
-    plt.yticks(np.arange(0.5, 2, 0.5), fontsize=m_fontsize)
+    # plt.xticks(np.arange(-5, 6, 1), fontsize=m_fontsize)
+    # plt.yticks(np.arange(0.5, 2, 0.5), fontsize=m_fontsize)
     # plt.xlim(0, 4)
     plt.ylim(0, 1.6)
-    plt.xlabel(r'$sim_{shape}$', fontsize=m_fontsize)
+    plt.xticks([0])
+    plt.yticks([])
+    # plt.text(3, -0.15, r'$sim_{shape}$', fontsize=m_fontsize)
+    # plt.xlabel(r'$sim_{shape}$', fontsize=m_fontsize)
+    plt.text(5, -0.15, 'x', fontsize=m_fontsize)
     # plt.ylabel('y')
 
     plt.show()

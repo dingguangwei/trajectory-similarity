@@ -2,7 +2,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-label = ['DTW', 'SDTW', 'PTM', 'STS']
+label = ['DTW', 'SDTW', 'PTM', 'DST']
 name_list = [0.39, 0.395, 0.4,0.405,0.41,0.415]
 num_list = []
 x = []

@@ -38,7 +38,7 @@ def cut():
     # 裁剪
     print('裁剪中...')
     path = "F:\\毕业设计大文件夹\\picture\\chapter4\\"
-    m_files = ['Fig4-3(a).jpg', 'Fig4-3(b).jpg', 'Fig4-3(c).jpg']
+    m_files = ['Fig4-3(0).jpg', 'Fig4-3(a).jpg', 'Fig4-3(b).jpg', 'Fig4-3(c).jpg']
 
     for m_file in m_files:
         img = Image.open(path + m_file)  # 打开当前路径图像
@@ -50,6 +50,44 @@ def cut():
         # print(image1.size)
         image1.save(path + 'cut_' + m_file)  # 存储当前区域
         print('path = ', path + 'cut_' + m_file)
+
+
+def draw_0(fig, ax):
+    # 轨迹R
+    r0 = [0.1, 0, 0.1]
+    r1 = [0, 0.3, 0.3]
+    ax.plot([r0[0], r1[0]], [r0[1], r1[1]], [r0[2], r1[2]], linestyle='-', linewidth=2, color='0.4', marker='*')
+    ax.text(r0[0], r0[1] - 0.03, r0[2] + 0.01, r'$r_0$', fontsize=m_fontsize, color='0.4')
+    ax.text(r1[0], r1[1] - 0.02, r1[2] + 0.01, r'$r_1$', fontsize=m_fontsize, color='0.4')
+
+    # 断点
+    # break_point_list = []
+    # m_step = 0.03
+    # for z in np.arange(0.1 + m_step, 0.3, m_step):
+    #     x = -(z - 0.1) / 2 + 0.1
+    #     y = 3 * (z - 0.1) / 2
+    #     break_point_list.append([x, y, z])
+    # print('break_point_list=\n', break_point_list)
+    # break_point_list = np.array(break_point_list)
+    # for i in range(len(break_point_list)):
+    #     ax.scatter(break_point_list[i, 0], break_point_list[i, 1], break_point_list[i, 2], marker='.', linewidths=2.5,
+    #                color='0.4')
+    #     ax.text(break_point_list[i, 0], break_point_list[i, 1] - 0.04, break_point_list[i, 2] + 0.015, r'$bp_' + str(i)+'$',
+    #             fontsize=m_fontsize, color='0.4')
+
+    # 轨迹Q（情况一）
+    q0 = [0.1, 0.2, 0.1]
+    q1 = [0., 0.3, 0.2]
+    plot([q0, q1], ax=ax, label=None, linestyle='-', linewidth=2, color='blue', marker='H')
+    ax.text(q0[0], q0[1] - 0.03, q0[2] - 0.03, r'$q_0$', fontsize=m_fontsize, color='blue')
+    ax.text(q1[0], q1[1] - 0.03, q1[2] - 0.04, r'$q_1$', fontsize=m_fontsize, color='blue')
+
+    find_pair_point(ax, r0, q0, q1)
+    find_pair_point(ax, r1, q0, q1)
+    # for i in range(len(break_point_list)):
+    #     find_pair_point(ax, break_point_list[i], q0, q1)
+
+    return "F:\\毕业设计大文件夹\\picture\\chapter4\\Fig4-3(0).jpg"
 
 
 def draw_a(fig, ax):
@@ -168,13 +206,15 @@ def draw_c(fig, ax):
     return "F:\\毕业设计大文件夹\\picture\\chapter4\\Fig4-3(c).jpg"
 
 
+
 if __name__=='__main__':
     fig = plt.figure()
     ax = fig.add_subplot(111, projection='3d')
 
+    path = draw_0(fig, ax)
     # path = draw_a(fig, ax)
     # path = draw_b(fig, ax)
-    path = draw_c(fig, ax)
+    # path = draw_c(fig, ax)
 
     # ax.legend()  # 显示图例
     ax.set_xlabel('x', fontsize=m_fontsize)
