@@ -2,7 +2,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-label = ['DTW', 'SDTW', 'PTM', 'DST']
+label = ['DTW', 'SDTW', 'PTM', 'STS']
 name_list = ['0.5km', '2km', '5km']
 num_list = []
 x = []
@@ -16,7 +16,7 @@ def get_data_GL():
     num2 = [0.62,0.785,0.879]  # PTM
     num_list.append(num2)
 
-    num3 = [0.942, 0.956, 0.978]  # DST
+    num3 = [0.942, 0.956, 0.978]  # STS
     num_list.append(num3)
 
     total_width, n = 0.4, len(num_list)
@@ -68,12 +68,12 @@ if __name__=='__main__':
     plt.xticks(x[1], name_list, fontsize=m_fontsize)
     plt.yticks(np.arange(0, 1.1, 0.2), fontsize=m_fontsize)
 
-    plt.ylim((0, 1.2))
+    plt.ylim((0, 1.3))
 
     plt.xlabel('Length of query trajectories', fontsize=m_fontsize)
     plt.ylabel('Precision rate', fontsize=m_fontsize)
 
-    plt.legend(ncol=2)
+    plt.legend(ncol=2,fontsize=m_fontsize)
     # plt.title(m_title, fontsize=m_fontsize)
     plt.subplots_adjust(top=0.97, bottom=0.15, right=0.99, left=0.12, hspace=0, wspace=0)
     plt.savefig(path)

@@ -28,10 +28,11 @@ def draw_cos():
 def draw_sigmoid():
     x = np.linspace(-5, 5, 200)
     y = 1/(1+np.power(np.e, -x))
-    plt.plot(x, y)
+    plt.plot(x, y, linewidth=3., color='0')
     plt.plot([-5, 5], [1, 1], linewidth=1., linestyle='--')
     plt.text(0.5, 1.5, 'y', fontsize=m_fontsize)
     plt.text(1, 0.5, '$y=1/(1+e^x)$', fontsize=m_fontsize)
+    return "F:\\毕业设计大文件夹\\picture\\chapter4\\Fig4_9.jpg"
 
 
 def draw_fu_sigmoid():
@@ -61,9 +62,10 @@ def draw_g_x():
 if __name__=='__main__':
     fig = plt.figure()
 
+    path=None
     # draw_cos()
-    draw_sigmoid()
-    # draw_fu_sigmoid()
+    # path = draw_sigmoid()
+    draw_fu_sigmoid()
     # draw_g_x()
 
     ax = plt.gca()
@@ -77,13 +79,14 @@ if __name__=='__main__':
     # plt.yticks(np.arange(0.5, 2, 0.5), fontsize=m_fontsize)
     # plt.xlim(0, 4)
     plt.ylim(0, 1.6)
-    plt.xticks([0])
+    plt.xticks([])
     plt.yticks([])
     # plt.text(3, -0.15, r'$sim_{shape}$', fontsize=m_fontsize)
     # plt.xlabel(r'$sim_{shape}$', fontsize=m_fontsize)
     plt.text(5, -0.15, 'x', fontsize=m_fontsize)
     # plt.ylabel('y')
-
+    if path is not None:
+        plt.savefig(path, dpi=600)
     plt.show()
 
 

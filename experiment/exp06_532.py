@@ -2,7 +2,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-label = ['DTW-2d', 'DTW-3d', 'DST']
+label = ['DTW-2d', 'DTW-3d', 'STS']
 name_list = ['GeoLife', 'North America Road Network']
 num_list = []
 x = []
@@ -70,9 +70,9 @@ if __name__=='__main__':
     plt.xlabel('', fontsize=m_fontsize)
     plt.ylabel('Precision', fontsize=m_fontsize)
 
-    plt.legend()
+    plt.legend(fontsize=m_fontsize)
     # plt.title(m_title, fontsize=m_fontsize)
-    plt.subplots_adjust(top=0.97, bottom=0.07, right=0.99, left=0.12, hspace=0, wspace=0)
+    plt.subplots_adjust(top=0.97, bottom=0.07, right=0.95, left=0.12, hspace=0, wspace=0)
     plt.savefig(path)
     plt.show()
 
