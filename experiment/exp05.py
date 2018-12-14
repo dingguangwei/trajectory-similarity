@@ -7,13 +7,13 @@ name_list = ['0.5km', '2km', '5km']
 num_list = []
 x = []
 def get_data_GL():
-    num0 = [0.56,0.683,0.776]  # DTW
+    num0 = [0.76,0.733,0.776]  # DTW
     num_list.append(num0)
 
-    num1 = [0.65,0.848,0.93]  # SDTW
+    num1 = [0.83,0.848,0.93]  # SDTW
     num_list.append(num1)
 
-    num2 = [0.62,0.785,0.879]  # PTM
+    num2 = [0.74,0.785,0.829]  # PTM
     num_list.append(num2)
 
     num3 = [0.942, 0.956, 0.978]  # STS
@@ -32,13 +32,13 @@ def get_data_GL():
 
 
 def get_data_NA():
-    num0 = [0.64,0.723,0.776]
+    num0 = [0.74,0.723,0.776]
     num_list.append(num0)
 
-    num1 = [0.75,0.878,0.933]
+    num1 = [0.88,0.878,0.933]
     num_list.append(num1)
 
-    num2 = [0.694,0.755,0.839]
+    num2 = [0.744,0.755,0.839]
     num_list.append(num2)
 
     num3 = [0.962, 0.916, 0.978]

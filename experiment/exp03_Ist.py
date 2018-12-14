@@ -10,18 +10,18 @@ def get_data():
 
     value_20 = np.zeros((len(x_list), 2))
     value_20[:, 0] = [i for i in range(1, len(x_list)+1)]
-    value_20[:, 1] = [0.923, 0.964, 0.985, 0.970, 0.835,
+    value_20[:, 1] = [0.923, 0.980, 0.985, 0.970, 0.835,
                       0.805]
     print(value_20)
 
     value_40 = np.zeros(shape=(len(x_list), 2))
     value_40[:, 0] = range(1, len(x_list)+1)
-    value_40[:, 1] = [0.870, 0.936, 0.953, 0.908, 0.758,
+    value_40[:, 1] = [0.870, 0.947, 0.953, 0.908, 0.758,
                       0.694]
 
     value_60 = np.zeros(shape=(len(x_list), 2))
     value_60[:, 0] = range(1, len(x_list)+1)
-    value_60[:, 1] = [0.820, 0.871, 0.893, 0.880, 0.638,
+    value_60[:, 1] = [0.820, 0.885, 0.893, 0.860, 0.638,
                       0.609]
 
     path = 'F:/毕业设计大文件夹/picture/exp/Fig5-3(a).jpg'
@@ -32,18 +32,18 @@ def get_data():
 def get_data_NA():
     value_20 = np.zeros((len(x_list), 2))
     value_20[:, 0] = [i for i in range(1, len(x_list) + 1)]
-    value_20[:, 1] = [0.863, 0.904, 0.973, 0.986, 0.955,
+    value_20[:, 1] = [0.863, 0.904, 0.963, 0.986, 0.965,
                       0.914]
     print(value_20)
 
     value_40 = np.zeros(shape=(len(x_list), 2))
     value_40[:, 0] = range(1, len(x_list) + 1)
-    value_40[:, 1] = [0.820, 0.876, 0.953, 0.940, 0.928,
+    value_40[:, 1] = [0.820, 0.856, 0.933, 0.960, 0.938,
                       0.874]
 
     value_60 = np.zeros(shape=(len(x_list), 2))
     value_60[:, 0] = range(1, len(x_list) + 1)
-    value_60[:, 1] = [0.760, 0.811, 0.923, 0.92, 0.888,
+    value_60[:, 1] = [0.760, 0.811, 0.903, 0.92, 0.898,
                       0.819]
 
     path = 'F:/毕业设计大文件夹/picture/exp/Fig5-3(b).jpg'
@@ -54,8 +54,8 @@ if __name__=='__main__':
     fig = plt.figure()
     m_fontsize = 16
 
-    value_20, value_40, value_60, x_list, m_title, path = get_data()
-    # value_20, value_40, value_60, x_list, m_title, path = get_data_NA()
+    # value_20, value_40, value_60, x_list, m_title, path = get_data()
+    value_20, value_40, value_60, x_list, m_title, path = get_data_NA()
 
     plt.plot(value_20[:, 0], value_20[:, 1], color='0.2', linewidth=2, label='k=20', marker='P', linestyle=None)
     plt.plot(value_40[:, 0], value_40[:, 1], color='0.3', linewidth=2, label='k=40', marker='o', linestyle=None)
