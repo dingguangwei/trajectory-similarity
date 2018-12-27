@@ -51,7 +51,7 @@ def cut():
     for m_file in m_files:
         img = Image.open(path + m_file)  # 打开当前路径图像
         # 左，上，右，下
-        box1 = (310, 230, 1600, 1350)  # 设置图像裁剪区域
+        box1 = (200, 230, 1600, 1350)  # 设置图像裁剪区域
         image1 = img.crop(box1)  # 图像裁剪
         # print(img.size)
         # image1.show()
@@ -166,9 +166,9 @@ if __name__=='__main__':
     path = draw_b(fig, ax)
 
     # ax.legend()  # 显示图例
-    ax.set_xlabel('x/m', fontsize=m_fontsize)
-    ax.set_ylabel('y/m', fontsize=m_fontsize)
-    ax.set_zlabel('z/m', fontsize=m_fontsize)
+    ax.set_xlabel('x/m', fontsize=m_fontsize-3)
+    ax.set_ylabel('y/m', fontsize=m_fontsize-3)
+    ax.set_zlabel('z/m', fontsize=m_fontsize-3)
     # 设置坐标轴刻度
     ax.set_xticks([])
     ax.set_yticks([])

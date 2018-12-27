@@ -43,7 +43,7 @@ def cut():
     for m_file in m_files:
         img = Image.open(path + m_file)  # 打开当前路径图像
         # 左，上，右，下
-        box1 = (310, 230, 1600, 1350)  # 设置图像裁剪区域
+        box1 = (200, 230, 1600, 1350)  # 设置图像裁剪区域
         image1 = img.crop(box1)  # 图像裁剪
         # print(img.size)
         # image1.show()
@@ -160,7 +160,9 @@ def draw_b(fig, ax):
     find_pair_point(ax, r0, q0, q0)
     find_pair_point(ax, r1, q0, q0)
     for i in range(len(break_point_list)):
-        find_pair_point(ax, break_point_list[i], q0, q0)
+        ax.plot([break_point_list[i][0], q0[0]], [break_point_list[i][1], q0[1]], [break_point_list[i][2], q0[2]], linestyle='--', linewidth=1,
+                color='green')
+        # find_pair_point(ax, break_point_list[i], q0, q0)
     return "F:\\毕业设计大文件夹\\picture\\chapter4\\Fig4-3(b).jpg"
 
 
@@ -211,15 +213,15 @@ if __name__=='__main__':
     fig = plt.figure()
     ax = fig.add_subplot(111, projection='3d')
 
-    path = draw_0(fig, ax)
+    # path = draw_0(fig, ax)
     # path = draw_a(fig, ax)
-    # path = draw_b(fig, ax)
+    path = draw_b(fig, ax)
     # path = draw_c(fig, ax)
 
     # ax.legend()  # 显示图例
-    ax.set_xlabel('x/m', fontsize=m_fontsize)
-    ax.set_ylabel('y/m', fontsize=m_fontsize)
-    ax.set_zlabel('z/m', fontsize=m_fontsize)
+    ax.set_xlabel('x/m', fontsize=m_fontsize-3)
+    ax.set_ylabel('y/m', fontsize=m_fontsize-3)
+    ax.set_zlabel('z/m', fontsize=m_fontsize-3)
     # 设置坐标轴刻度
     ax.set_xticks([])
     ax.set_yticks([])

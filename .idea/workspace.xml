@@ -3,48 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="91198781-803d-49ae-8514-c7e749cd03f8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiment/exp05.py" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/exp05.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiment/exp06_532.py" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/exp06_532.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiment/exp07_533.py" beforeDir="false" afterPath="$PROJECT_DIR$/experiment/exp07_533.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/combination/exp1.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/combination/exp1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/combination/exp3_draw.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/combination/exp3_draw.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/drawer_package/Fig3-1_3-1-2.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/drawer_package/Fig3-1_3-1-2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/drawer_package/Fig3-2_PTM_3-1-1.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/drawer_package/Fig3-2_PTM_3-1-1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/drawer_package/Fig3-3_PTM_draw_time_3-1-1.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/drawer_package/Fig3-3_PTM_draw_time_3-1-1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/drawer_package/Fig3_10_Fig3_13.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/drawer_package/Fig3_10_Fig3_13.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/drawer_package/Fig3_11_DTW-BDS(delete).py" beforeDir="false" afterPath="$PROJECT_DIR$/util/drawer_package/Fig3_11_DTW-BDS(delete).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/drawer_package/Fig3_12_(delete).py" beforeDir="false" afterPath="$PROJECT_DIR$/util/drawer_package/Fig3_12_(delete).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/drawer_package/Fig3_14_BDS_DTW_amend_902_3d.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/drawer_package/Fig3_14_BDS_DTW_amend_902_3d.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/drawer_package/Fig3_15.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/drawer_package/Fig3_15.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/drawer_package/Fig3_4_my_function_draw.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/drawer_package/Fig3_4_my_function_draw.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/drawer_package/Fig3_5_BDS_draw_3_3_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/drawer_package/Fig3_5_BDS_draw_3_3_1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/drawer_package/Fig3_7_BDS_weakness_draw_2d.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/drawer_package/Fig3_7_BDS_weakness_draw_2d.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/drawer_package/Fig3_8_BDS_weakness_draw.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/drawer_package/Fig3_8_BDS_weakness_draw.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/drawer_package/Fig3_9_DTW_benefit_draw_3d.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/drawer_package/Fig3_9_DTW_benefit_draw_3d.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/drawer_package/Fig4_11.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/drawer_package/Fig4_11.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/drawer_package/Fig4_1_EU_que_dian.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/drawer_package/Fig4_1_EU_que_dian.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/util/drawer_package/Fig4_1_new.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/drawer_package/Fig4_1_new.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/util/drawer_package/Fig4_3_break_point.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/drawer_package/Fig4_3_break_point.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/util/drawer_package/Fig4_4_break_point.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/drawer_package/Fig4_4_break_point.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/util/drawer_package/Fig4_5_yi_mian_zhi_xian.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/drawer_package/Fig4_5_yi_mian_zhi_xian.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/drawer_package/Fig4_6.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/drawer_package/Fig4_6.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/util/drawer_package/Fig4_7_angle.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/drawer_package/Fig4_7_angle.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/util/drawer_package/Fig4_8.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/drawer_package/Fig4_8.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/drawer_package/chapter2/Fig2-1.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/drawer_package/chapter2/Fig2-1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/drawer_package/chapter2/Fig2-11.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/drawer_package/chapter2/Fig2-11.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/drawer_package/chapter2/Fig2-12.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/drawer_package/chapter2/Fig2-12.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/drawer_package/chapter2/Fig2-2.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/drawer_package/chapter2/Fig2-2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/drawer_package/d0_2d.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/drawer_package/d0_2d.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/drawer_package/d0_3d.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/drawer_package/d0_3d.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/drawer_package/d0_util_3d.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/drawer_package/d0_util_3d.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/drawer_package/d4_draw_math_function.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/drawer_package/d4_draw_math_function.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/drawer_package/d903_BDS_DTW_amend_3d(delete).py" beforeDir="false" afterPath="$PROJECT_DIR$/util/drawer_package/d903_BDS_DTW_amend_3d(delete).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/drawer_package/d905_BDS_DTW_demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/drawer_package/d905_BDS_DTW_demo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/drawer_package/d906_space_time_draw.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/drawer_package/d906_space_time_draw.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/drawer_package/ppt/Fig3_10_Fig3_13(delete).py" beforeDir="false" afterPath="$PROJECT_DIR$/util/drawer_package/ppt/Fig3_10_Fig3_13(delete).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/drawer_package/ppt/Fig3_10_Fig3_13.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/drawer_package/ppt/Fig3_10_Fig3_13.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/drawer_package/ppt/Fig3_7&amp;Fig3_8.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/drawer_package/ppt/Fig3_7&amp;Fig3_8.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/drawer_package/ppt/Fig4_11.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/drawer_package/ppt/Fig4_11.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -58,72 +22,108 @@
       <file leaf-file-name="Fig3_8_BDS_weakness_draw.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/util/drawer_package/Fig3_8_BDS_weakness_draw.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
+            <state relative-caret-position="759">
               <caret line="65" column="17" selection-start-line="65" selection-start-column="17" selection-end-line="65" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Fig3_9_DTW_benefit_draw_3d.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/util/drawer_package/Fig3_9_DTW_benefit_draw_3d.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
-              <folding>
-                <element signature="e#15#46#0" expanded="true" />
-                <element signature="e#327#1189#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Fig3_10_Fig3_13.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/util/drawer_package/Fig3_10_Fig3_13.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-204">
-              <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
-              <folding>
-                <element signature="e#898#1003#0" />
-                <element signature="e#1039#1131#0" />
-                <element signature="e#1171#2140#0" />
-                <element signature="e#3327#3612#0" />
-                <element signature="e#3640#4595#0" />
-                <element signature="e#4633#6106#0" />
-                <element signature="e#6150#8268#0" />
-                <element signature="e#8307#10427#0" />
-                <element signature="e#10463#12975#0" />
-                <element signature="e#13009#13977#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Fig3_11_DTW-BDS(delete).py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/util/drawer_package/Fig3_11_DTW-BDS(delete).py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
       <file leaf-file-name="Fig3_14_BDS_DTW_amend_902_3d.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/util/drawer_package/Fig3_14_BDS_DTW_amend_902_3d.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
+            <state relative-caret-position="924">
               <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Fig3_15.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Fig3_15.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/util/drawer_package/Fig3_15.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="136" column="20" selection-start-line="136" selection-start-column="20" selection-end-line="136" selection-end-column="20" />
+            <state relative-caret-position="361">
+              <caret line="230" lean-forward="true" selection-start-line="230" selection-end-line="230" />
               <folding>
                 <element signature="e#239#480#0" />
                 <element signature="e#538#1224#0" />
                 <element signature="e#1255#2386#0" />
-                <element signature="e#4312#5741#0" />
-                <element signature="e#5762#7588#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Fig4_1_EU_que_dian.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util/drawer_package/Fig4_1_EU_que_dian.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="19" column="11" lean-forward="true" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Fig4_1_new.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util/drawer_package/Fig4_1_new.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="130" column="13" selection-start-line="130" selection-start-column="13" selection-end-line="130" selection-end-column="13" />
+              <folding>
+                <element signature="e#413#1357#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Fig4_3_break_point.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/util/drawer_package/Fig4_3_break_point.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="162" column="102" selection-start-line="162" selection-start-column="102" selection-end-line="162" selection-end-column="102" />
+              <folding>
+                <element signature="e#1796#3431#0" />
+                <element signature="e#3459#5064#0" />
+                <element signature="e#6676#8388#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Fig4_4_break_point.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util/drawer_package/Fig4_4_break_point.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="166" lean-forward="true" selection-start-line="166" selection-end-line="166" />
+              <folding>
+                <element signature="e#380#621#0" />
+                <element signature="e#679#1365#0" />
+                <element signature="e#1901#3266#0" />
+                <element signature="e#3294#6478#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Fig4_8.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util/drawer_package/Fig4_8.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="490">
+              <caret line="166" lean-forward="true" selection-start-line="166" selection-end-line="166" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Fig4_7_angle.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util/drawer_package/Fig4_7_angle.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="97" column="46" lean-forward="true" selection-start-line="97" selection-start-column="23" selection-end-line="97" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Fig4_5_yi_mian_zhi_xian.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util/drawer_package/Fig4_5_yi_mian_zhi_xian.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="65" column="20" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -139,8 +139,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>shape=(8, 2)</find>
-      <find>(8, 2)</find>
       <find>0.1</find>
       <find>1.5</find>
       <find>2</find>
@@ -169,9 +167,10 @@
       <find>label='R'*marker='*'</find>
       <find>0.6</find>
       <find>zlabel('Z'</find>
+      <find>Fig4-7</find>
+      <find>find_pair_point</find>
     </findStrings>
     <replaceStrings>
-      <replace>Fig3-15</replace>
       <replace>300</replace>
       <replace>500</replace>
       <replace>marker='H'</replace>
@@ -201,6 +200,7 @@
       <replace>0.6</replace>
       <replace>0.4</replace>
       <replace>zlabel('z/m'</replace>
+      <replace>Fig4-8</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -209,10 +209,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/util/drawer_package/d903_Fig3_12.py" />
-        <option value="$PROJECT_DIR$/util/drawer_package/d903_Fig3_11_all_step.py" />
-        <option value="$PROJECT_DIR$/util/drawer_package/d903_Fig3_10_cut_image.py" />
-        <option value="$PROJECT_DIR$/util/drawer_package/d903_Fig3_10_all_step.py" />
         <option value="$PROJECT_DIR$/util/drawer_package/d1_Fig_3_15_xyzDrawer.py" />
         <option value="$PROJECT_DIR$/util/drawer_package/d6_Fig4_3_break_point.py" />
         <option value="$PROJECT_DIR$/util/drawer_package/d6_Fig4_4_break_point.py" />
@@ -220,7 +216,6 @@
         <option value="$PROJECT_DIR$/util/drawer_package/Fig4_7.py" />
         <option value="$PROJECT_DIR$/util/drawer_package/Fig4_6.py" />
         <option value="$PROJECT_DIR$/util/drawer_package/test.py" />
-        <option value="$PROJECT_DIR$/util/drawer_package/Fig4_7_angle.py" />
         <option value="$PROJECT_DIR$/util/drawer_package/Fig4_9.py" />
         <option value="$PROJECT_DIR$/util/algorithm/DTW_BDS_pair.py" />
         <option value="$PROJECT_DIR$/util/drawer_package/d8_PTM_computing.py" />
@@ -229,7 +224,6 @@
         <option value="$PROJECT_DIR$/util/drawer_package/ppt/Fig3_7&amp;Fig3_8.py" />
         <option value="$PROJECT_DIR$/util/drawer_package/ppt/Fig3_10_Fig3_13(delete).py" />
         <option value="$PROJECT_DIR$/util/drawer_package/ppt/Fig3_10_Fig3_13.py" />
-        <option value="$PROJECT_DIR$/util/drawer_package/Fig4_3_break_point.py" />
         <option value="$PROJECT_DIR$/util/drawer_package/Fig4_11.py" />
         <option value="$PROJECT_DIR$/experiment/exp01_eta.py" />
         <option value="$PROJECT_DIR$/experiment_zhaoying/e0_model.py" />
@@ -260,6 +254,12 @@
         <option value="$PROJECT_DIR$/util/drawer_package/Fig3_10_Fig3_13.py" />
         <option value="$PROJECT_DIR$/util/drawer_package/Fig3_14_BDS_DTW_amend_902_3d.py" />
         <option value="$PROJECT_DIR$/util/drawer_package/Fig3_15.py" />
+        <option value="$PROJECT_DIR$/util/drawer_package/Fig4_1_new.py" />
+        <option value="$PROJECT_DIR$/util/drawer_package/Fig4_4_break_point.py" />
+        <option value="$PROJECT_DIR$/util/drawer_package/Fig4_7_angle.py" />
+        <option value="$PROJECT_DIR$/util/drawer_package/Fig4_8.py" />
+        <option value="$PROJECT_DIR$/util/drawer_package/Fig4_5_yi_mian_zhi_xian.py" />
+        <option value="$PROJECT_DIR$/util/drawer_package/Fig4_3_break_point.py" />
       </list>
     </option>
   </component>
@@ -361,8 +361,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Fig3_15">
-    <configuration name="Fig3_10_Fig3_13" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.Fig4_3_break_point">
+    <configuration name="Fig4_3_break_point" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="trajectory" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -374,13 +374,13 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/drawer_package/Fig3_10_Fig3_13.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/drawer_package/Fig4_3_break_point.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="Fig3_14_BDS_DTW_amend_902_3d" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Fig4_4_break_point" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="trajectory" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -392,13 +392,13 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/drawer_package/Fig3_14_BDS_DTW_amend_902_3d.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/drawer_package/Fig4_4_break_point.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="Fig3_15" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Fig4_5_yi_mian_zhi_xian" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="trajectory" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -410,13 +410,13 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/drawer_package/Fig3_15.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/drawer_package/Fig4_5_yi_mian_zhi_xian.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="Fig3_8_BDS_weakness_draw" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Fig4_7_angle" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="trajectory" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -428,13 +428,13 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/drawer_package/Fig3_8_BDS_weakness_draw.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/drawer_package/Fig4_7_angle.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="Fig3_9_DTW_benefit_draw_3d" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Fig4_8" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="trajectory" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -446,26 +446,26 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/drawer_package/Fig3_9_DTW_benefit_draw_3d.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/drawer_package/Fig4_8.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.Fig3_8_BDS_weakness_draw" />
-      <item itemvalue="Python.Fig3_9_DTW_benefit_draw_3d" />
-      <item itemvalue="Python.Fig3_10_Fig3_13" />
-      <item itemvalue="Python.Fig3_14_BDS_DTW_amend_902_3d" />
-      <item itemvalue="Python.Fig3_15" />
+      <item itemvalue="Python.Fig4_3_break_point" />
+      <item itemvalue="Python.Fig4_4_break_point" />
+      <item itemvalue="Python.Fig4_8" />
+      <item itemvalue="Python.Fig4_7_angle" />
+      <item itemvalue="Python.Fig4_5_yi_mian_zhi_xian" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Fig3_15" />
-        <item itemvalue="Python.Fig3_14_BDS_DTW_amend_902_3d" />
-        <item itemvalue="Python.Fig3_10_Fig3_13" />
-        <item itemvalue="Python.Fig3_9_DTW_benefit_draw_3d" />
-        <item itemvalue="Python.Fig3_8_BDS_weakness_draw" />
+        <item itemvalue="Python.Fig4_3_break_point" />
+        <item itemvalue="Python.Fig4_5_yi_mian_zhi_xian" />
+        <item itemvalue="Python.Fig4_7_angle" />
+        <item itemvalue="Python.Fig4_8" />
+        <item itemvalue="Python.Fig4_4_break_point" />
       </list>
     </recent_temporary>
   </component>
@@ -506,20 +506,20 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.190625" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32715377" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.261723" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3293348" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.261723" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.11014177" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.25845146" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.27589968" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32715377" />
     </layout>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -579,41 +579,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/util/drawer_package/Fig4_6.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="126" column="7" selection-start-line="126" selection-start-column="7" selection-end-line="126" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/drawer_package/Fig4_5_yi_mian_zhi_xian.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/drawer_package/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="41" column="26" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/drawer_package/Fig4_7_angle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2134">
-          <caret line="99" column="43" selection-start-line="99" selection-start-column="43" selection-end-line="99" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Anaconda/Lib/site-packages/mpl_toolkits/mplot3d/axes3d.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="857" selection-start-line="857" selection-end-line="857" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/util/drawer_package/d8_PTM_computing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="282">
@@ -661,13 +626,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/drawer_package/Fig4_3_break_point.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Anaconda/Lib/site-packages/matplotlib/pyplot.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="278">
@@ -703,13 +661,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1408">
           <caret line="65" column="112" selection-start-line="65" selection-start-column="112" selection-end-line="65" selection-end-column="112" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/drawer_package/Fig4_8.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2200">
-          <caret line="103" selection-start-line="103" selection-end-line="103" />
         </state>
       </provider>
     </entry>
@@ -808,9 +759,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-          <folding>
-            <element signature="e#734#1344#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -888,11 +836,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="473">
           <caret line="88" column="67" lean-forward="true" selection-start-line="87" selection-start-column="4" selection-end-line="88" selection-end-column="67" />
-          <folding>
-            <element signature="e#120#516#0" />
-            <element signature="e#600#967#0" />
-            <element signature="e#1096#1718#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -903,39 +846,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/drawer_package/Fig3_8_BDS_weakness_draw.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="65" column="17" selection-start-line="65" selection-start-column="17" selection-end-line="65" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/util/drawer_package/Fig3_9_DTW_benefit_draw_3d.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+        <state relative-caret-position="1210">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
           <folding>
             <element signature="e#15#46#0" expanded="true" />
-            <element signature="e#327#1189#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/util/drawer_package/Fig3_10_Fig3_13.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204">
-          <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
+        <state relative-caret-position="1364">
+          <caret line="100" selection-start-line="100" selection-end-line="100" />
           <folding>
             <element signature="e#898#1003#0" />
             <element signature="e#1039#1131#0" />
             <element signature="e#1171#2140#0" />
-            <element signature="e#3327#3612#0" />
-            <element signature="e#3640#4595#0" />
-            <element signature="e#4633#6106#0" />
-            <element signature="e#6150#8268#0" />
-            <element signature="e#8307#10427#0" />
-            <element signature="e#10463#12975#0" />
-            <element signature="e#13009#13977#0" />
           </folding>
         </state>
       </provider>
@@ -945,21 +873,89 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/util/drawer_package/Fig3_14_BDS_DTW_amend_902_3d.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
+        <state relative-caret-position="924">
           <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/util/drawer_package/Fig3_15.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="136" column="20" selection-start-line="136" selection-start-column="20" selection-end-line="136" selection-end-column="20" />
+        <state relative-caret-position="361">
+          <caret line="230" lean-forward="true" selection-start-line="230" selection-end-line="230" />
           <folding>
             <element signature="e#239#480#0" />
             <element signature="e#538#1224#0" />
             <element signature="e#1255#2386#0" />
-            <element signature="e#4312#5741#0" />
-            <element signature="e#5762#7588#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/drawer_package/Fig4_1_EU_que_dian.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="19" column="11" lean-forward="true" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/drawer_package/Fig3_8_BDS_weakness_draw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="759">
+          <caret line="65" column="17" selection-start-line="65" selection-start-column="17" selection-end-line="65" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/drawer_package/Fig4_1_new.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="130" column="13" selection-start-line="130" selection-start-column="13" selection-end-line="130" selection-end-column="13" />
+          <folding>
+            <element signature="e#413#1357#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/drawer_package/Fig4_4_break_point.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="166" lean-forward="true" selection-start-line="166" selection-end-line="166" />
+          <folding>
+            <element signature="e#380#621#0" />
+            <element signature="e#679#1365#0" />
+            <element signature="e#1901#3266#0" />
+            <element signature="e#3294#6478#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/drawer_package/Fig4_8.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="166" lean-forward="true" selection-start-line="166" selection-end-line="166" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/drawer_package/Fig4_7_angle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="97" column="46" lean-forward="true" selection-start-line="97" selection-start-column="23" selection-end-line="97" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/drawer_package/Fig4_5_yi_mian_zhi_xian.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="65" column="20" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/drawer_package/Fig4_3_break_point.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="162" column="102" selection-start-line="162" selection-start-column="102" selection-end-line="162" selection-end-column="102" />
+          <folding>
+            <element signature="e#1796#3431#0" />
+            <element signature="e#3459#5064#0" />
+            <element signature="e#6676#8388#0" />
           </folding>
         </state>
       </provider>

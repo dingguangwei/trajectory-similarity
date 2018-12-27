@@ -50,13 +50,13 @@ def draw_DTW_less_point():
 
     Q, R, S = get_QRS()
     ax.plot(Q[:, 0], Q[:, 1], Q[:, 2], label='Q', linestyle='-', linewidth=2, color='black', marker='H')
-    ax.plot(R[:, 0], R[:, 1], R[:, 2], label='R', linestyle='-', linewidth=2, color='black', marker='*')
-    ax.plot(S[:, 0], S[:, 1], S[:, 2], label='S', linestyle='-', linewidth=2, color='0.5', marker='1')
+    ax.plot(R[:, 0], R[:, 1], R[:, 2], label='R', linestyle='-', linewidth=2, color='0.4', marker='*')
+    ax.plot(S[:, 0], S[:, 1], S[:, 2], label='S', linestyle='-', linewidth=2, color='0.6', marker='|')
 
     for i in range(len(Q)):
-        ax.text(Q[i,0], Q[i, 1], Q[i, 2], '$q_'+str(i)+'$', fontsize=m_fontsize)
-        ax.text(R[i,0], R[i, 1]-0.1, R[i, 2], '$r_'+str(i)+'$', fontsize=m_fontsize)
-        ax.text(S[i,0], S[i, 1]+0.5, S[i, 2], '$s_'+str(i)+'$', fontsize=m_fontsize)
+        ax.text(Q[i,0], Q[i, 1], Q[i, 2], '$q_'+str(i)+'$', fontsize=m_fontsize, color='0.')
+        ax.text(R[i,0], R[i, 1]-0.1, R[i, 2], '$r_'+str(i)+'$', fontsize=m_fontsize, color='0.4')
+        ax.text(S[i,0], S[i, 1]+0.5, S[i, 2], '$s_'+str(i)+'$', fontsize=m_fontsize, color='0.6')
         ax.plot([Q[i,0], R[i,0]], [Q[i,1], R[i,1]], [Q[i,2], R[i,2]], linestyle='--', linewidth=1, color='0')
         ax.plot([Q[i, 0], S[i, 0]], [Q[i, 1], S[i, 1]], [Q[i, 2], S[i, 2]], linestyle='--', linewidth=1, color='0.5')
 
@@ -68,7 +68,7 @@ def draw_DTW_less_point():
     # 设置坐标轴刻度
     ax.set_xticks([])
     # ax.set_yticks([])
-    ax.set_zticks(np.arange(0, 20, 5))
+    ax.set_zticks(np.arange(5, 16, 10))
     # plt.xlim(0, 2)
     plt.ylim(0, 5)
     ax.set_zlim(0, 20)
@@ -84,25 +84,25 @@ def draw_DTW_more_point():
 
     Q, R, S = get_QRS(is_less=False)
     ax.plot(Q[:, 0], Q[:, 1], Q[:, 2], label='Q', linestyle='-', linewidth=2, color='black', marker='H')
-    ax.plot(R[:, 0], R[:, 1], R[:, 2], label='R', linestyle='-', linewidth=2, color='black', marker='*')
-    ax.plot(S[:, 0], S[:, 1], S[:, 2], label='S', linestyle='-', linewidth=2, color='0.5', marker='1')
+    ax.plot(R[:, 0], R[:, 1], R[:, 2], label='R', linestyle='-', linewidth=2, color='0.4', marker='*')
+    ax.plot(S[:, 0], S[:, 1], S[:, 2], label='S', linestyle='-', linewidth=2, color='0.6', marker='|')
 
     m_list = [0, 2, 4, 7, 10, 13, 17]
     for i in m_list:
-        ax.text(Q[i, 0], Q[i, 1], Q[i, 2], '$q_{' + str(i) + '}$', fontsize=m_fontsize)
+        ax.text(Q[i, 0], Q[i, 1], Q[i, 2], '$q_{' + str(i) + '}$', fontsize=m_fontsize, color='0.')
 
     for i in m_list:
         if i<5:
             R_bias = -0.1
         else:
             R_bias = 0.5
-        ax.text(R[i, 0], R[i, 1] +R_bias, R[i, 2], '$r_{' + str(i) + '}$', fontsize=m_fontsize)
+        ax.text(R[i, 0], R[i, 1] +R_bias, R[i, 2], '$r_{' + str(i) + '}$', fontsize=m_fontsize, color='0.4')
     for i in m_list:
         if i<5:
             S_bias = 0.5
         else:
             S_bias = -0.1
-        ax.text(S[i, 0], S[i, 1] + S_bias, S[i, 2], '$s_{' + str(i) + '}$', fontsize=m_fontsize)
+        ax.text(S[i, 0], S[i, 1] + S_bias, S[i, 2], '$s_{' + str(i) + '}$', fontsize=m_fontsize, color='0.6')
 
     for i in range(len(Q)):
         ax.plot([Q[i,0], R[i,0]], [Q[i,1], R[i,1]], [Q[i,2], R[i,2]], linestyle='--', linewidth=1, color='0')
@@ -116,7 +116,7 @@ def draw_DTW_more_point():
     # 设置坐标轴刻度
     ax.set_xticks([])
     # ax.set_yticks([])
-    ax.set_zticks(np.arange(0, 20, 5))
+    ax.set_zticks(np.arange(5, 16, 10))
     # plt.xlim(0, 2)
     plt.ylim(0, 5)
     ax.set_zlim(0, 20)
@@ -127,5 +127,5 @@ def draw_DTW_more_point():
 
 
 if __name__=='__main__':
-    draw_DTW_less_point()
-    # draw_DTW_more_point()
+    # draw_DTW_less_point()
+    draw_DTW_more_point()

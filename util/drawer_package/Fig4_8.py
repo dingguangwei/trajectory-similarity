@@ -135,16 +135,16 @@ def draw():
 
 
     ax.legend()  # 显示图例
-    ax.set_xlabel('x/m', fontsize=m_fontsize)
-    ax.set_ylabel('y/m', fontsize=m_fontsize)
-    ax.set_zlabel('z/m', fontsize=m_fontsize)
+    ax.set_xlabel('x/m', fontsize=m_fontsize-3)
+    ax.set_ylabel('y/m', fontsize=m_fontsize-3)
+    ax.set_zlabel('z/m', fontsize=m_fontsize-3)
 
     # 设置坐标轴刻度
     ax.set_xticks([])
     ax.set_yticks([])
     ax.set_zticks(np.arange(0.2, 0.5, 0.1))
     ax.view_init(elev=20, azim=240)  # 调整视角
-    plt.savefig("F:\\毕业设计大文件夹\\picture\\chapter4\\Fig4-7.jpg", dpi=500)
+    plt.savefig("F:\\毕业设计大文件夹\\picture\\chapter4\\Fig4-8.jpg", dpi=500)
     plt.show()
 
 if __name__=='__main__':
@@ -153,7 +153,7 @@ if __name__=='__main__':
     # 裁剪
     print('裁剪中...')
     path = "F:\\毕业设计大文件夹\\picture\\chapter4\\"
-    m_files = ['Fig4-7.jpg']
+    m_files = ['Fig4-8.jpg']
     for m_file in m_files:
         img = Image.open(path + m_file)  # 打开当前路径图像
         # print(img.size)
