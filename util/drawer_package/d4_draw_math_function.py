@@ -83,8 +83,8 @@ if __name__=='__main__':
     plt.yticks([])
     # plt.text(3, -0.15, r'$sim_{shape}$', fontsize=m_fontsize)
     # plt.xlabel(r'$sim_{shape}$', fontsize=m_fontsize)
-    plt.text(5, -0.15, 'x', fontsize=m_fontsize)
-    # plt.ylabel('y')
+    plt.text(5, -0.15, 'x/m', fontsize=m_fontsize)
+    # plt.ylabel('y/m')
     if path is not None:
         plt.savefig(path, dpi=600)
     plt.show()

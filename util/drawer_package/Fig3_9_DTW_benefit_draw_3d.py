@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import numpy as np
 import d0_util_3d
-import d902_Fig3_8_BDS_weakness_draw
+import Fig3_8_BDS_weakness_draw
 
 
 def get_EU_distance_3d(v1, v2):
@@ -47,11 +47,11 @@ if __name__=='__main__':
     ax = fig.add_subplot(111, projection='3d')
     m_fontsize = 16
 
-    Q, R, S = d902_Fig3_8_BDS_weakness_draw.get_data()
+    Q, R, S = Fig3_8_BDS_weakness_draw.get_data()
     pair = get_pair_point_in_DTW(Q, R)
 
-    ax.plot(Q[:, 0], Q[:, 1], Q[:, 2], label='Q', linestyle='-', linewidth=2, color='blue', marker='H')
-    ax.plot(R[:, 0], R[:, 1], R[:, 2], label='R', linestyle='-', linewidth=2, color='0.3', marker='H')
+    ax.plot(Q[:, 0], Q[:, 1], Q[:, 2], label='Q', linestyle='-', linewidth=2, color='black', marker='H')
+    ax.plot(R[:, 0], R[:, 1], R[:, 2], label='R', linestyle='-', linewidth=2, color='0.4', marker='H')
 
     for i in range(len(pair)):
         v1 = Q[pair[i, 0]]
@@ -59,15 +59,15 @@ if __name__=='__main__':
         ax.plot([v1[0], v2[0]], [v1[1], v2[1]], [v1[2], v2[2]],linestyle='--', linewidth=1.5, color='green', marker=None)
 
     for i in [0, 1, 2, 3, 4,5,6]:
-        ax.text(Q[i, 0] + 0.2, Q[i, 1], Q[i, 2] - 1, r'$q_{'+str(i)+'}$', color='blue', fontsize=m_fontsize)
+        ax.text(Q[i, 0] + 0.2, Q[i, 1], Q[i, 2] - 1, r'$q_{'+str(i)+'}$', color='black', fontsize=m_fontsize)
     for i in [0, 2, 3, 5, 6,7,8]:
-        ax.text(R[i, 0] + 0.7, R[i, 1], R[i, 2] - 1, r'$r_{'+str(i)+'}$', color='0.3', fontsize=m_fontsize)
+        ax.text(R[i, 0] + 0.7, R[i, 1], R[i, 2] - 1, r'$r_{'+str(i)+'}$', color='0.4', fontsize=m_fontsize)
 
 
     ax.legend()  # 显示图例
-    ax.set_xlabel('x', fontsize=m_fontsize)
-    ax.set_ylabel('y', fontsize=m_fontsize)
-    ax.set_zlabel('Z', fontsize=m_fontsize)
+    ax.set_xlabel('x/m', fontsize=m_fontsize)
+    ax.set_ylabel('y/m', fontsize=m_fontsize)
+    ax.set_zlabel('z/m', fontsize=m_fontsize)
 
     # 设置坐标轴刻度
     ax.set_xticks([])
@@ -78,5 +78,5 @@ if __name__=='__main__':
     # plt.ylim(0, 2)
     ax.set_zlim(0, 10)
 
-    ax.view_init(elev=30, azim=130)  # 调整视角
+    ax.view_init(elev=10, azim=120)  # 调整视角
     plt.show()

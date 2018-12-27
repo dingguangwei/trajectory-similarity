@@ -2,21 +2,21 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-label = ['DTW', 'SDTW', 'PTM', 'STS']
-name_list = ['0.5km', '2km', '5km']
+label = [ 'SDTW', 'PTM', 'STS']
+name_list = ['5000', '10000', '15000']
 num_list = []
 x = []
 def get_data_GL():
-    num0 = [0.76,0.733,0.776]  # DTW
-    num_list.append(num0)
+    # num0 = [0.76,0.733,0.776]  # DTW
+    # num_list.append(num0)
 
-    num1 = [0.83,0.848,0.93]  # SDTW
+    num1 = [0.93,0.848,0.83]  # SDTW
     num_list.append(num1)
 
-    num2 = [0.74,0.785,0.829]  # PTM
+    num2 = [0.824,0.805,0.789]  # PTM
     num_list.append(num2)
 
-    num3 = [0.942, 0.956, 0.978]  # STS
+    num3 = [0.972, 0.926, 0.918]  # STS
     num_list.append(num3)
 
     total_width, n = 0.4, len(num_list)
@@ -32,16 +32,16 @@ def get_data_GL():
 
 
 def get_data_NA():
-    num0 = [0.74,0.723,0.776]
-    num_list.append(num0)
+    # num0 = [0.74,0.723,0.776]
+    # num_list.append(num0)
 
-    num1 = [0.88,0.878,0.933]
+    num1 = [0.917,0.848,0.803]
     num_list.append(num1)
 
-    num2 = [0.744,0.755,0.839]
+    num2 = [0.843,0.805,0.779]
     num_list.append(num2)
 
-    num3 = [0.962, 0.916, 0.978]
+    num3 = [0.942, 0.906, 0.888]
     num_list.append(num3)
 
     total_width, n = 0.4, len(num_list)
@@ -70,7 +70,7 @@ if __name__=='__main__':
 
     plt.ylim((0, 1.3))
 
-    plt.xlabel('Length of query trajectories', fontsize=m_fontsize)
+    plt.xlabel('Number of trajectories', fontsize=m_fontsize)
     plt.ylabel('Precision rate', fontsize=m_fontsize)
 
     plt.legend(ncol=2,fontsize=m_fontsize)

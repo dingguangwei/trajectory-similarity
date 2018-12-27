@@ -25,7 +25,7 @@ if __name__=='__main__':
     m_fontsize = 13
 
     Q, R = get_data()
-    ax.plot(Q[:, 0], Q[:, 1], Q[:, 2], label='Q', linestyle='-', linewidth=2, color='blue', marker=None)
+    ax.plot(Q[:, 0], Q[:, 1], Q[:, 2], label='Q', linestyle='-', linewidth=2, color='black', marker=None)
     ax.plot(R[:, 0], R[:, 1], R[:, 2], label='R', linestyle='-', linewidth=2, color='0.3', marker='H')
 
     ax.scatter(Q[1, 0], Q[1, 1], Q[1, 2], marker='.', linewidths=3.)
@@ -35,7 +35,7 @@ if __name__=='__main__':
     ax.scatter(QQ[2, 0], QQ[2, 1], QQ[2, 2], marker='>', linewidths=3., color='0.3')
     Q_label=['BDS(rj)', 'qi', 'BDS(rk)']
     for i in range(len(QQ)):
-        ax.text(QQ[i, 0], QQ[i, 1]-0.2, QQ[i, 2]+0.9, Q_label[i], color='blue', fontsize=m_fontsize)
+        ax.text(QQ[i, 0], QQ[i, 1]-0.2, QQ[i, 2]+0.9, Q_label[i], color='black', fontsize=m_fontsize)
     R_label = ['', 'rj', 'rk']
     for i in [1, 2]:
         ax.text(R[i, 0], R[i, 1], R[i, 2]+0.7, R_label[i], color='0.3', fontsize=m_fontsize)
@@ -47,9 +47,9 @@ if __name__=='__main__':
     ax.text(2, 3, 3, 'R(qi)', fontsize=m_fontsize)
 
     ax.legend()  # 显示图例
-    ax.set_xlabel('x', fontsize=m_fontsize)
-    ax.set_ylabel('y', fontsize=m_fontsize)
-    ax.set_zlabel('Z', fontsize=m_fontsize)
+    ax.set_xlabel('x/m', fontsize=m_fontsize)
+    ax.set_ylabel('y/m', fontsize=m_fontsize)
+    ax.set_zlabel('z/m', fontsize=m_fontsize)
 
     # 设置坐标轴刻度
     ax.set_xticks([])

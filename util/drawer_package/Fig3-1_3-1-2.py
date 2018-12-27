@@ -32,12 +32,12 @@ if __name__ == "__main__":
 
     # 画轨迹
     R, S, Q = get_Data()
-    plt.plot(Q[:, 0], Q[:, 1], color='blue', linewidth=4, label='Q', marker='H', linestyle='-')
+    plt.plot(Q[:, 0], Q[:, 1], color='black', linewidth=4, label='Q', marker='H', linestyle='-')
     plt.plot(R[:, 0], R[:, 1], color='0.4', linewidth=4, label='R', marker='*', linestyle=None)
     plt.plot(S[:, 0], S[:, 1], color='0.6', linewidth=4, label='S', marker='|', linestyle=None)
 
     for i in range(len(Q)):
-        plt.text(Q[i][0] - 0.2, Q[i][1] + 0.3, 'q'+str(i), fontsize=m_fontsize, color='blue')
+        plt.text(Q[i][0] - 0.2, Q[i][1] + 0.3, 'q'+str(i), fontsize=m_fontsize, color='black')
     for i in range(len(S)):
         plt.text(S[i][0] - 0.1, S[i][1] + 0.3, 's'+str(i), fontsize=m_fontsize)
     for i in range(len(R)):

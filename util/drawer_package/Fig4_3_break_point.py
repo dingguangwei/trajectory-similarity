@@ -78,9 +78,9 @@ def draw_0(fig, ax):
     # 轨迹Q（情况一）
     q0 = [0.1, 0.2, 0.1]
     q1 = [0., 0.3, 0.2]
-    plot([q0, q1], ax=ax, label=None, linestyle='-', linewidth=2, color='blue', marker='H')
-    ax.text(q0[0], q0[1] - 0.03, q0[2] - 0.03, r'$q_0$', fontsize=m_fontsize, color='blue')
-    ax.text(q1[0], q1[1] - 0.03, q1[2] - 0.04, r'$q_1$', fontsize=m_fontsize, color='blue')
+    plot([q0, q1], ax=ax, label=None, linestyle='-', linewidth=2, color='black', marker='H')
+    ax.text(q0[0], q0[1] - 0.03, q0[2] - 0.03, r'$q_0$', fontsize=m_fontsize, color='black')
+    ax.text(q1[0], q1[1] - 0.03, q1[2] - 0.04, r'$q_1$', fontsize=m_fontsize, color='black')
 
     find_pair_point(ax, r0, q0, q1)
     find_pair_point(ax, r1, q0, q1)
@@ -116,9 +116,9 @@ def draw_a(fig, ax):
     # 轨迹Q（情况一）
     q0 = [0.1, 0.2, 0.1]
     q1 = [0., 0.3, 0.2]
-    plot([q0, q1], ax=ax, label=None, linestyle='-', linewidth=2, color='blue', marker='H')
-    ax.text(q0[0], q0[1] - 0.03, q0[2] - 0.03, r'$q_0$', fontsize=m_fontsize, color='blue')
-    ax.text(q1[0], q1[1] - 0.03, q1[2] - 0.04, r'$q_1$', fontsize=m_fontsize, color='blue')
+    plot([q0, q1], ax=ax, label=None, linestyle='-', linewidth=2, color='black', marker='H')
+    ax.text(q0[0], q0[1] - 0.03, q0[2] - 0.03, r'$q_0$', fontsize=m_fontsize, color='black')
+    ax.text(q1[0], q1[1] - 0.03, q1[2] - 0.04, r'$q_1$', fontsize=m_fontsize, color='black')
 
     find_pair_point(ax, r0, q0, q1)
     find_pair_point(ax, r1, q0, q1)
@@ -154,8 +154,8 @@ def draw_b(fig, ax):
     # 轨迹Q（情况二）
     q0 = [0.1, 0.2, 0.1]
     # plot([q0], ax=ax, label=None, linestyle='-', linewidth=2, color='0.5', marker='H')
-    ax.scatter(q0[0], q0[1], q0[2], linestyle='-', linewidth=2, color='blue', marker='H')
-    ax.text(q0[0], q0[1] + 0.02, q0[2] - 0.02, 'q0', fontsize=m_fontsize, color='blue')
+    ax.scatter(q0[0], q0[1], q0[2], linestyle='-', linewidth=2, color='black', marker='H')
+    ax.text(q0[0], q0[1] + 0.02, q0[2] - 0.02, 'q0', fontsize=m_fontsize, color='black')
 
     find_pair_point(ax, r0, q0, q0)
     find_pair_point(ax, r1, q0, q0)
@@ -193,9 +193,9 @@ def draw_c(fig, ax):
     q.append([0.1, 0.2, 0.08])
     q.append([0.05, 0.23, 0.15])
     q.append([0., 0.3, 0.2])
-    plot([q[0], q[1], q[2]], ax=ax, label=None, linestyle='-', linewidth=2, color='blue', marker='H')
+    plot([q[0], q[1], q[2]], ax=ax, label=None, linestyle='-', linewidth=2, color='black', marker='H')
     for i in range(3):
-        ax.text(q[i][0], q[i][1] + 0.02, q[i][2] - 0.02, 'q'+str(i), fontsize=m_fontsize, color='blue')
+        ax.text(q[i][0], q[i][1] + 0.02, q[i][2] - 0.02, 'q'+str(i), fontsize=m_fontsize, color='black')
 
     find_pair_point(ax, r0, q[0], q[1])
     find_pair_point(ax, r1, q[1], q[2] )
@@ -217,9 +217,9 @@ if __name__=='__main__':
     # path = draw_c(fig, ax)
 
     # ax.legend()  # 显示图例
-    ax.set_xlabel('x', fontsize=m_fontsize)
-    ax.set_ylabel('y', fontsize=m_fontsize)
-    ax.set_zlabel('z', fontsize=m_fontsize)
+    ax.set_xlabel('x/m', fontsize=m_fontsize)
+    ax.set_ylabel('y/m', fontsize=m_fontsize)
+    ax.set_zlabel('z/m', fontsize=m_fontsize)
     # 设置坐标轴刻度
     ax.set_xticks([])
     ax.set_yticks([])

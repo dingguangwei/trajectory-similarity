@@ -58,7 +58,7 @@ if __name__=='__main__':
     num_list, x, width, name_list, label, m_title, path = get_data_GL()
 
     m_fontsize = 14
-    color_list = ['cornflowerblue', 'lightsteelblue', 'lightsalmon', 'rosybrown']
+    color_list = ['cornflowerblack', 'lightsteelblack', 'lightsalmon', 'rosybrown']
     for i in range(len(num_list)):
         plt.bar(x[i], num_list[i], width, label=label[i], color=color_list[i])
 

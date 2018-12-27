@@ -31,7 +31,7 @@ def draw_a():
 
     Q, R = get_data()
 
-    ax.plot(Q[:, 0], Q[:, 1], Q[:, 2], label='Q', linestyle='-', linewidth=2, color='blue', marker='H')
+    ax.plot(Q[:, 0], Q[:, 1], Q[:, 2], label='Q', linestyle='-', linewidth=2, color='black', marker='H')
     ax.plot(R[:, 0], R[:, 1], R[:, 2], label='R', linestyle='-', linewidth=2, color='0', marker='H')
 
     draw_line(ax, Q[0], R[0], color='0', linewidth=1.5)
@@ -42,8 +42,8 @@ def draw_a():
     # m_label = [r'$q_{0}=DTW(r_0)$',r'$q_{1}=DTW(r_1)$', r'$q_{2}$']
     m_label = [r'$q_{0}$', r'$q_{1}$', r'$q_{2}$']
     for i in range(0, len(Q)):
-        ax.text(Q[i, 0] - 0.5, Q[i, 1]+1, Q[i, 2], m_label[i], color='blue', fontsize=m_fontsize)
-    # ax.text(Q[2, 0]+1.5, Q[2, 1], Q[2, 2], m_label[2], color='blue', fontsize=m_fontsize)
+        ax.text(Q[i, 0] - 0.5, Q[i, 1]+1, Q[i, 2], m_label[i], color='black', fontsize=m_fontsize)
+    # ax.text(Q[2, 0]+1.5, Q[2, 1], Q[2, 2], m_label[2], color='black', fontsize=m_fontsize)
     for i in range(len(R)):
         ax.text(R[i, 0] - 0.5, R[i, 1], R[i, 2], r'$r_{' + str(i) + '}$', color='0.3', fontsize=m_fontsize)
 
@@ -57,9 +57,9 @@ def draw_a():
     ax.text(min_point[0] + 5, min_point[1], min_point[2], r'$DTW-DBS(r_2)$', color='0.1', fontsize=small_fontsize)
 
     ax.legend()  # 显示图例
-    ax.set_xlabel('x', fontsize=m_fontsize)
-    ax.set_ylabel('y', fontsize=m_fontsize)
-    ax.set_zlabel('Z', fontsize=m_fontsize)
+    ax.set_xlabel('x/m', fontsize=m_fontsize)
+    ax.set_ylabel('y/m', fontsize=m_fontsize)
+    ax.set_zlabel('z/m', fontsize=m_fontsize)
 
     # 设置坐标轴刻度
     ax.set_xticks([])
@@ -80,7 +80,7 @@ def draw_b():
 
     Q, R = get_data()
 
-    ax.plot(Q[:, 0], Q[:, 1], Q[:, 2], label='Q', linestyle='-', linewidth=2, color='blue', marker='H')
+    ax.plot(Q[:, 0], Q[:, 1], Q[:, 2], label='Q', linestyle='-', linewidth=2, color='black', marker='H')
     ax.plot(R[:, 0], R[:, 1], R[:, 2], label='R', linestyle='-', linewidth=2, color='0', marker='H')
 
     draw_line(ax,Q[0], R[0], color='0', linewidth=1.5)
@@ -91,8 +91,8 @@ def draw_b():
     # m_label = [r'$q_{0}=DTW(r_0)$',r'$q_{1}=DTW(r_1)$', r'$q_{2}$']
     m_label = [r'$q_{0}$', r'$q_{1}$', r'$q_{2}$']
     for i in range(0, len(Q)):
-        ax.text(Q[i, 0] + 1.2, Q[i, 1]+0.8, Q[i, 2], m_label[i], color='blue', fontsize=m_fontsize)
-    # ax.text(Q[2, 0]+1.5, Q[2, 1], Q[2, 2], m_label[2], color='blue', fontsize=m_fontsize)
+        ax.text(Q[i, 0] + 1.2, Q[i, 1]+0.8, Q[i, 2], m_label[i], color='black', fontsize=m_fontsize)
+    # ax.text(Q[2, 0]+1.5, Q[2, 1], Q[2, 2], m_label[2], color='black', fontsize=m_fontsize)
     for i in range(len(R)):
         ax.text(R[i, 0] - 0.5, R[i, 1], R[i, 2], r'$r_{' + str(i) + '}$', color='0.3', fontsize=m_fontsize)
 
@@ -110,9 +110,9 @@ def draw_b():
     ax.text(min_point[0] + 5, min_point[1] + 1, min_point[2], r'$DTW-DBS(r_1)$', color='0.1', fontsize=small_fontsize)
 
     ax.legend()  # 显示图例
-    ax.set_xlabel('x', fontsize=m_fontsize)
-    ax.set_ylabel('y', fontsize=m_fontsize)
-    ax.set_zlabel('Z', fontsize=m_fontsize)
+    ax.set_xlabel('x/m', fontsize=m_fontsize)
+    ax.set_ylabel('y/m', fontsize=m_fontsize)
+    ax.set_zlabel('z/m', fontsize=m_fontsize)
 
     # 设置坐标轴刻度
     ax.set_xticks([])

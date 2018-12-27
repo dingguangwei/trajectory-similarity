@@ -19,7 +19,7 @@ if __name__=='__main__':
     plt.yticks(np.arange(0, 10, 1), fontsize=m_fontsize)
     # plt.xlim(0, 4)
     # plt.ylim(-2, 2)
-    plt.xlabel('x', fontsize=m_fontsize)
-    plt.ylabel('y', fontsize=m_fontsize)
+    plt.xlabel('x/m', fontsize=m_fontsize)
+    plt.ylabel('y/m', fontsize=m_fontsize)
 
     plt.show()

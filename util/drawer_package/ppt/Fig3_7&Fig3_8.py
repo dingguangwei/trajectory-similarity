@@ -21,7 +21,7 @@ def draw_2d():
     m_fontsize = 16
 
     Q, R = get_data()
-    plt.plot(Q[:, 0], Q[:, 1], color='blue')
+    plt.plot(Q[:, 0], Q[:, 1], color='black')
     plt.plot(R[:, 0], R[:, 1], color='0.4')
 
     ax = plt.gca()
@@ -36,8 +36,8 @@ def draw_2d():
     plt.yticks(np.arange(0, 10, 1), fontsize=m_fontsize)
     # plt.xlim(0, 4)
     # plt.ylim(-2, 2)
-    plt.xlabel('x', fontsize=m_fontsize)
-    plt.ylabel('y', fontsize=m_fontsize)
+    plt.xlabel('x/m', fontsize=m_fontsize)
+    plt.ylabel('y/m', fontsize=m_fontsize)
 
     plt.show()
 
@@ -50,9 +50,9 @@ def draw_3d():
     ax.plot([0, 1], [1, 2], [3, 4], label='a', linestyle='-', linewidth=2, color='0', marker='H')
 
     ax.legend()  # 显示图例
-    ax.set_xlabel('x', fontsize=m_fontsize)
-    ax.set_ylabel('y', fontsize=m_fontsize)
-    ax.set_zlabel('Z', fontsize=m_fontsize)
+    ax.set_xlabel('x/m', fontsize=m_fontsize)
+    ax.set_ylabel('y/m', fontsize=m_fontsize)
+    ax.set_zlabel('z/m', fontsize=m_fontsize)
 
     # 设置坐标轴刻度
     ax.set_xticks([])

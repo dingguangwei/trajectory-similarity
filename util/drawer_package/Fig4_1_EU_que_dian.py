@@ -14,7 +14,7 @@ def draw_DTW_less_point():
     Q, R, S = d5_compute_dtw_value.get_QRS()
     # 画轨迹
     plot_line_with_points(Q, color='black', linewidth=1.5, label='Q', marker='*', linestyle='-')
-    plot_line_with_points(R, color='blue', linewidth=1.5, label='R', marker='>', linestyle='--')
+    plot_line_with_points(R, color='black', linewidth=1.5, label='R', marker='>', linestyle='--')
     plot_line_with_points(S, color='0.5', linewidth=1.5, label='S', marker='H', linestyle='-.')
 
     # 标注样本点
@@ -30,7 +30,7 @@ def draw_DTW_less_point():
 
     # 画对应点的连线
     for i in np.arange(0, len(Q), 1):
-        plot_line_with_points(np.array([Q[i,:], R[i,:]]), color='blue', linewidth=1, linestyle=':')
+        plot_line_with_points(np.array([Q[i,:], R[i,:]]), color='black', linewidth=1, linestyle=':')
 
     for i in np.arange(0, len(Q), 1):
         plot_line_with_points(np.array([Q[i, :], S[i, :]]), color='0.5', linewidth=1, linestyle=':')
@@ -41,7 +41,7 @@ def draw_DTW_more_point():
 
     # 画轨迹
     plot_line_with_points(Q, color='black', linewidth=1.5, label='Q', marker='*', linestyle='-')
-    plot_line_with_points(R, color='blue', linewidth=1.5, label='R', marker='>', linestyle='--')
+    plot_line_with_points(R, color='black', linewidth=1.5, label='R', marker='>', linestyle='--')
     plot_line_with_points(S, color='0.5', linewidth=1.5, label='S', marker='H', linestyle='-.')
 
     # 标注样本点
@@ -58,7 +58,7 @@ def draw_DTW_more_point():
 
     # 画对应点的连线
     for i in np.arange(0, len(Q), 1):
-        plot_line_with_points(np.array([Q[i,:], R[i,:]]), color='blue', linewidth=1, linestyle=':')
+        plot_line_with_points(np.array([Q[i,:], R[i,:]]), color='black', linewidth=1, linestyle=':')
 
     for i in np.arange(0, len(Q), 1):
         plot_line_with_points(np.array([Q[i, :], S[i, :]]), color='0.5', linewidth=1, linestyle=':')
@@ -82,7 +82,7 @@ if __name__=='__main__':
     plt.yticks(np.arange(0, 7, 1), fontsize=m_fontsize)
     # plt.xlim(0, 4)
     # plt.ylim(-2, 2)
-    plt.xlabel('x', fontsize=m_fontsize-3)
-    plt.ylabel('y', fontsize=m_fontsize-3)
+    plt.xlabel('x/m', fontsize=m_fontsize-3)
+    plt.ylabel('y/m', fontsize=m_fontsize-3)
 
     plt.show()

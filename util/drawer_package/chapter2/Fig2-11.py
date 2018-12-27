@@ -34,11 +34,11 @@ if __name__=='__main__':
     m_fontsize = 20
 
     Q, R = get_data()
-    plt.plot(Q[:, 0], Q[:, 1], color='blue', linewidth=4, label='Q', marker='H', linestyle='-')
-    plt.plot(R[:, 0], R[:, 1], color='0.4', linewidth=4, label='R', marker='*', linestyle=None)
+    plt.plot(Q[:, 0], Q[:, 1], color='black', linewidth=2, label='Q', marker='H', linestyle='-')
+    plt.plot(R[:, 0], R[:, 1], color='0.6', linewidth=2, label='R', marker='*', linestyle=None)
 
     for i in range(len(Q)):
-        plt.text(Q[i][0] - 0.2, Q[i][1] - 0.5, 'q'+str(i), fontsize=m_fontsize, color='blue')
+        plt.text(Q[i][0] - 0.2, Q[i][1] - 0.5, 'q'+str(i), fontsize=m_fontsize, color='black')
     for i in range(len(R)):
         plt.text(R[i][0] - 0.3, R[i][1] + 0.3, 'r'+str(i), fontsize=m_fontsize, color='0.4')
 
@@ -53,12 +53,12 @@ if __name__=='__main__':
     ax.spines['right'].set_position(('data', 0))
 
     plt.legend(fontsize=m_fontsize)
-    plt.xticks(np.arange(0, 10, 1), fontsize=m_fontsize)
-    plt.yticks(np.arange(0, 10, 1), fontsize=m_fontsize)
+    plt.xticks(np.arange(0, 10, 1), np.arange(0, 100, 10), fontsize=m_fontsize)
+    plt.yticks(np.arange(0, 10, 1), np.arange(0, 100, 10), fontsize=m_fontsize)
     plt.xlim(0, 8)
     plt.ylim(0, 7)
-    plt.xlabel('x', fontsize=m_fontsize)
-    plt.ylabel('y', fontsize=m_fontsize)
+    plt.xlabel('x/m', fontsize=m_fontsize)
+    plt.ylabel('y/m', fontsize=m_fontsize)
     plt.subplots_adjust(top=0.95, bottom=0.15, right=0.97, left=0.12, hspace=0, wspace=0)
     plt.savefig('F:/毕业设计大文件夹/picture/chapter2/2-11.jpg')
     plt.show()

@@ -61,8 +61,8 @@ def draw_a():
     plt.yticks(np.arange(1, 7, 1), ['', '', '', '', '5', ], fontsize=m_fontsize)
     plt.xlim(0, 5.5)
     plt.ylim(0, 5.5)
-    # plt.xlabel('x', fontsize=m_fontsize)
-    plt.ylabel('y', fontsize=m_fontsize)
+    # plt.xlabel('x/m', fontsize=m_fontsize)
+    plt.ylabel('y/m', fontsize=m_fontsize)
     path = "F:\\毕业设计大文件夹\\picture\\chapter4\\Fig4-6(a).jpg"
     plt.savefig(path, dpi=300)
     # plt.show()
@@ -107,8 +107,8 @@ def draw_b():
     plt.yticks(np.arange(1, 7, 1), ['', '', '', '', '', ], fontsize=m_fontsize)
     plt.xlim(0, 4.5)
     plt.ylim(0, 4.5)
-    # plt.xlabel('x', fontsize=m_fontsize)
-    plt.ylabel('y', fontsize=m_fontsize)
+    # plt.xlabel('x/m', fontsize=m_fontsize)
+    plt.ylabel('y/m', fontsize=m_fontsize)
     path = "F:\\毕业设计大文件夹\\picture\\chapter4\\Fig4-6(b).jpg"
     plt.savefig(path, dpi=300)
     # plt.show()

@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
 
-def set_text(ax, Q, label_perfix='q', color='blue', fontsize='14'):
+def set_text(ax, Q, label_perfix='q', color='black', fontsize='14'):
     for i in range(len(Q)):
         ax.text(Q[i, 0], Q[i, 1], Q[i, 2], label_perfix+str(i), color=color, fontsize=fontsize)
 
@@ -37,5 +37,5 @@ def find_pair_point_in_Traj_and_draw(v, T, label=None, color='green', linestyle=
         ax.scatter(min_point[0], min_point[1], min_point[2], marker='*', linewidths=2, color='0.1')
     # if not m_text is None:
     #     # ax.text(min_point[0]+0.,min_point[1],min_point[2]-0.5, text=m_text, fontsize=fontsize, color=color)
-    #     ax.text(min_point[0] + 6, min_point[1]-1, min_point[2] - 0.5, m_text, fontsize=fontsize, color='blue')
+    #     ax.text(min_point[0] + 6, min_point[1]-1, min_point[2] - 0.5, m_text, fontsize=fontsize, color='black')
     return min_point

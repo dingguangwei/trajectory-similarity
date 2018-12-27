@@ -44,7 +44,7 @@ if __name__=='__main__':
     print('Q=\n', Q, '\n')
     print('R=\n', R, '\n')
     # 2、画轨迹
-    ax.plot(Q[:, 0], Q[:, 1], Q[:, 2], label='Q', linestyle='-', linewidth=2, color='blue', marker='H')
+    ax.plot(Q[:, 0], Q[:, 1], Q[:, 2], label='Q', linestyle='-', linewidth=2, color='black', marker='H')
     ax.plot(R[:, 0], R[:, 1], R[:, 2], label='R', linestyle='-', linewidth=2, color='0.3', marker='H')
     eta = 0.2
     epsilon=0.1
@@ -110,18 +110,18 @@ if __name__=='__main__':
     ####################################################################################
     # 标序号
     # for i in range(len(Q)):
-    #     ax.text(Q[i, 0] + 0.2, Q[i, 1], Q[i, 2] - 0.7, 'q' + str(i), color='blue', fontsize=m_fontsize)
+    #     ax.text(Q[i, 0] + 0.2, Q[i, 1], Q[i, 2] - 0.7, 'q' + str(i), color='black', fontsize=m_fontsize)
     for i in range(len(new_Q)):
-        ax.text(new_Q[i, 0] + 0.4, new_Q[i, 1], new_Q[i, 2] - 0.7, 'nq' + str(i), color='blue', fontsize=m_fontsize)
+        ax.text(new_Q[i, 0] + 0.4, new_Q[i, 1], new_Q[i, 2] - 0.7, 'nq' + str(i), color='black', fontsize=m_fontsize)
     for i in range(len(R)):
         ax.text(R[i, 0] + 0.2, R[i, 1], R[i, 2] - 0.7, 'r' + str(i), color='0.3', fontsize=m_fontsize)
     ####################################################################################
     # 坐标系
     ####################################################################################
     ax.legend()  # 显示图例
-    ax.set_xlabel('x', fontsize=m_fontsize)
-    ax.set_ylabel('y', fontsize=m_fontsize)
-    ax.set_zlabel('Z', fontsize=m_fontsize)
+    ax.set_xlabel('x/m', fontsize=m_fontsize)
+    ax.set_ylabel('y/m', fontsize=m_fontsize)
+    ax.set_zlabel('z/m', fontsize=m_fontsize)
     # 设置坐标轴刻度
     ax.set_xticks([])
     ax.set_yticks([])

@@ -101,7 +101,7 @@ def draw_a():
     R, Q = get_R_and_Q('a')
 
     # 画出轨迹R和Q
-    plot(Q, ax, label='Q', linestyle='-', linewidth=2, color='blue', marker='H')
+    plot(Q, ax, label='Q', linestyle='-', linewidth=2, color='black', marker='H')
     plot(R, ax, label='R', linestyle='-', linewidth=2, color='0.4', marker='*')
 
     # 为轨迹样本点进行标注
@@ -110,7 +110,7 @@ def draw_a():
         ax.text(R[i][0], R[i][1], R[i][2]+0.03, m_label, fontsize=m_fontsize, color='0.4')
     for i in range(len(Q)):
         m_label = r'$q_' + str(i)+'$'
-        ax.text(Q[i][0], Q[i][1], Q[i][2]+0.03, m_label, fontsize=m_fontsize, color='blue')
+        ax.text(Q[i][0], Q[i][1], Q[i][2]+0.03, m_label, fontsize=m_fontsize, color='black')
 
     min_point = find_pair_point(ax=ax, r=R[0], qi=Q[0], qj=Q[1])
     ax.scatter(min_point[0], min_point[1], min_point[2], marker='*', linewidths=2.)
@@ -125,14 +125,17 @@ def draw_a():
     # find_pair_point(ax=ax, r=Q[2], qi=R[0], qj=R[1], label='   R(q2,r0r1)')
 
     ax.legend()  # 显示图例
-    ax.set_xlabel('x', fontsize=m_fontsize)
-    ax.set_ylabel('y', fontsize=m_fontsize)
-    ax.set_zlabel('z', fontsize=m_fontsize)
+    ax.set_xlabel('x/m', fontsize=m_fontsize)
+    ax.set_ylabel('y/m', fontsize=m_fontsize)
+    ax.set_zlabel('z/m', fontsize=m_fontsize)
 
     # 设置坐标轴刻度
     ax.set_xticks([])
     ax.set_yticks([])
-    ax.set_zticks(np.arange(0.2, 0.5, 0.1))
+    # ax.set_zticks(np.arange(0.2, 0.5, 0.1))
+    ax.set_zticks(np.arange(0.2, 0.5, 0.1), [])
+    # ax.set_zticks([])
+
     ax.view_init(elev=20, azim=130)  # 调整视角
     plt.savefig("F:\\毕业设计大文件夹\\picture\\chapter\\Fig3-15(a).jpg", dpi=500)
     plt.show()
@@ -145,7 +148,7 @@ def draw_b():
     R, Q = get_R_and_Q('b')
 
     # 画出轨迹R和Q
-    plot(Q, ax, label='Q', linestyle='-', linewidth=2, color='blue', marker='H')
+    plot(Q, ax, label='Q', linestyle='-', linewidth=2, color='black', marker='H')
     plot(R, ax, label='R', linestyle='-', linewidth=2, color='0.4', marker='*')
 
     # 为轨迹样本点进行标注
@@ -156,7 +159,7 @@ def draw_b():
         m_label = r'$q_' + str(i)+'$'
         # if i==1:
         #     m_label=r'$q_1=Q(r_0)=Q(r_1)$'
-        ax.text(Q[i][0]+0.02, Q[i][1], Q[i][2] + 0.01, m_label, fontsize=m_fontsize, color='blue')
+        ax.text(Q[i][0]+0.02, Q[i][1], Q[i][2] + 0.01, m_label, fontsize=m_fontsize, color='black')
 
     ax.text(Q[1][0] + 0.04, Q[1][1], Q[1][2] - 0.04, r'$Q(r_0) Q(r_1)$', fontsize=m_fontsize, color='0.4')
 
@@ -164,9 +167,9 @@ def draw_b():
     ax.plot([R[1, 0], Q[1, 0]], [R[1, 1], Q[1, 1]], [R[1, 2], Q[1, 2]], linestyle='--', linewidth=1, color='green')
 
     ax.legend()  # 显示图例
-    ax.set_xlabel('x', fontsize=m_fontsize)
-    ax.set_ylabel('y', fontsize=m_fontsize)
-    ax.set_zlabel('z', fontsize=m_fontsize)
+    ax.set_xlabel('x/m', fontsize=m_fontsize)
+    ax.set_ylabel('y/m', fontsize=m_fontsize)
+    ax.set_zlabel('z/m', fontsize=m_fontsize)
 
     # 设置坐标轴刻度
     ax.set_xticks([])
@@ -184,7 +187,7 @@ def draw_c():
     R, Q = get_R_and_Q('c')
 
     # 画出轨迹R和Q
-    plot(Q, ax, label='Q', linestyle='-', linewidth=2, color='blue', marker='H')
+    plot(Q, ax, label='Q', linestyle='-', linewidth=2, color='black', marker='H')
     plot(R, ax, label='R', linestyle='-', linewidth=2, color='0.4', marker='*')
 
     # 为轨迹样本点进行标注
@@ -193,7 +196,7 @@ def draw_c():
         ax.text(R[i][0] - 0.01, R[i][1] + 0.02, R[i][2] + 0.02, m_label, fontsize=m_fontsize, color='0.4')
     for i in range(len(Q)):
         m_label = r'$q_' + str(i) + '$'
-        ax.text(Q[i][0] + 0.01, Q[i][1], Q[i][2] + 0.005, m_label, fontsize=m_fontsize, color='blue')
+        ax.text(Q[i][0] + 0.01, Q[i][1], Q[i][2] + 0.005, m_label, fontsize=m_fontsize, color='black')
 
     # 寻找R0对应点
     min_point = find_pair_point(ax=ax, r=R[0], qi=Q[0], qj=Q[1])
@@ -209,9 +212,9 @@ def draw_c():
     # ax.plot([R[1, 0], Q[1, 0]], [R[1, 1], Q[1, 1]], [R[1, 2], Q[1, 2]], linestyle='--', linewidth=1, color='green')
 
     ax.legend()  # 显示图例
-    ax.set_xlabel('x', fontsize=m_fontsize)
-    ax.set_ylabel('y', fontsize=m_fontsize)
-    ax.set_zlabel('z', fontsize=m_fontsize)
+    ax.set_xlabel('x/m', fontsize=m_fontsize)
+    ax.set_ylabel('y/m', fontsize=m_fontsize)
+    ax.set_zlabel('z/m', fontsize=m_fontsize)
 
     # 设置坐标轴刻度
     ax.set_xticks([])

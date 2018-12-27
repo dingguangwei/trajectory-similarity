@@ -11,12 +11,12 @@ if __name__=='__main__':
     m_fontsize=16
 
     Q, R, S = d8_PTM_computing.get_data()
-    ax.plot(Q[:, 0], Q[:, 1], Q[:, 2]*I_st,label='Q', linestyle='-', linewidth=4, color='blue', marker='H')
-    ax.plot(R[:, 0], R[:, 1], R[:, 2]*I_st, label='R', linestyle='-', linewidth=4, color='0.4', marker='*')
-    ax.plot(S[:, 0], S[:, 1], S[:, 2]*I_st, label='S', linestyle='-', linewidth=4, color='0.6', marker='|')
+    ax.plot(Q[:, 0], Q[:, 1], Q[:, 2]*I_st,label='Q', linestyle='-', linewidth=2, color='black', marker='H')
+    ax.plot(R[:, 0], R[:, 1], R[:, 2]*I_st, label='R', linestyle='-', linewidth=2, color='0.4', marker='*')
+    ax.plot(S[:, 0], S[:, 1], S[:, 2]*I_st, label='S', linestyle='-', linewidth=2, color='0.6', marker='|')
 
     for i in range(len(Q)):
-        ax.text(Q[i, 0]-1, Q[i, 1]+1, Q[i, 2]*I_st, 'q'+str(i), color='blue', fontsize=m_fontsize)
+        ax.text(Q[i, 0]-1, Q[i, 1]+1, Q[i, 2]*I_st, 'q'+str(i), color='black', fontsize=m_fontsize)
     for i in range(len(R)):
         ax.text(R[i, 0]-1, R[i, 1], R[i, 2]*I_st-8, 'r'+str(i), color='0.4', fontsize=m_fontsize)
     for i in range(len(S)):
@@ -24,8 +24,9 @@ if __name__=='__main__':
 
 
     ax.legend()  # 显示图例
-    ax.set_xlabel('x')
-    ax.set_ylabel('y')
+    ax.set_xlabel('x/m')
+    ax.set_ylabel('y/m')
+    ax.set_zlabel('z/m')
 
     # 设置坐标轴刻度
     ax.set_xticks([])

@@ -8,23 +8,23 @@ if __name__=='__main__':
     m_fontsize = 18
 
     Q, R, S = d8_PTM_computing.get_data()
-    plt.plot(Q[:, 0], Q[:, 1], color='blue', linewidth=4, label='Q', marker='H', linestyle=None)
-    plt.plot(R[:, 0], R[:, 1], color='0.4', linewidth=4, label='R', marker='*', linestyle=None)
-    plt.plot(S[:, 0], S[:, 1], color='0.6', linewidth=4, label='S', marker='|', linestyle=None)
+    plt.plot(Q[:, 0], Q[:, 1], color='black', linewidth=2, label='Q', marker='H', linestyle=None)
+    plt.plot(R[:, 0], R[:, 1], color='0.4', linewidth=2, label='R', marker='*', linestyle=None)
+    plt.plot(S[:, 0], S[:, 1], color='0.6', linewidth=2, label='S', marker='|', linestyle=None)
 
     Q_label = ['q0', 'q1', 'q2']
-    plt.text(Q[0][0] - 3, Q[0][1], Q_label[0], fontsize=m_fontsize, color='blue')
-    plt.text(Q[1][0] + 1.5, Q[1][1]-0.7, Q_label[1], fontsize=m_fontsize, color='blue')
-    plt.text(Q[2][0] + 1.5, Q[2][1]-0.7, Q_label[2], fontsize=m_fontsize, color='blue')
+    plt.text(Q[0][0] - 3, Q[0][1], Q_label[0], fontsize=m_fontsize, color='black')
+    plt.text(Q[1][0] + 1.5, Q[1][1]-0.7, Q_label[1], fontsize=m_fontsize, color='black')
+    plt.text(Q[2][0] + 1.5, Q[2][1]-0.7, Q_label[2], fontsize=m_fontsize, color='black')
     # for i in range(len(Q)):
-    #     plt.text(Q[i][0] + 0.5, Q[i][1], Q_label[i], fontsize=m_fontsize, color='blue')
+    #     plt.text(Q[i][0] + 0.5, Q[i][1], Q_label[i], fontsize=m_fontsize, color='black')
 
     R_label = ['r0', 'r1', 'r2', 'r3', 'r4', 'r5']
     plt.text(R[0][0], R[0][1] + 1, R_label[0], fontsize=m_fontsize, color='0.4')
     plt.text(R[1][0], R[1][1] + 1.2, R_label[1], fontsize=m_fontsize, color='0.4')
     plt.text(R[2][0], R[2][1] + 1, R_label[2], fontsize=m_fontsize, color='0.4')
     for i in range(3, len(R)):
-        plt.text(R[i][0], R[i][1]+1, R_label[i], fontsize=m_fontsize, color='0.5')
+        plt.text(R[i][0], R[i][1]+1, R_label[i], fontsize=m_fontsize, color='0.4')
 
     S_label = ['s0', 's1', 's2', 's3', 's4', 's5']
     plt.text(S[0][0] - 1.4, S[0][1] - 1.5, S_label[0], fontsize=m_fontsize, color='0.6')
@@ -50,8 +50,8 @@ if __name__=='__main__':
     plt.yticks(np.arange(0, 21, 5), fontsize=m_fontsize)
     plt.xlim(0, 37)
     plt.ylim(0, 21)
-    plt.xlabel('x', fontsize=m_fontsize)
-    plt.ylabel('y', fontsize=m_fontsize)
-
+    plt.xlabel('x/m', fontsize=m_fontsize)
+    plt.ylabel('y/m', fontsize=m_fontsize)
+    plt.subplots_adjust(top=0.95, bottom=0.15, right=0.97, left=0.12, hspace=0, wspace=0)
     plt.savefig("F:\\毕业设计大文件夹\\picture\\chapter\\Fig3-2.jpg")
     plt.show()

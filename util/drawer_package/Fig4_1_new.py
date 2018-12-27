@@ -49,7 +49,7 @@ def draw_DTW_less_point():
     m_fontsize = 16
 
     Q, R, S = get_QRS()
-    ax.plot(Q[:, 0], Q[:, 1], Q[:, 2], label='Q', linestyle='-', linewidth=2, color='blue', marker='H')
+    ax.plot(Q[:, 0], Q[:, 1], Q[:, 2], label='Q', linestyle='-', linewidth=2, color='black', marker='H')
     ax.plot(R[:, 0], R[:, 1], R[:, 2], label='R', linestyle='-', linewidth=2, color='black', marker='*')
     ax.plot(S[:, 0], S[:, 1], S[:, 2], label='S', linestyle='-', linewidth=2, color='0.5', marker='1')
 
@@ -61,9 +61,9 @@ def draw_DTW_less_point():
         ax.plot([Q[i, 0], S[i, 0]], [Q[i, 1], S[i, 1]], [Q[i, 2], S[i, 2]], linestyle='--', linewidth=1, color='0.5')
 
     ax.legend()  # 显示图例
-    ax.set_xlabel('x', fontsize=m_fontsize)
-    ax.set_ylabel('y', fontsize=m_fontsize)
-    ax.set_zlabel('Z', fontsize=m_fontsize)
+    ax.set_xlabel('x/m', fontsize=m_fontsize)
+    ax.set_ylabel('y/m', fontsize=m_fontsize)
+    ax.set_zlabel('z/m', fontsize=m_fontsize)
 
     # 设置坐标轴刻度
     ax.set_xticks([])
@@ -83,7 +83,7 @@ def draw_DTW_more_point():
     m_fontsize = 16
 
     Q, R, S = get_QRS(is_less=False)
-    ax.plot(Q[:, 0], Q[:, 1], Q[:, 2], label='Q', linestyle='-', linewidth=2, color='blue', marker='H')
+    ax.plot(Q[:, 0], Q[:, 1], Q[:, 2], label='Q', linestyle='-', linewidth=2, color='black', marker='H')
     ax.plot(R[:, 0], R[:, 1], R[:, 2], label='R', linestyle='-', linewidth=2, color='black', marker='*')
     ax.plot(S[:, 0], S[:, 1], S[:, 2], label='S', linestyle='-', linewidth=2, color='0.5', marker='1')
 
@@ -109,9 +109,9 @@ def draw_DTW_more_point():
         ax.plot([Q[i, 0], S[i, 0]], [Q[i, 1], S[i, 1]], [Q[i, 2], S[i, 2]], linestyle='--', linewidth=1, color='0.5')
 
     ax.legend()  # 显示图例
-    ax.set_xlabel('x', fontsize=m_fontsize)
-    ax.set_ylabel('y', fontsize=m_fontsize)
-    ax.set_zlabel('Z', fontsize=m_fontsize)
+    ax.set_xlabel('x/m', fontsize=m_fontsize)
+    ax.set_ylabel('y/m', fontsize=m_fontsize)
+    ax.set_zlabel('z/m', fontsize=m_fontsize)
 
     # 设置坐标轴刻度
     ax.set_xticks([])

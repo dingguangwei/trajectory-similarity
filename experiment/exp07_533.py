@@ -8,10 +8,10 @@ np.random.seed(0)
 def get_data():
 
     # DTW
-    value_DTW = [
-     [0.1, 0.704], [0.2, 0.696], [0.3, 0.685], [0.4, 0.680], [0.5, 0.673],
-     [0.6, 0.647], [0.7, 0.64], [0.8, 0.631], [0.9, 0.620], [1.,  0.611]]
-    print(value_DTW)
+    # value_DTW = [
+    #  [0.1, 0.704], [0.2, 0.696], [0.3, 0.685], [0.4, 0.680], [0.5, 0.673],
+    #  [0.6, 0.647], [0.7, 0.64], [0.8, 0.631], [0.9, 0.620], [1.,  0.611]]
+    # print(value_DTW)
 
     value_SDTW = [
      [0.1, 0.894], [0.2, 0.886], [0.3, 0.875], [0.4, 0.860], [0.5, 0.853],
@@ -27,13 +27,13 @@ def get_data():
 
     path = 'F:/毕业设计大文件夹/picture/exp/Fig5-7(a).jpg'
     m_title = 'GeoLife'
-    return np.array(value_DTW), np.array(value_SDTW), np.array(value_PTM), np.array(value_STS), x_list, m_title, path
+    return np.array(value_SDTW), np.array(value_PTM), np.array(value_STS), x_list, m_title, path
 
 
 def get_data_NA():
-    value_DTW = [
-     [0.1, 0.664],[0.2, 0.659],[0.3, 0.650],[0.4, 0.643],[0.5, 0.640],
-     [0.6, 0.631],[0.7, 0.627],[0.8, 0.613],[0.9, 0.591],[1.,  0.583]]
+    # value_DTW = [
+    #  [0.1, 0.664],[0.2, 0.659],[0.3, 0.650],[0.4, 0.643],[0.5, 0.640],
+    #  [0.6, 0.631],[0.7, 0.627],[0.8, 0.613],[0.9, 0.591],[1.,  0.583]]
 
     value_SDTW = [
      [0.1, 0.914],[0.2, 0.899],[0.3, 0.885],[0.4, 0.876],[0.5, 0.861],
@@ -48,16 +48,16 @@ def get_data_NA():
 
     path = 'F:/毕业设计大文件夹/picture/exp/Fig5-7(b).jpg'
     m_title = 'North America Road Network'
-    return np.array(value_DTW), np.array(value_SDTW), np.array(value_PTM), np.array(value_STS), x_list, m_title, path
+    return np.array(value_SDTW), np.array(value_PTM), np.array(value_STS), x_list, m_title, path
 
 if __name__=='__main__':
     fig = plt.figure()
     m_fontsize = 16
 
-    # value_DTW, value_SDTW, value_PTM, value_STS, x_list, m_title, path = get_data()
-    value_DTW, value_SDTW, value_PTM, value_STS, x_list, m_title, path = get_data_NA()
+    # value_SDTW, value_PTM, value_STS, x_list, m_title, path = get_data()
+    value_SDTW, value_PTM, value_STS, x_list, m_title, path = get_data_NA()
 
-    plt.plot(value_DTW[:, 0], value_DTW[:, 1], color='0.2', linewidth=2, label='DTW', marker='x', linestyle=None)
+    # plt.plot(value_DTW[:, 0], value_DTW[:, 1], color='0.2', linewidth=2, label='DTW', marker='x/m', linestyle=None)
     plt.plot(value_SDTW[:, 0], value_SDTW[:, 1], color='0.3', linewidth=2, label='SDTW', marker='D', linestyle=None)
     plt.plot(value_PTM[:, 0], value_PTM[:, 1], color='0.4', linewidth=2, label='PTM', marker='|', linestyle=None)
     plt.plot(value_STS[:, 0], value_STS[:, 1], color='0.1', linewidth=2, label='STS', marker='o', linestyle=None)

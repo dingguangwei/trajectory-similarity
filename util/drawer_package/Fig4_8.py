@@ -99,7 +99,7 @@ def draw():
     R, Q = get_R_and_Q('c')
 
     # 画出轨迹R和Q
-    plot(Q, ax, label='Q', linestyle='-', linewidth=2, color='blue', marker='H')
+    plot(Q, ax, label='Q', linestyle='-', linewidth=2, color='black', marker='H')
     plot(R, ax, label='R', linestyle='-', linewidth=2, color='0.4', marker='*')
 
     # 为轨迹样本点进行标注
@@ -108,7 +108,7 @@ def draw():
         ax.text(R[i][0] - 0.03, R[i][1] - 0.01, R[i][2] + 0.02, m_label, fontsize=m_fontsize, color='0.4')
     for i in range(len(Q)):
         m_label = r'$q_' + str(i) + '$'
-        ax.text(Q[i][0] + 0.01, Q[i][1], Q[i][2] + 0.005, m_label, fontsize=m_fontsize, color='blue')
+        ax.text(Q[i][0] + 0.01, Q[i][1], Q[i][2] + 0.005, m_label, fontsize=m_fontsize, color='black')
 
     ################################################################################################
     # 寻找对应点
@@ -135,9 +135,9 @@ def draw():
 
 
     ax.legend()  # 显示图例
-    ax.set_xlabel('x', fontsize=m_fontsize)
-    ax.set_ylabel('y', fontsize=m_fontsize)
-    ax.set_zlabel('z', fontsize=m_fontsize)
+    ax.set_xlabel('x/m', fontsize=m_fontsize)
+    ax.set_ylabel('y/m', fontsize=m_fontsize)
+    ax.set_zlabel('z/m', fontsize=m_fontsize)
 
     # 设置坐标轴刻度
     ax.set_xticks([])

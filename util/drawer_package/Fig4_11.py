@@ -54,12 +54,12 @@ if __name__=='__main__':
 
     Q, R, S = get_data()
 
-    plot(Q, ax, label='Q', linewidth=2., color='blue', marker='H')
+    plot(Q, ax, label='Q', linewidth=2., color='black', marker='H')
     plot(R, ax, label='R', linewidth=2., color='0.4', marker='*')
     plot(S, ax, label='S', linewidth=2., color='0.6', marker='|')
 
     for i in range(len(Q)):
-        ax.text(Q[i, 0], Q[i, 1]-0., Q[i, 2], '$q_'+str(i)+'$', fontsize=m_fontsize, color='blue')
+        ax.text(Q[i, 0], Q[i, 1]-0., Q[i, 2], '$q_'+str(i)+'$', fontsize=m_fontsize, color='black')
     for i in range(len(R)):
         ax.text(R[i, 0], R[i, 1]-0.2, R[i, 2], '$r_'+str(i)+'$', fontsize=m_fontsize, color='0.4')
     for i in range(len(S)):
@@ -75,9 +75,9 @@ if __name__=='__main__':
 
 
     # ax.legend()  # 显示图例
-    ax.set_xlabel('x', fontsize=m_fontsize)
-    ax.set_ylabel('y', fontsize=m_fontsize)
-    ax.set_zlabel('Z', fontsize=m_fontsize)
+    ax.set_xlabel('x/m', fontsize=m_fontsize)
+    ax.set_ylabel('y/m', fontsize=m_fontsize)
+    ax.set_zlabel('z/m', fontsize=m_fontsize)
 
     # 设置坐标轴刻度
     ax.set_xticks([])

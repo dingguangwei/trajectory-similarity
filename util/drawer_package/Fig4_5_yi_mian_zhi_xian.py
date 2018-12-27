@@ -61,8 +61,8 @@ if __name__=='__main__':
     ax.text(0, 0.3, 0.1, 'θ')
 
     # ax.legend()  # 显示图例
-    ax.set_xlabel('x')
-    ax.set_ylabel('y')
+    ax.set_xlabel('x/m')
+    ax.set_ylabel('y/m')
 
     # 设置坐标轴刻度
     ax.set_xticks([])

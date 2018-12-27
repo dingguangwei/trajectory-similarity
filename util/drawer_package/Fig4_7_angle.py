@@ -56,7 +56,7 @@ if __name__=='__main__':
     small_fontsize = 20
 
     Q, R = get_data()
-    ax.plot(Q[:,0],Q[:, 1],Q[:, 2], label='Q', linestyle='-', linewidth=2, color='blue', marker='H')
+    ax.plot(Q[:,0],Q[:, 1],Q[:, 2], label='Q', linestyle='-', linewidth=2, color='black', marker='H')
     ax.plot(R[:, 0], R[:, 1], R[:, 2], label='R', linestyle='-', linewidth=2, color='0.4', marker='*')
 
     # ri & qi
@@ -64,9 +64,9 @@ if __name__=='__main__':
     ax.text(R[1, 0] - 0.3, R[1, 1], R[1, 2] - 0.1, '$r_j$', color='0.4', fontsize=m_fontsize)
 
     m_label=[r'$Q(r_i).pre$', r'$Q(r_i)$', r'$Q(r_i).next$']
-    ax.text(Q[0, 0] - 1.4, Q[0, 1], Q[0, 2]-0.1, m_label[0], color='blue', fontsize=small_fontsize)
-    ax.text(Q[1, 0] + 0.2, Q[1, 1], Q[1, 2]-0.2, m_label[1], color='blue', fontsize=small_fontsize)
-    ax.text(Q[2, 0] - 0.1, Q[2, 1], Q[2, 2]+0.1, m_label[2], color='blue', fontsize=small_fontsize)
+    ax.text(Q[0, 0] - 1.4, Q[0, 1], Q[0, 2]-0.1, m_label[0], color='black', fontsize=small_fontsize)
+    ax.text(Q[1, 0] + 0.2, Q[1, 1], Q[1, 2]-0.2, m_label[1], color='black', fontsize=small_fontsize)
+    ax.text(Q[2, 0] - 0.1, Q[2, 1], Q[2, 2]+0.1, m_label[2], color='black', fontsize=small_fontsize)
 
     # 对应点连线
     plot([R[0], Q[1]], ax, linestyle='--', linewidth=1, color='green')
@@ -95,9 +95,9 @@ if __name__=='__main__':
 
 
     # ax.legend()  # 显示图例
-    ax.set_xlabel('x', fontsize=m_fontsize)
-    ax.set_ylabel('y', fontsize=m_fontsize)
-    ax.set_zlabel('Z', fontsize=m_fontsize)
+    ax.set_xlabel('x/m', fontsize=m_fontsize)
+    ax.set_ylabel('y/m', fontsize=m_fontsize)
+    ax.set_zlabel('z/m', fontsize=m_fontsize)
     # 设置坐标轴刻度
     ax.set_xticks([])
     ax.set_yticks([])

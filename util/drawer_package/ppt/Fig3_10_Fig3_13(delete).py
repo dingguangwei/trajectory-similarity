@@ -79,8 +79,8 @@ def get_pair_index_in_DTW(Q, R):
 
 def text(ax, Q, R):
     for i in [0,1,3,4]:
-        ax.text(Q[i, 0] - 0.1, Q[i, 1], Q[i, 2]+0.8, r'$q_{'+str(i)+'}$', color='blue', fontsize=m_fontsize)
-    ax.text(Q[2, 0] + 0., Q[2, 1]-0.3 , Q[2, 2] - 0.5, r'$q_{' + str(2) + '}$', color='blue', fontsize=m_fontsize)
+        ax.text(Q[i, 0] - 0.1, Q[i, 1], Q[i, 2]+0.8, r'$q_{'+str(i)+'}$', color='black', fontsize=m_fontsize)
+    ax.text(Q[2, 0] + 0., Q[2, 1]-0.3 , Q[2, 2] - 0.5, r'$q_{' + str(2) + '}$', color='black', fontsize=m_fontsize)
     for i in range(len(R)-1):
         ax.text(R[i, 0] - 0.6, R[i, 1]+0.4, R[i, 2]+0., r'$r_{' + str(i) + '}$', color='0.4', fontsize=m_fontsize)
     ax.text(R[-1, 0] - 0., R[-1, 1]+0., R[-1, 2] + 0.7, r'$r_{' + str(7) + '}$', color='0.4', fontsize=m_fontsize)
@@ -93,10 +93,10 @@ def text(ax, Q, R):
 def draw_2d():
     fig = plt.figure()
     Q, R = get_data()
-    plt.plot(Q[:, 0], Q[:, 1], label='Q', linestyle='-', linewidth=2, color='blue', marker='H')
+    plt.plot(Q[:, 0], Q[:, 1], label='Q', linestyle='-', linewidth=2, color='black', marker='H')
     plt.plot(R[:, 0], R[:, 1], label='R', linestyle='-', linewidth=2, color='.4', marker='*')
     for i in range(len(Q)):
-        plt.text(Q[i, 0]+0.2, Q[i, 1]-0.3, '$q_'+str(i)+'$', color='blue', fontsize=m_fontsize+4)
+        plt.text(Q[i, 0]+0.2, Q[i, 1]-0.3, '$q_'+str(i)+'$', color='black', fontsize=m_fontsize+4)
     for i in range(len(R)):
         plt.text(R[i, 0] - 0.5, R[i, 1] - 0.1, '$r_' + str(i) + '$', color='.4', fontsize=m_fontsize+4)
 
@@ -106,22 +106,22 @@ def draw_2d():
     plt.yticks(np.arange(0, 10, 1), fontsize=m_fontsize)
     plt.xlim(0, 6)
     # plt.ylim(-2, 2)
-    plt.xlabel('x', fontsize=m_fontsize)
-    plt.ylabel('y', fontsize=m_fontsize)
+    plt.xlabel('x/m', fontsize=m_fontsize)
+    plt.ylabel('y/m', fontsize=m_fontsize)
     plt.savefig('F:\\毕业设计大文件夹\\picture\\ppt图片\\Fig3-10\\0-2d.jpg', dpi=500)
     plt.show()
 
 
 def draw_0(fig, ax):
     Q, R = get_data()
-    ax.plot(Q[:, 0], Q[:, 1], Q[:, 2], label='Q', linestyle='-', linewidth=2, color='blue', marker='H')
+    ax.plot(Q[:, 0], Q[:, 1], Q[:, 2], label='Q', linestyle='-', linewidth=2, color='black', marker='H')
     ax.plot(R[:, 0], R[:, 1], R[:, 2], label='R', linestyle='-', linewidth=2, color='0.4', marker='*')
     return "F:\\毕业设计大文件夹\\picture\\ppt图片\\Fig3-10\\0.jpg"
 
 
 def draw_1(fig, ax):
     Q, R = get_data()
-    ax.plot(Q[:, 0], Q[:, 1], Q[:, 2], label='Q', linestyle='-', linewidth=2, color='blue', marker='H')
+    ax.plot(Q[:, 0], Q[:, 1], Q[:, 2], label='Q', linestyle='-', linewidth=2, color='black', marker='H')
     ax.plot(R[:, 0], R[:, 1], R[:, 2], label='R', linestyle='-', linewidth=2, color='0.4', marker='*')
 
     # 获取DTW对应点
@@ -137,7 +137,7 @@ def draw_1(fig, ax):
 # 寻找r0的对应点
 def draw_2(fig, ax):
     Q, R = get_data()
-    ax.plot(Q[:, 0], Q[:, 1], Q[:, 2], label='Q', linestyle='-', linewidth=2, color='blue', marker='H')
+    ax.plot(Q[:, 0], Q[:, 1], Q[:, 2], label='Q', linestyle='-', linewidth=2, color='black', marker='H')
     ax.plot(R[:, 0], R[:, 1], R[:, 2], label='R', linestyle='-', linewidth=2, color='0.4', marker='*')
 
     # 获取DTW对应点
@@ -159,7 +159,7 @@ def draw_2(fig, ax):
 # 寻找r0,r1,r2的对应点
 def draw_3(fig, ax):
     Q, R = get_data()
-    ax.plot(Q[:, 0], Q[:, 1], Q[:, 2], label='Q', linestyle='-', linewidth=2, color='blue', marker='H')
+    ax.plot(Q[:, 0], Q[:, 1], Q[:, 2], label='Q', linestyle='-', linewidth=2, color='black', marker='H')
     ax.plot(R[:, 0], R[:, 1], R[:, 2], label='R', linestyle='-', linewidth=2, color='0.4', marker='*')
 
     # 获取DTW对应点
@@ -192,7 +192,7 @@ def draw_3(fig, ax):
 # 优化r2的对应点
 def draw_4(fig, ax):
     Q, R = get_data()
-    ax.plot(Q[:, 0], Q[:, 1], Q[:, 2], label='Q', linestyle='-', linewidth=2, color='blue', marker='H')
+    ax.plot(Q[:, 0], Q[:, 1], Q[:, 2], label='Q', linestyle='-', linewidth=2, color='black', marker='H')
     ax.plot(R[:, 0], R[:, 1], R[:, 2], label='R', linestyle='-', linewidth=2, color='0.4', marker='*')
 
     # 获取DTW对应点
@@ -203,8 +203,8 @@ def draw_4(fig, ax):
         draw_line(ax, Q[pair[1]], R[pair[0]])
 
     for i in range(0, len(Q) - 1):
-        ax.text(Q[i, 0] - 0.7, Q[i, 1] + 1, Q[i, 2] - 0.8, r'$q_{' + str(i) + '}$', color='blue', fontsize=m_fontsize)
-    ax.text(Q[-1, 0] + 0.2, Q[-1, 1], Q[-1, 2] + 0.2, r'$q_{' + str(3) + '}$', color='blue', fontsize=m_fontsize)
+        ax.text(Q[i, 0] - 0.7, Q[i, 1] + 1, Q[i, 2] - 0.8, r'$q_{' + str(i) + '}$', color='black', fontsize=m_fontsize)
+    ax.text(Q[-1, 0] + 0.2, Q[-1, 1], Q[-1, 2] + 0.2, r'$q_{' + str(3) + '}$', color='black', fontsize=m_fontsize)
     for i in range(len(R) - 1):
         ax.text(R[i, 0] + 0.2, R[i, 1], R[i, 2] + 0., r'$r_{' + str(i) + '}$', color='0.4', fontsize=m_fontsize)
     ax.text(R[-1, 0] + 0.2, R[-1, 1], R[-1, 2] + 0., r'$r_{' + str(5) + '}$', color='0.4', fontsize=m_fontsize)
@@ -230,7 +230,7 @@ def draw_4(fig, ax):
 # 全部对应点
 def draw_5(fig, ax):
     Q, R = get_data()
-    ax.plot(Q[:, 0], Q[:, 1], Q[:, 2], label='Q', linestyle='-', linewidth=2, color='blue', marker='H')
+    ax.plot(Q[:, 0], Q[:, 1], Q[:, 2], label='Q', linestyle='-', linewidth=2, color='black', marker='H')
     ax.plot(R[:, 0], R[:, 1], R[:, 2], label='R', linestyle='-', linewidth=2, color='0.4', marker='*')
 
     # 获取DTW对应点
@@ -241,8 +241,8 @@ def draw_5(fig, ax):
     #     draw_line(ax, Q[pair[1]], R[pair[0]])
 
     for i in range(0, len(Q) - 1):
-        ax.text(Q[i, 0] - 0.7, Q[i, 1] + 1, Q[i, 2] - 0.8, r'$q_{' + str(i) + '}$', color='blue', fontsize=m_fontsize)
-    ax.text(Q[-1, 0] + 0.2, Q[-1, 1], Q[-1, 2] + 0.2, r'$q_{' + str(3) + '}$', color='blue', fontsize=m_fontsize)
+        ax.text(Q[i, 0] - 0.7, Q[i, 1] + 1, Q[i, 2] - 0.8, r'$q_{' + str(i) + '}$', color='black', fontsize=m_fontsize)
+    ax.text(Q[-1, 0] + 0.2, Q[-1, 1], Q[-1, 2] + 0.2, r'$q_{' + str(3) + '}$', color='black', fontsize=m_fontsize)
     for i in range(len(R) - 1):
         ax.text(R[i, 0] + 0.2, R[i, 1], R[i, 2] + 0., r'$r_{' + str(i) + '}$', color='0.4', fontsize=m_fontsize)
     ax.text(R[-1, 0] + 0.2, R[-1, 1], R[-1, 2] + 0., r'$r_{' + str(5) + '}$', color='0.4', fontsize=m_fontsize)
@@ -288,9 +288,9 @@ if __name__=='__main__':
         #                                     左     下
         ax.legend(loc='right', bbox_to_anchor=(0.95, 0.85),ncol=1)  # 显示图例
 
-        ax.set_xlabel('x', fontsize=m_fontsize)
-        ax.set_ylabel('y', fontsize=m_fontsize)
-        ax.set_zlabel('Z', fontsize=m_fontsize)
+        ax.set_xlabel('x/m', fontsize=m_fontsize)
+        ax.set_ylabel('y/m', fontsize=m_fontsize)
+        ax.set_zlabel('z/m', fontsize=m_fontsize)
         # 设置坐标轴刻度
         ax.set_xticks([])
         ax.set_yticks([])

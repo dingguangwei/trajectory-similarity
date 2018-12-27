@@ -53,19 +53,22 @@ if __name__=='__main__':
     m_fontsize = 16
 
     Q, R = get_data()
-    plt.plot(Q[:, 0], Q[:, 1], color='blue', linewidth=2, label='Q', marker='H', linestyle=None)
+    plt.plot(Q[:, 0], Q[:, 1], color='black', linewidth=2, label='Q', marker='H', linestyle=None)
     plt.plot(R[:, 0], R[:, 1], color='0.5', linewidth=2, label='R', marker='*', linestyle=None)
 
     for i in range(len(Q)):
-        plt.text(Q[i][0] + 0.2, Q[i][1], 'q'+str(i), fontsize=m_fontsize, color='blue')
+        plt.text(Q[i][0] + 0.2, Q[i][1], 'q'+str(i), fontsize=m_fontsize, color='black')
     for i in range(len(R)):
         plt.text(R[i][0] + 0.2, R[i][1], 'r'+str(i), fontsize=m_fontsize, color='0.5')
-    for i in range(len(Q)):
-        plt.plot([Q[i,0], R[i, 0]], [Q[i, 1], R[i, 1]], color='green', linewidth=1.0, linestyle='--')
+
+    # 下面只允许运行一段：
     # for i in range(len(Q)):
-    #     find_pair_point_in_Traj(Q[i], R)
-    # for i in range(len(R)):
-    #     find_pair_point_in_Traj(R[i], Q, color='red', linestyle='-.')
+    #     plt.plot([Q[i,0], R[i, 0]], [Q[i, 1], R[i, 1]], color='green', linewidth=1.0, linestyle='--')
+
+    for i in range(len(Q)):
+        find_pair_point_in_Traj(Q[i], R)
+    for i in range(len(R)):
+        find_pair_point_in_Traj(R[i], Q, color='red', linestyle='-.')
 
 
     ax = plt.gca()
@@ -76,11 +79,12 @@ if __name__=='__main__':
     ax.spines['right'].set_position(('data', 0))
 
     plt.legend(fontsize=m_fontsize)
-    plt.xticks(np.arange(0, 10, 1), fontsize=m_fontsize)
-    plt.yticks(np.arange(0, 5, 1), fontsize=m_fontsize)
+    plt.xticks(np.arange(0, 10, 1), np.arange(0, 100, 10), fontsize=m_fontsize)
+    plt.yticks(np.arange(0, 5, 1), np.arange(0, 50, 10), fontsize=m_fontsize)
     # plt.xlim(0, 4)
     # plt.ylim(-2, 2)
-    plt.xlabel('x', fontsize=m_fontsize)
-    plt.ylabel('y', fontsize=m_fontsize)
-
+    plt.xlabel('x/m', fontsize=m_fontsize)
+    plt.ylabel('y/m', fontsize=m_fontsize)
+    plt.subplots_adjust(top=0.95, bottom=0.15, right=0.97, left=0.12, hspace=0, wspace=0)
+    plt.savefig("F:\\毕业设计大文件夹\\picture\\chapter\\3-4.jpg", dpi=300)
     plt.show()

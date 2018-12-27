@@ -33,16 +33,16 @@ if __name__=='__main__':
 
     Q, R, S = get_data()
 
-    plt.scatter(Q[:, 0], Q[:, 1], color='blue')
+    plt.scatter(Q[:, 0], Q[:, 1], color='black')
     plt.scatter(R[:, 0], R[:, 1], color='0.4')
     plt.scatter(S[:, 0], S[:, 1], color='0.6')
 
     for i in range(len(Q)):
-        plt.text(Q[i, 0], Q[i, 1]+0.1, 'q'+str(i), color='blue', fontsize=m_fontsize)
+        plt.text(Q[i, 0], Q[i, 1]+0.1, 'q'+str(i), color='black', fontsize=m_fontsize)
         plt.plot([Q[i, 0], R[i+3, 0]], [Q[i, 1], R[i+3, 1]], color='green', linewidth=1., label='', marker=None,linestyle='--')
         plt.plot([Q[i, 0], S[i, 0]], [Q[i, 1], S[i, 1]], color='green', linewidth=1., label='', marker=None,linestyle='--')
         if i < len(Q)-1:
-            plt.plot([Q[i,0], Q[i+1,0]], [Q[i,1], Q[i+1,1]], color='blue', linewidth=4., label='Q', marker=None, linestyle='-')
+            plt.plot([Q[i,0], Q[i+1,0]], [Q[i,1], Q[i+1,1]], color='black', linewidth=4., label='Q', marker=None, linestyle='-')
     for i in range(len(R)):
         plt.text(R[i, 0], R[i, 1]+0.1, 'r' + str(i), color='0.4', fontsize=m_fontsize)
         if i < len(R)-1:

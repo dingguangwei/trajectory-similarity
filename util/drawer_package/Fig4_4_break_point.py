@@ -81,9 +81,9 @@ def draw_a(fig, ax):
                    color='0.4')
 
     # 轨迹Q（情况一）
-    plot([q0, q1], ax=ax, label=None, linestyle='-', linewidth=2, color='blue', marker='H')
-    ax.text(q0[0], q0[1] - 0.03, q0[2] - 0.03, r'$q_0$', fontsize=m_fontsize, color='blue')
-    ax.text(q1[0], q1[1] - 0.03, q1[2] - 0.04, r'$q_1$', fontsize=m_fontsize, color='blue')
+    plot([q0, q1], ax=ax, label=None, linestyle='-', linewidth=2, color='black', marker='H')
+    ax.text(q0[0], q0[1] - 0.03, q0[2] - 0.03, r'$q_0$', fontsize=m_fontsize, color='black')
+    ax.text(q1[0], q1[1] - 0.03, q1[2] - 0.04, r'$q_1$', fontsize=m_fontsize, color='black')
 
     find_pair_point(ax, r0, q0, q1)
     find_pair_point(ax, r1, q0, q1)
@@ -146,9 +146,9 @@ def draw_b(fig, ax):
     #################################################################################
     # 轨迹Q（情况一）
     #################################################################################
-    plot([q0, q1], ax=ax, label=None, linestyle='-', linewidth=2, color='blue', marker='H')
-    ax.text(q0[0], q0[1] - 0.03, q0[2] - 0.03, r'$q_0$', fontsize=m_fontsize, color='blue')
-    ax.text(q1[0], q1[1] - 0.03, q1[2] - 0.04, r'$q_1$', fontsize=m_fontsize, color='blue')
+    plot([q0, q1], ax=ax, label=None, linestyle='-', linewidth=2, color='black', marker='H')
+    ax.text(q0[0], q0[1] - 0.03, q0[2] - 0.03, r'$q_0$', fontsize=m_fontsize, color='black')
+    ax.text(q1[0], q1[1] - 0.03, q1[2] - 0.04, r'$q_1$', fontsize=m_fontsize, color='black')
 
     find_pair_point(ax, r0, q0, q1)
     find_pair_point(ax, r1, q0, q1)
@@ -166,9 +166,9 @@ if __name__=='__main__':
     path = draw_b(fig, ax)
 
     # ax.legend()  # 显示图例
-    ax.set_xlabel('x', fontsize=m_fontsize)
-    ax.set_ylabel('y', fontsize=m_fontsize)
-    ax.set_zlabel('z', fontsize=m_fontsize)
+    ax.set_xlabel('x/m', fontsize=m_fontsize)
+    ax.set_ylabel('y/m', fontsize=m_fontsize)
+    ax.set_zlabel('z/m', fontsize=m_fontsize)
     # 设置坐标轴刻度
     ax.set_xticks([])
     ax.set_yticks([])
