@@ -106,6 +106,6 @@ if __name__=='__main__':
     plt.ylim(0, 3)
     ax.set_zlim(0, 3)
     ax.view_init(elev=20, azim=300)  # 调整视角
-    plt.subplots_adjust(top=1, bottom=0, right=0.95, left=0, hspace=0, wspace=0)
+    plt.subplots_adjust(top=1, bottom=0, right=0.95, left=-0.1, hspace=0, wspace=0)
     plt.savefig("F:\\毕业设计大文件夹\\picture\\chapter4\\Fig4-7.jpg", pad_inches = 0.25)
     plt.show()

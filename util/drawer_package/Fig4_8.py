@@ -158,7 +158,7 @@ if __name__=='__main__':
         img = Image.open(path + m_file)  # 打开当前路径图像
         # print(img.size)
         # 左，上，右，下
-        box1 = (530, 230, 2900, 2150)  # 设置图像裁剪区域
+        box1 = (330, 230, 2900, 2150)  # 设置图像裁剪区域
         image1 = img.crop(box1)  # 图像裁剪
         # image1.show()
         # print(image1.size)

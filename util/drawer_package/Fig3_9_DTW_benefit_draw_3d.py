@@ -51,7 +51,7 @@ if __name__=='__main__':
     pair = get_pair_point_in_DTW(Q, R)
 
     ax.plot(Q[:, 0], Q[:, 1], Q[:, 2], label='Q', linestyle='-', linewidth=2, color='black', marker='H')
-    ax.plot(R[:, 0], R[:, 1], R[:, 2], label='R', linestyle='-', linewidth=2, color='0.4', marker='H')
+    ax.plot(R[:, 0], R[:, 1], R[:, 2], label='R', linestyle='-', linewidth=2, color='0.4', marker='*')
 
     for i in range(len(pair)):
         v1 = Q[pair[i, 0]]

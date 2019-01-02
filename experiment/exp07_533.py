@@ -58,9 +58,9 @@ if __name__=='__main__':
     value_SDTW, value_PTM, value_STS, x_list, m_title, path = get_data_NA()
 
     # plt.plot(value_DTW[:, 0], value_DTW[:, 1], color='0.2', linewidth=2, label='DTW', marker='x/m', linestyle=None)
-    plt.plot(value_SDTW[:, 0], value_SDTW[:, 1], color='0.3', linewidth=2, label='SDTW', marker='D', linestyle=None)
-    plt.plot(value_PTM[:, 0], value_PTM[:, 1], color='0.4', linewidth=2, label='PTM', marker='|', linestyle=None)
-    plt.plot(value_STS[:, 0], value_STS[:, 1], color='0.1', linewidth=2, label='STS', marker='o', linestyle=None)
+    plt.plot(value_SDTW[:, 0], value_SDTW[:, 1], color='0.6', linewidth=2, label='SDTW', marker='|', linestyle=None)
+    plt.plot(value_PTM[:, 0], value_PTM[:, 1], color='0.4', linewidth=2, label='PTM', marker='o', linestyle=None)
+    plt.plot(value_STS[:, 0], value_STS[:, 1], color='0.', linewidth=2, label='STS', marker='>', linestyle=None)
 
     ax = plt.gca()
 

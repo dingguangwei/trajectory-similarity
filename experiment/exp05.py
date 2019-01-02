@@ -57,13 +57,15 @@ def get_data_NA():
 
 
 if __name__=='__main__':
-    # num_list, x, width, name_list, label, m_title, path = get_data_GL()
-    num_list, x, width, name_list, label, m_title, path = get_data_NA()
+    num_list, x, width, name_list, label, m_title, path = get_data_GL()
+    # num_list, x, width, name_list, label, m_title, path = get_data_NA()
 
     m_fontsize = 14
-    color_list = ['cornflowerblue', 'lightsteelblue', 'lightsalmon', 'rosybrown']
+    # color_list = ['cornflowerblue', 'lightsteelblue', 'lightsalmon', 'rosybrown']
+    color_list = ['0.8', '0.5', '0.3', 'rosybrown']
+    hatch_list = ['', '....', '///', 'x']
     for i in range(len(num_list)):
-        plt.bar(x[i], num_list[i], width, label=label[i], color=color_list[i])
+        plt.bar(x[i], num_list[i], width, label=label[i], color="w",edgecolor="k", hatch=hatch_list[i])
 
     plt.xticks(x[1], name_list, fontsize=m_fontsize)
     plt.yticks(np.arange(0, 1.1, 0.2), fontsize=m_fontsize)

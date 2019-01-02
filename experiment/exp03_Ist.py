@@ -57,9 +57,9 @@ if __name__=='__main__':
     # value_20, value_40, value_60, x_list, m_title, path = get_data()
     value_20, value_40, value_60, x_list, m_title, path = get_data_NA()
 
-    plt.plot(value_20[:, 0], value_20[:, 1], color='0.2', linewidth=2, label='k=20', marker='P', linestyle=None)
-    plt.plot(value_40[:, 0], value_40[:, 1], color='0.3', linewidth=2, label='k=40', marker='o', linestyle=None)
-    plt.plot(value_60[:, 0], value_60[:, 1], color='0.4', linewidth=2, label='k=60', marker='>', linestyle=None)
+    plt.plot(value_20[:, 0], value_20[:, 1], color='black', linewidth=2, label='k=20', marker='P', linestyle=None)
+    plt.plot(value_40[:, 0], value_40[:, 1], color='0.4', linewidth=2, label='k=40', marker='o', linestyle=None)
+    plt.plot(value_60[:, 0], value_60[:, 1], color='0.6', linewidth=2, label='k=60', marker='>', linestyle=None)
 
 
     ax = plt.gca()
